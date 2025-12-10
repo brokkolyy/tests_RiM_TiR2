@@ -1,0 +1,181 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: Открыть контекстное меню
+              - generic [ref=e65]: ПКМ
+            - tree [ref=e67]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e71]:
+                - generic [ref=e74]:
+                  - button [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - paragraph [ref=e80]: Прием
+          - separator [ref=e81]
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - paragraph [ref=e88]: Открыть контекстное меню
+              - generic [ref=e89]: ПКМ
+            - tree [ref=e91]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e95]:
+                - generic [ref=e98]:
+                  - button [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - paragraph [ref=e104]: Передача
+        - separator [ref=e105]
+        - generic [ref=e110]:
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - paragraph [ref=e127]: Выберите узел в дереве приема или передачи
+          - separator [ref=e128]:
+            - generic:
+              - img
+          - generic [ref=e131]:
+            - navigation "breadcrumb" [ref=e132]:
+              - list [ref=e133]:
+                - listitem [ref=e134]: Переменные
+                - listitem [ref=e135]:
+                  - img [ref=e136]
+                - listitem [ref=e138]: variable
+            - generic [ref=e139]:
+              - paragraph [ref=e141]: U0E1M3ItDwP6
+              - group [ref=e144]:
+                - paragraph [ref=e146]: Название
+                - textbox "Название" [ref=e148]: variable
+              - generic [ref=e149]:
+                - generic [ref=e150]:
+                  - group [ref=e151]:
+                    - paragraph [ref=e153]: Тип переменной
+                    - generic [ref=e154]:
+                      - combobox [ref=e155]
+                      - generic [ref=e157]:
+                        - combobox "Тип переменной" [ref=e158]:
+                          - generic [ref=e159]: 1 бит - bool
+                        - generic:
+                          - generic:
+                            - img
+                  - group [ref=e160]:
+                    - paragraph [ref=e162]: Описание переменной
+                    - textbox "Описание переменной" [ref=e164]
+                - generic [ref=e165]:
+                  - generic [ref=e167]:
+                    - generic [ref=e169]:
+                      - checkbox [ref=e170]
+                      - img [ref=e172]
+                    - generic [ref=e174]:
+                      - img [ref=e175]
+                      - paragraph [ref=e181]: Специальная переменная
+                    - group [ref=e183]:
+                      - paragraph [ref=e185]: Задержка цикла, сек
+                      - generic [ref=e186]:
+                        - group [ref=e187]:
+                          - button "increment value" [ref=e188] [cursor=pointer]:
+                            - img [ref=e189]
+                          - button "decrease value" [ref=e191] [cursor=pointer]:
+                            - img [ref=e192]
+                        - spinbutton "Задержка цикла, сек" [active] [ref=e195]: "34"
+                  - generic [ref=e197]:
+                    - generic [ref=e199]:
+                      - checkbox [ref=e200]
+                      - img [ref=e202]
+                    - generic [ref=e203]:
+                      - img [ref=e204]
+                      - paragraph [ref=e207]: Архив
+                  - generic [ref=e209]:
+                    - generic [ref=e211]:
+                      - checkbox [ref=e212]
+                      - img [ref=e214]
+                    - generic [ref=e215]:
+                      - img [ref=e216]
+                      - paragraph [ref=e219]: Команда пользователя
+                - code [ref=e222]:
+                  - generic [ref=e223]:
+                    - textbox "Editor content"
+                    - textbox [ref=e224]
+                    - generic [ref=e229]: "1"
+        - separator [ref=e236]
+        - tree [ref=e240]:
+          - generic [ref=e243]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e244]:
+              - generic [ref=e247]:
+                - button [ref=e248] [cursor=pointer]:
+                  - img [ref=e249]
+                - generic [ref=e252]:
+                  - paragraph [ref=e253]: Переменные
+                  - generic [ref=e254]:
+                    - button [ref=e255] [cursor=pointer]:
+                      - img [ref=e256]
+                    - button [ref=e259] [cursor=pointer]:
+                      - img [ref=e260]
+                    - button [ref=e262] [cursor=pointer]:
+                      - img [ref=e263]
+                    - button [ref=e266] [cursor=pointer]:
+                      - img [ref=e267]
+            - treeitem "variable" [level=2] [selected] [ref=e270]:
+              - generic [ref=e276]:
+                - img [ref=e277]
+                - generic "Цикличная" [ref=e282]:
+                  - img [ref=e283]
+                - paragraph [ref=e289]: variable
+    - contentinfo [ref=e290]:
+      - generic [ref=e291]:
+        - generic [ref=e292]:
+          - img [ref=e293]
+          - paragraph [ref=e296]: "-------"
+        - generic [ref=e297]:
+          - img [ref=e298]
+          - paragraph [ref=e301]: "----"
+        - generic [ref=e302]:
+          - img [ref=e303]
+          - paragraph [ref=e305]: "----"
+        - img [ref=e306]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e310]':
+          - paragraph [ref=e311]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - generic [ref=e312]:
+    - alert
+    - alert
+```
