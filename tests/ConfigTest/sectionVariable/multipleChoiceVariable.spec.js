@@ -5,7 +5,6 @@ const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configurat
 
 test('Множественный выбор переменных(no)', async ({page}) => {
     const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
         
     await config.goto();
     await config.contextMenuVariable();
