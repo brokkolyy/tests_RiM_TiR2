@@ -230,8 +230,7 @@ test('Создание объектов данных(2) ModbusRTU Slave, раз�
     button: 'right'});
     await configElement.clickModbusRTU_Slave();
 
-    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_Slave$/ }).nth(1).click({
-        button: 'right'});
+    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_slave$/ }).nth(1).click({button: 'right'});
     await configElement.clickFunctionGroup();
 
     await page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first().click({
@@ -255,7 +254,7 @@ test('Создание объектов данных(3) ModbusRTU Slave, раз�
     button: 'right'});
     await configElement.clickModbusRTU_Slave();
 
-    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_Slave$/ }).nth(1).click({
+    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_slave$/ }).nth(1).click({
         button: 'right'});
     await configElement.clickFunctionGroup();
 
@@ -280,7 +279,7 @@ test('Создание объектов данных(5) ModbusRTU Slave, раз�
     button: 'right'});
     await configElement.clickModbusRTU_Slave();
 
-    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_Slave$/ }).nth(1).click({
+    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_slave$/ }).nth(1).click({
         button: 'right'});
     await configElement.clickFunctionGroup();
 
@@ -305,7 +304,7 @@ test('Создание объектов данных(10) ModbusRTU Slave, раз
     button: 'right'});
     await configElement.clickModbusRTU_Slave();
 
-    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_Slave$/ }).nth(1).click({
+    await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_slave$/ }).nth(1).click({
         button: 'right'});
     await configElement.clickFunctionGroup();
 

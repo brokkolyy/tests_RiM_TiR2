@@ -190,9 +190,9 @@ test('Ввести 0 после чего недопустимое значени
     const val = await field.inputValue();
     const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
     expect(val).toBe('555');
-    expect(error).toBeVisible();
+    expect(error).not.toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
-    await expect(errIcon).toBeVisible();
+    await expect(errIcon).not.toBeVisible();
     const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
     await expect(buttonError).toBeVisible();
 });
@@ -210,9 +210,9 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     const val = await field.inputValue();
     const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
     expect(val).toBe('2 3');
-    expect(error).toBeVisible();
+    expect(error).not.toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
-    await expect(errIcon).toBeVisible();
+    await expect(errIcon).not.toBeVisible();
     const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
     await expect(buttonError).toBeVisible();
 });

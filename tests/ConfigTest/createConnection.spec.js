@@ -165,10 +165,10 @@ test('Создание соединения Modbus server', async ({ page }) => 
     const config = new ConfigPage(page);
 
     await config.goto();
-    await config.clickButtonAddConnBroad();    // 
+    await config.contextMenuBroadcast();    // контекстное меню передача
     await config.clickModbusTCP_S();
 
-    await config.contextMenuBroadcast();    // контекстное меню передача
+    await config.clickButtonAddConnBroad();
     await config.clickModbusTCP_S();
 
     const el = page.locator('div').filter({ hasText: /^MB TCP127\.0\.0\.1502modbusTCP_server$/ }).nth(1);
@@ -179,7 +179,7 @@ test('Создание соединений Modbus server + уникальнос
     const config = new ConfigPage(page);
 
     await config.goto();
-    await config.contextMenuReception();
+    await config.contextMenuBroadcast();
     await config.clickModbusTCP_S();
 
     await config.clickButtonAddConnBroad();

@@ -9,10 +9,10 @@ test.describe('Навигация', () => {
         const configElement = new ConfigPageElements(page);
                 
         await config.goto();
-        await config.contextMenuReception(); 
-        await config.clickIec104_C();
+        await config.contextMenuBroadcast(); 
+        await config.clickIec104_S();
         
-        const iec = page.locator('div').filter({ hasText: /^iec104127\.0\.0\.1102iec104_client$/ }).nth(1);
+        const iec = page.locator('div').filter({ hasText: /^iec104127\.0\.0\.1102iec104_server$/ }).nth(1);
         await expect(iec).toBeVisible();
         await iec.click();
         const item = page.getByRole('combobox', { name: 'Длина адреса объекта' });
@@ -22,7 +22,7 @@ test.describe('Навигация', () => {
         await op.click();
         await expect(item).toHaveText('2 байта');
                                         
-        await page.locator('div').filter({ hasText: /^iec104127\.0\.0\.1102iec104_client$/ }).nth(1).click({button:'right'});
+        await page.locator('div').filter({ hasText: /^iec104127\.0\.0\.1102iec104_server$/ }).nth(1).click({button:'right'});
         await configElement.clickAsdu();
         await page.locator('div').filter({ hasText: /^asdu1asdu$/ }).nth(1).click({button:'right'});
         await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();

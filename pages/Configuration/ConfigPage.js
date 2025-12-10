@@ -27,7 +27,7 @@ class ConfigPage {
         this.buttonIgnorBroad = this.page.locator('[id="tooltip::ri::trigger"]');
         this.buttonBroad = this.page.locator('[id="tooltip::rj::trigger"]');
 
-        this.buttonAddVariable = this.page.locator('[id="tooltip::rs::trigger"]');  //переменные
+        this.buttonAddVariable = this.page.locator('[id="tooltip::rs:]');  //переменные
         this.buttonAddFolder = this.page.locator('[id="tooltip::rt::trigger"]');
         this.buttonIgnorVar = this.page.locator('[id="tooltip::ru::trigger"]');
         this.buttonVar = this.page.locator('[id="tooltip::rv::trigger"]');
