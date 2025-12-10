@@ -2,7 +2,6 @@ const path = require('path');
 const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 
-
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
