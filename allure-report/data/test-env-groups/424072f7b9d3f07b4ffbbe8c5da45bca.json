@@ -1,0 +1,1 @@
+{"id":"424072f7b9d3f07b4ffbbe8c5da45bca","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/FGObjectSlave/ObjUniqueSlave.spec.js:260:1","name":"Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(FG-ИО), 4 объекта данных","status":"failed","testResultsByEnv":{"default":"b13017039f384078e9a05dae4176ffdc"}}

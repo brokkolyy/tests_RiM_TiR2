@@ -1,0 +1,167 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - generic [ref=e64]:
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - paragraph [ref=e69]: Открыть контекстное меню
+              - generic [ref=e70]: ПКМ
+            - tree [ref=e72]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e76]:
+                - generic [ref=e79]:
+                  - button [ref=e80] [cursor=pointer]:
+                    - img [ref=e81]
+                  - paragraph [ref=e85]: Прием
+          - separator [ref=e86]
+          - tree [ref=e90]:
+            - generic [ref=e93]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e94]:
+                - generic [ref=e97]:
+                  - button [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+                  - generic [ref=e102]:
+                    - paragraph [ref=e103]: Передача
+                    - generic [ref=e104]:
+                      - button [ref=e105] [cursor=pointer]:
+                        - img [ref=e106]
+                      - button [ref=e107] [cursor=pointer]:
+                        - img [ref=e108]
+                      - button [ref=e111] [cursor=pointer]:
+                        - img [ref=e112]
+              - treeitem "MB TCP 127.0.0.1 502 modbusTCP_server" [expanded] [level=2] [ref=e115]:
+                - generic [ref=e120]:
+                  - button [ref=e121] [cursor=pointer]:
+                    - img [ref=e122]
+                  - generic [ref=e124]:
+                    - generic "Modbus-TCP Сервер" [ref=e125]: MB TCP
+                    - generic "IP-адрес" [ref=e126]: 127.0.0.1
+                    - generic "Порт" [ref=e127]: "502"
+                    - paragraph [ref=e128]: modbusTCP_server
+              - treeitem "fg 1 f" [expanded] [level=3] [selected] [ref=e129]:
+                - generic [ref=e131]:
+                  - generic [ref=e135]:
+                    - button [ref=e136] [cursor=pointer]:
+                      - img [ref=e137]
+                    - generic [ref=e139]:
+                      - generic "Функциональная группа" [ref=e140]: fg
+                      - generic "Функция" [ref=e141]: "1"
+                      - paragraph [ref=e142]: f
+                  - img [ref=e143]
+        - separator [ref=e145]
+        - generic [ref=e150]:
+          - generic [ref=e153]:
+            - navigation "breadcrumb" [ref=e154]:
+              - list [ref=e155]:
+                - listitem [ref=e156]: Передача
+                - listitem [ref=e157]:
+                  - img [ref=e158]
+                - listitem [ref=e160]: modbusTCP_se...
+                - listitem [ref=e161]:
+                  - img [ref=e162]
+                - listitem [ref=e164]: f
+            - generic [ref=e165]:
+              - paragraph [ref=e167]: Oq2odHnso5Ds
+              - group [ref=e170]:
+                - paragraph [ref=e172]: Название
+                - textbox "Название" [active] [ref=e174]: f
+              - generic [ref=e175]:
+                - group [ref=e176]:
+                  - paragraph [ref=e178]: Функция
+                  - generic [ref=e179]:
+                    - combobox [ref=e180]
+                    - generic [ref=e182]:
+                      - combobox "Функция" [ref=e183]:
+                        - generic [ref=e184]: (0x01) Чтение значений из нескольких регистров флагов
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e185]:
+                  - paragraph [ref=e187]: Тип данных
+                  - generic [ref=e188]:
+                    - combobox [ref=e189]
+                    - generic [ref=e191]:
+                      - combobox "Тип данных" [ref=e192]:
+                        - generic [ref=e193]: Выберите параметр
+                      - generic:
+                        - generic:
+                          - img
+                      - img [ref=e195]
+          - separator [ref=e197]:
+            - generic:
+              - img
+          - generic [ref=e202]:
+            - img [ref=e203]
+            - paragraph [ref=e208]: Выберите узел в дереве переменных
+        - separator [ref=e209]
+        - generic [ref=e211]:
+          - generic [ref=e213]:
+            - img [ref=e214]
+            - paragraph [ref=e216]: Открыть контекстное меню
+            - generic [ref=e217]: ПКМ
+          - tree [ref=e219]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e223]:
+              - generic [ref=e226]:
+                - button [ref=e227] [cursor=pointer]:
+                  - img [ref=e228]
+                - paragraph [ref=e232]: Переменные
+    - contentinfo [ref=e233]:
+      - generic [ref=e234]:
+        - generic [ref=e235]:
+          - img [ref=e236]
+          - paragraph [ref=e239]: "-------"
+        - generic [ref=e240]:
+          - img [ref=e241]
+          - paragraph [ref=e244]: "----"
+        - generic [ref=e245]:
+          - img [ref=e246]
+          - paragraph [ref=e248]: "----"
+        - img [ref=e249]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e253]':
+          - paragraph [ref=e254]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

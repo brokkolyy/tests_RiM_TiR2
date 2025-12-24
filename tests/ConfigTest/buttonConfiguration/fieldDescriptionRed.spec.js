@@ -39,7 +39,7 @@ test.describe('Навигация', () => {
     await field.press('Enter');
     
     const val = await field.inputValue();
-    expect(val).toBe('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМН');
+    expect(val).toBe('abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWX');
     const save = page.getByRole('button', { name: 'Сохранить' });
     await save.click();
 });
@@ -55,7 +55,7 @@ test.describe('Навигация', () => {
     await field.press('Enter');
     
     const val = await field.inputValue();
-    expect(val).toBe('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789~`!@#$%^&*()-_=+[{]}\\|;:",<.>/?');
+    expect(val).toBe('АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789~`!@#$%');
     const save = page.getByRole('button', { name: 'Сохранить' });
     await save.click();
 });

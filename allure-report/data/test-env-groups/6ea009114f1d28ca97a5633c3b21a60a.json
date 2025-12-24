@@ -1,0 +1,1 @@
+{"id":"6ea009114f1d28ca97a5633c3b21a60a","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/functionGroupServer/listFunctionModbusServer.spec.js:68:1","name":"(0x04) Чтение значений из нескольких регистров ввода","status":"passed","testResultsByEnv":{"default":"e990c251e0c1b922ee6fbb4f897c2f58"}}

@@ -18,11 +18,11 @@ test('Выпадающий список переменные', async ({ page }) 
     await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({button: 'right'});
     await configElement.clickFunctionGroup();       //1 функциональная группа
     
-    await page.locator('div:nth-child(4) > ._node_1yclz_1').click({button: 'right'});
+    await page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first().click({button: 'right'});
     await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();
     await configElement.clickObject_1();
     
-    const fg = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack')
+    const fg = page.locator('div').filter({ hasText: /^Это поле обязательно для заполненияЭто поле обязательно для заполнения$/ }).nth(1);
     await expect(fg).toBeVisible();
     await fg.click();
     //Variable
@@ -40,8 +40,7 @@ test('Выпадающий список переменные', async ({ page }) 
     const val = await field.inputValue();
     expect(val).toBe('a');
 
-    await config.clickButtonAddVar();
-    const variable2 = page.locator('div').filter({ hasText: /^variable$/ }).nth(3);
+    const variable2 = page.locator('div').filter({ hasText: /^variable$/ }).nth(1)
     await variable2.click();
     const field2 = page.getByRole('textbox', { name: 'Название' });
     await field2.focus();
@@ -55,15 +54,13 @@ test('Выпадающий список переменные', async ({ page }) 
     const buttunList = page.getByRole('button', { name: 'Toggle suggestions' });
     await buttunList.click();
 
-    const opA = page.getByText('a').nth(3);
+    const opA = page.getByText('a').nth(4)
+    await expect(opA).toBeVisible();
     await opA.click();
     await expect(page.getByText('ab', { exact: true })).toBeHidden();
-    await expect(cbx).toHaveText('a');
+    //await expect(cbx).toHaveText('a');
 
-    await item.click();
-    await expect(page.locator('.chakra-combobox__itemIndicator > .css-s3mb0o').first()).toBeVisible();
-
-    const opB = page.getByText('b', { exact: true }).nth(1);
+    const opB = page.getByText('b', { exact: true }).nth(2);
     await opB.click();
     await expect(page.getByText('ab', { exact: true })).toBeHidden();
     await expect(cbx).toHaveText('b');

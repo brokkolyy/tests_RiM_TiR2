@@ -1,0 +1,1 @@
+{"id":"2a1c6632a78d5583e00fad148a6f0c8f","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ModbusFunctionGroup/listFuction.spec.js:78:1","name":"(0x03) Чтение значений из нескольких регистров хранения","status":"passed","testResultsByEnv":{"default":"bf45c119bf03110e8e3e85a81cba01c9"}}

@@ -1,0 +1,1 @@
+{"id":"5a5415e772f485bb7e3160a6fa163ee5","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ComportTCPBridgeServer/fieldNameTCP.spec.js:42:5","name":"Ввод больше максимальной длины (31 символ)","status":"failed","testResultsByEnv":{"default":"301632ef9ec4b1a6e561d40de7e45d53"}}

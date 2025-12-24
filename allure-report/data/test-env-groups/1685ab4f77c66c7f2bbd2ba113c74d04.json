@@ -1,0 +1,1 @@
+{"id":"1685ab4f77c66c7f2bbd2ba113c74d04","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ModbusFunctionGroup/listFuction.spec.js:6:1","name":"(0x01) Чтение значений из нескольких регистров флагов","status":"passed","testResultsByEnv":{"default":"e247887d6359a154333e557f40ba39e0"}}

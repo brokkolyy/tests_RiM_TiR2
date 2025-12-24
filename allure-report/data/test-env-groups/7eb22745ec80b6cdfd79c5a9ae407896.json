@@ -1,0 +1,1 @@
+{"id":"7eb22745ec80b6cdfd79c5a9ae407896","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldPeriodOprModbusTCP.spec.js:38:5","name":"Ввод числа с максимальной длиной (5 символа) и максимально допустимого значение","status":"passed","testResultsByEnv":{"default":"a2ff58407a7e4ef54f6568c4741f3ebe"}}

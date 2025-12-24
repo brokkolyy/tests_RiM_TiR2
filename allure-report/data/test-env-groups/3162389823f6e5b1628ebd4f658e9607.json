@@ -1,0 +1,1 @@
+{"id":"3162389823f6e5b1628ebd4f658e9607","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldModbusServer.spec.js:42:5","name":"Ввод больше максимальной длины (1 буква)","status":"passed","testResultsByEnv":{"default":"855240c9131133e382238099a4aac214"}}

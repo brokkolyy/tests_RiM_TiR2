@@ -4,6 +4,11 @@ const { defineConfig, devices } = require('@playwright/test');
 module.exports = defineConfig({
     testDir: '.',
 
+    reporter: [
+        ['line'],
+        ['allure-playwright'],
+    ],
+
     testMatch:[
         'tests/**/*.spec.js',
         'tests/**/*.spec.ts',
