@@ -1,0 +1,1 @@
+{"id":"e2e4a34f06a6780970af6cd19d4d79fa","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/functionGroupClient/listFunctionModbusTCP.spec.js:113:1","name":"(0x15) Запись значений в несколько регистров флагов","status":"passed","testResultsByEnv":{"default":"616f9454676e0f740413b699bbbf7b41"}}

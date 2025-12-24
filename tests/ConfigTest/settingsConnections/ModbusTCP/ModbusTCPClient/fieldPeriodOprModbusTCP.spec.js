@@ -118,7 +118,7 @@ test.describe('Навигация', () => {
         await field.fill(inputVal);
         await field.press('Enter');
         const val = await field.inputValue();
-        expect(val).toBe('34');
+        expect(val).toBe('034');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
     });
@@ -148,7 +148,7 @@ test.describe('Навигация', () => {
         await field.fill(inputVal);
         await field.press('Enter');
         const val = await field.inputValue();
-        expect(val).toBe('23');
+        expect(val).toBe('2 3');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
     });

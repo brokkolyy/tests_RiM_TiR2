@@ -1,0 +1,1 @@
+{"id":"098eb4a5cd76405c879d854f1acb0113","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ModbusFunctionGroup/fieldFunctionGroup.spec.js:166:1","name":"Оставить поле пустым, поле название элемента \"Последовательный порт\"","status":"failed","testResultsByEnv":{"default":"89aa28f8132b9f20be1c57bd17aab243"}}

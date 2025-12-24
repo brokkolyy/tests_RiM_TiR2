@@ -1,0 +1,1 @@
+{"id":"e6fab5fc736e7f4edb06f9221eed369f","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/listFunctionSlave.spec.js:56:1","name":"(0x03) Чтение значений из нескольких регистров хранения","status":"passed","testResultsByEnv":{"default":"bf1397dcb91fb4fb641f776baafb9285"}}

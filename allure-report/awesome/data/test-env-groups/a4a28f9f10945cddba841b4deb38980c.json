@@ -1,0 +1,1 @@
+{"id":"a4a28f9f10945cddba841b4deb38980c","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportTCPBridgeClient/fieldTime.spec.js:62:5","name":"Ввод числа с большим количеством символов чем у максимального числа (4 и более)","status":"passed","testResultsByEnv":{"default":"109a0bd8b5e6c3326ca7af8ee3e34d58"}}

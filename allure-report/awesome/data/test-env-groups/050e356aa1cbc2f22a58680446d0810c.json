@@ -1,0 +1,1 @@
+{"id":"050e356aa1cbc2f22a58680446d0810c","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/fieldPauseMaster.spec.js:23:1","name":"Ввод числа с максимальной длиной (3 символа) и максимально допустимого значение","status":"failed","testResultsByEnv":{"default":"c6bb9f7a323234ac2a0a3f8c120239e5"}}

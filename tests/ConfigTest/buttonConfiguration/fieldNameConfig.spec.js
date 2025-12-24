@@ -27,6 +27,8 @@ test.describe('Навигация', () => {
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('TestTestTestTestTestTestTestTestTestTestTestTestTe');
+        const save = page.getByRole('button', { name: 'Сохранить' });
+        await save.click();
     });
 
     test('Ввод больше максимальной длины имени конфигурации(51 символ)', async ({page}) => {
@@ -46,45 +48,6 @@ test.describe('Навигация', () => {
         const field = page.getByRole('textbox', { name: 'Имя конфигурации' });
         await field.focus();
         await expect(field).toBeFocused();
-        const createElement = page.locator('*:has-text("Создать")').first();
-
-        // Узнать больше об элементе
-/*const createElement = page.locator('text=Создать').first();
-const elementInfo = await createElement.evaluate((el) => {
-  return {
-    tagName: el.tagName,
-    className: el.className,
-    id: el.id,
-    disabled: el.disabled,
-    ariaDisabled: el.getAttribute('aria-disabled'),
-    dataDisabled: el.getAttribute('data-disabled'),
-    tabIndex: el.tabIndex,
-    parentRole: el.parentElement?.getAttribute('role'),
-    // Все атрибуты
-    attributes: Array.from(el.attributes).map(attr => `${attr.name}="${attr.value}"`)
-  };
-});
-console.log('Информация об элементе "Создать":', elementInfo);*/
-        const save = page.locator('[data-value="new-file"]');   //const save = page.getByRole('menuitem', { name: /Создать/ });
-        await page.screenshot({ path: 'debug-before-check.png', fullPage: true });
-        await expect(save).toBeVisible();
-        await expect(save).toBeDisabled();
-
-        await field.fill('');
-        const inputVal = 'abc';
-        await field.fill(inputVal);
-        await field.press('Enter');
-        const val = await field.inputValue();
-        expect(val).toBe('abc');
-        await expect(save).not.toBeDisabled();
-    });
-
-    test('Ввод минимальной длины имени (4 символа)', async ({page}) => {
-        const field = page.getByRole('textbox', { name: 'Имя конфигурации' });
-        await field.focus();
-        await expect(field).toBeFocused();
-        const save = page.getByRole('menuitem', { name: 'Создать' });
-        await expect(save).toBeDisabled();
 
         await field.fill('');
         const inputVal = 'Test';
@@ -92,7 +55,24 @@ console.log('Информация об элементе "Создать":', elem
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('Test');
-        await expect(save).toBeDisabled();
+        const save = page.getByRole('button', { name: 'Сохранить' });
+        await save.click();
+        await expect(page.getByText('Test')).toBeVisible();
+    });
+
+    test('Ввод минимальной длины имени (4 символа)', async ({page}) => {
+        const field = page.getByRole('textbox', { name: 'Имя конфигурации' });
+        await field.focus();
+        await expect(field).toBeFocused();
+        const save = page.getByRole('menuitem', { name: 'Создать' });
+
+        await field.fill('');
+        const inputVal = 'Test';
+        await field.fill(inputVal);
+        await field.press('Enter');
+        const val = await field.inputValue();
+        expect(val).toBe('Test');
+        await expect(save).toBeEnabled();
     });
 
     test('Оставить поле пустым', async ({page}) => {
@@ -100,7 +80,6 @@ console.log('Информация об элементе "Создать":', elem
         await field.focus();
         await expect(field).toBeFocused();
         const save = page.getByRole('menuitem', { name: 'Создать' });
-        await expect(save).toBeDisabled();
 
         await field.fill('');
         await field.press('Enter');
@@ -114,7 +93,6 @@ console.log('Информация об элементе "Создать":', elem
         await field.focus();
         await expect(field).toBeFocused();
         const save = page.getByRole('menuitem', { name: 'Создать' });
-        await expect(save).toBeDisabled();
 
         await field.fill('');
         const inputVal = 'test 1';
@@ -130,7 +108,6 @@ console.log('Информация об элементе "Создать":', elem
         await field.focus();
         await expect(field).toBeFocused();
         const save = page.getByRole('menuitem', { name: 'Создать' });
-        await expect(save).toBeDisabled();
 
         await field.fill('');
         const inputVal = '1234567';

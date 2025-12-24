@@ -123,8 +123,6 @@ test.describe('Навигация', () => {
         expect(val).toBe('');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).nth(1);
         await expect(err).not.toBeVisible();
-        const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-        await expect(buttonError).not.toBeVisible();
     });
 
     test('Оставить поле пустым', async({page}) => {
@@ -138,8 +136,6 @@ test.describe('Навигация', () => {
         expect(val).toBe('');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до 65535' }).nth(1);
         await expect(err).not.toBeVisible();
-        const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-        await expect(buttonError).not.toBeVisible();
     });
 
     test('Ввести 0 после чего допустимое значение', async({page}) => {

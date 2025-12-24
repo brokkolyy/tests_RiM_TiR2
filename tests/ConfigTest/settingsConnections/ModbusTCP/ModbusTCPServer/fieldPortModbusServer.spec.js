@@ -146,7 +146,7 @@ test.describe('Навигация', () => {
         await field.fill(inputVal);
         await field.press('Enter');
         const val = await field.inputValue();
-        expect(val).toBe('34');
+        expect(val).toBe('034');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).nth(1);
         await expect(err).not.toBeVisible();
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });

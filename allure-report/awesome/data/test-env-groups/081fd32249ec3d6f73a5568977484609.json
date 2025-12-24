@@ -1,0 +1,1 @@
+{"id":"081fd32249ec3d6f73a5568977484609","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldAddressModbusServer.spec.js:18:1","name":"Ввод числа с максимальной длиной (3 символа) и максимально допустимого значение","status":"passed","testResultsByEnv":{"default":"77d5289f1e2f95f5166e23e900f0d845"}}

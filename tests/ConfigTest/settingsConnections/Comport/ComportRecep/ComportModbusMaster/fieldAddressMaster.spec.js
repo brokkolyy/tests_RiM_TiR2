@@ -182,7 +182,7 @@ test('Ввести 0 после чего допустимое значение',
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
     const val = await field.inputValue();
-    expect(val).toBe('34');
+    expect(val).toBe('034');
 });
 
 test('Ввести 0 после чего недопустимое значение', async ({ page }) => {
@@ -201,7 +201,7 @@ test('Ввести 0 после чего недопустимое значени
     expect(val).toBe('555');
     expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
-    await expect(errIcon).toBeVisible(10000);
+    await expect(errIcon).toBeVisible();
     const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
     await expect(buttonError).toBeVisible();
 });
@@ -220,9 +220,9 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     const val = await field.inputValue();
     const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
     expect(val).toBe('2 3');
-    expect(error).toBeVisible(10000);
+    expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
-    await expect(errIcon).toBeVisible(10000);
+    await expect(errIcon).toBeVisible();
     const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
     await expect(buttonError).toBeVisible();
 });

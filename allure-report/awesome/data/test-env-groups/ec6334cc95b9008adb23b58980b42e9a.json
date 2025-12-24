@@ -1,0 +1,1 @@
+{"id":"ec6334cc95b9008adb23b58980b42e9a","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldIPModbusTCP.spec.js:88:5","name":"Ввод неверного формата IP-адреса","status":"passed","testResultsByEnv":{"default":"fd5dc4abe3a14f797a1e8fbe1217ff1b"}}

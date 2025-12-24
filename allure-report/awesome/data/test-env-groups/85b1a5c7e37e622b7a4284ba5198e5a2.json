@@ -1,0 +1,1 @@
+{"id":"85b1a5c7e37e622b7a4284ba5198e5a2","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportTCPBridgeClient/fieldPortTCP.spec.js:62:5","name":"Ввод числа с большим количеством символов чем у максимального числа (4 и более)","status":"passed","testResultsByEnv":{"default":"fbc10aaa884804d427211f11ff9b8459"}}

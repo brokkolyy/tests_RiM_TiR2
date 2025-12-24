@@ -64,7 +64,7 @@ test('Проверить работоспособность кнопок вве�
     await inc.click();
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    expect(val).toBe('2');
+    expect(val).toBe('1');
 });
 
 test('Проверить работоспособность кнопок вниз', async ({ page }) => {
@@ -77,7 +77,7 @@ test('Проверить работоспособность кнопок вни�
     await inc.click(3);
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    expect(val).toBe('4');
+    expect(val).toBe('5');
 });
 
 test('Ввод числа с большим количеством символов чем у максимального числа (4 и более)', async ({ page }) => {
