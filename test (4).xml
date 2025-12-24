@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root>
+  <ConfigInfo name="test" description="Конфигурация без описания" date="1763633285530"/>
+  <Communication>
+    <Root isIgnored="false" name="Прием" id="receive" path="#">
+      <Children>
+        <Interface isIgnored="true" name="comport" id="xCLGoixtYu6V" rootId="receive" parentId="receive" path="#/comport" node="comport">
+          <Settings iface="ttyS0" baudRate="115200" stopBit="1" parity="none"/>
+          <Children>
+            <Protocol isIgnored="false" name="modbusRTU_master" id="SAN-c1DxR2A5" rootId="receive" parentId="xCLGoixtYu6V" path="#/comport/modbusRTU_master" node="modbusRTU_master">
+              <Settings logging="false" address="1" order2="little" order4="1-0 3-2" pause="50"/>
+              <Children>
+                <ProtocolSpecific isIgnored="false" name="functionGroup" id="EXWM6f9dcmg9" rootId="receive" parentId="SAN-c1DxR2A5" path="#/comport/modbusRTU_master/functionGroup" node="functionGroup">
+                  <Settings function="1" dataType="bit"/>
+                  <Children>
+                    <DataObject isIgnored="false" id="31CF7x57PFDX" rootId="receive" parentId="EXWM6f9dcmg9" path="#/comport/modbusRTU_master/functionGroup/dataObject" node="dataObject">
+                      <Settings address="0x0" description="" variableId="6XVzDH6bJkhp"/>
+                    </DataObject>
+                  </Children>
+                </ProtocolSpecific>
+              </Children>
+            </Protocol>
+          </Children>
+        </Interface>
+        <Interface isIgnored="true" name="gpio" id="q0zL-vR0d3Sy" rootId="receive" parentId="receive" path="#/gpio" node="gpio">
+          <Settings logging="false" contactBounce="200"/>
+          <Children>
+            <DataObject isIgnored="false" id="4pN7hP8ivdN2" rootId="receive" parentId="q0zL-vR0d3Sy" path="#/gpio/dataObject" node="dataObject">
+              <Settings port="1" function="in" description="" variableId="ExVrGwpELQTm"/>
+            </DataObject>
+          </Children>
+        </Interface>
+        <Protocol isIgnored="false" name="iec104_client" id="kv8tdCNtScb7" rootId="receive" parentId="receive" path="#/iec104_client" node="iec104_client">
+          <Settings logging="false" ip="127.0.0.1" port="102" lengthOfASDU="1" lengthOfCause="1" lengthOfAdr="1" k="1" w="1" t0="1" t1="1" t2="1" t3="1"/>
+          <Children>
+            <ProtocolSpecific isIgnored="false" name="asdu" id="rKnlWw39bY6l" rootId="receive" parentId="kv8tdCNtScb7" path="#/iec104_client/asdu" node="asdu">
+              <Settings address="1" pollMode="manual" pollPeriod="1"/>
+              <Children>
+                <DataObject isIgnored="false" id="5_mR4peqyURv" rootId="receive" parentId="rKnlWw39bY6l" path="#/iec104_client/asdu/dataObject" node="dataObject">
+                  <Settings address="1" sigType="ts1" exec="direct" description="" variableId="DOY3uv_L8V1k"/>
+                </DataObject>
+              </Children>
+            </ProtocolSpecific>
+          </Children>
+        </Protocol>
+        <Protocol isIgnored="false" name="modbusTCP_client" id="XiVZcZAQKwm2" rootId="receive" parentId="receive" path="#/modbusTCP_client" node="modbusTCP_client">
+          <Settings logging="false" ip="127.0.0.1" port="502" address="1" order2="little" order4="1-0 3-2" pollPeriod="70" waitResponse="true"/>
+          <Children>
+            <ProtocolSpecific isIgnored="false" name="functionGroup" id="Nl8xoNx5k2zz" rootId="receive" parentId="XiVZcZAQKwm2" path="#/modbusTCP_client/functionGroup" node="functionGroup">
+              <Settings function="1" dataType="bit"/>
+              <Children>
+                <DataObject isIgnored="false" id="rXJ97CiZ835a" rootId="receive" parentId="Nl8xoNx5k2zz" path="#/modbusTCP_client/functionGroup/dataObject" node="dataObject">
+                  <Settings address="0x0" description="" variableId="eWDOH9-0YVCg"/>
+                </DataObject>
+              </Children>
+            </ProtocolSpecific>
+          </Children>
+        </Protocol>
+      </Children>
+    </Root>
+    <Root isIgnored="false" name="Передача" id="send" path="#">
+      <Children>
+        <Interface isIgnored="false" name="comport" id="YAz5spu11Pfk" rootId="send" parentId="send" path="#/comport" node="comport">
+          <Settings iface="ttyS0" baudRate="115200" stopBit="1" parity="none"/>
+          <Children>
+            <Protocol isIgnored="false" name="modbusRTU_slave" id="NnbLXRhRuI-w" rootId="send" parentId="YAz5spu11Pfk" path="#/comport/modbusRTU_slave" node="modbusRTU_slave">
+              <Settings logging="false" address="1" order2="little" order4="1-0 3-2"/>
+              <Children>
+                <ProtocolSpecific isIgnored="false" name="functionGroup" id="MJCLj_YEX4iP" rootId="send" parentId="NnbLXRhRuI-w" path="#/comport/modbusRTU_slave/functionGroup" node="functionGroup">
+                  <Settings function="1" dataType="bit"/>
+                  <Children>
+                    <DataObject isIgnored="false" id="sCZWsTxUGKZX" rootId="send" parentId="MJCLj_YEX4iP" path="#/comport/modbusRTU_slave/functionGroup/dataObject" node="dataObject">
+                      <Settings address="0x0" description="" variableId="6XVzDH6bJkhp"/>
+                    </DataObject>
+                  </Children>
+                </ProtocolSpecific>
+              </Children>
+            </Protocol>
+          </Children>
+        </Interface>
+        <Interface isIgnored="false" name="gpio" id="er2tZyklw5gu" rootId="send" parentId="send" path="#/gpio" node="gpio">
+          <Settings logging="false" contactBounce="200"/>
+          <Children>
+            <DataObject isIgnored="false" id="_O8vJqseCYyM" rootId="send" parentId="er2tZyklw5gu" path="#/gpio/dataObject" node="dataObject">
+              <Settings port="1" function="in" description="" variableId="ExVrGwpELQTm"/>
+            </DataObject>
+          </Children>
+        </Interface>
+        <Protocol isIgnored="false" name="iec104_server" id="xvDT5WXT_hje" rootId="send" parentId="send" path="#/iec104_server" node="iec104_server">
+          <Settings logging="false" ip="127.0.0.1" port="102" lengthOfASDU="1" lengthOfCause="1" lengthOfAdr="1" k="1" w="1" t0="1" t1="1" t2="1" t3="1"/>
+          <Children>
+            <ProtocolSpecific isIgnored="false" name="asdu" id="SmNublWl-Zjj" rootId="send" parentId="xvDT5WXT_hje" path="#/iec104_server/asdu" node="asdu">
+              <Settings sporadical="false" address="1"/>
+              <Children>
+                <DataObject isIgnored="false" id="rzKAX50avEVv" rootId="send" parentId="SmNublWl-Zjj" path="#/iec104_server/asdu/dataObject" node="dataObject">
+                  <Settings address="1" sigType="ts1" aperture="0" exec="direct" description="" variableId="DOY3uv_L8V1k"/>
+                </DataObject>
+              </Children>
+            </ProtocolSpecific>
+          </Children>
+        </Protocol>
+        <Protocol isIgnored="false" name="modbusTCP_server" id="ywiL5zWcaHz0" rootId="send" parentId="send" path="#/modbusTCP_server" node="modbusTCP_server">
+          <Settings logging="false" ip="127.0.0.1" port="502" address="1" order2="little" order4="1-0 3-2"/>
+          <Children>
+            <ProtocolSpecific isIgnored="false" name="functionGroup" id="qSO-0YAQT99B" rootId="send" parentId="ywiL5zWcaHz0" path="#/modbusTCP_server/functionGroup" node="functionGroup">
+              <Settings function="1" dataType="bit"/>
+              <Children>
+                <DataObject isIgnored="false" id="s0VN1ZqJHpEx" rootId="send" parentId="qSO-0YAQT99B" path="#/modbusTCP_server/functionGroup/dataObject" node="dataObject">
+                  <Settings address="0x0" description="" variableId="eWDOH9-0YVCg"/>
+                </DataObject>
+              </Children>
+            </ProtocolSpecific>
+          </Children>
+        </Protocol>
+      </Children>
+    </Root>
+  </Communication>
+  <Variables>
+    <Root isIgnored="false" name="Переменные" id="variables" path="#">
+      <Children>
+        <Variable isIgnored="true" name="test1" id="6XVzDH6bJkhp" rootId="variables" parentId="variables" path="#/variable" node="variable">
+          <Settings type="ushort" description="" isSpecial="false" specialCycleDelay="2" graph="true" measurement="V" aperture="0" cmd="false" archive="false" group="noGroup" luaExpression="" sendId="sCZWsTxUGKZX" receiveId="31CF7x57PFDX"/>
+        </Variable>
+        <Variable isIgnored="false" name="test2" id="ExVrGwpELQTm" rootId="variables" parentId="variables" path="#/variable" node="variable">
+          <Settings type="short" description="" isSpecial="false" specialCycleDelay="2" graph="true" measurement="V" aperture="0" cmd="false" archive="false" group="noGroup" luaExpression="" sendId="_O8vJqseCYyM" receiveId="4pN7hP8ivdN2"/>
+        </Variable>
+        <Variable isIgnored="false" name="test3" id="DOY3uv_L8V1k" rootId="variables" parentId="variables" path="#/variable" node="variable">
+          <Settings type="int" description="" isSpecial="false" specialCycleDelay="2" graph="true" measurement="V" aperture="0" cmd="false" archive="false" group="noGroup" luaExpression="" sendId="rzKAX50avEVv" receiveId="5_mR4peqyURv"/>
+        </Variable>
+        <Variable isIgnored="false" name="test4" id="eWDOH9-0YVCg" rootId="variables" parentId="variables" path="#/variable" node="variable">
+          <Settings type="uint" description="" isSpecial="false" specialCycleDelay="2" graph="true" measurement="V" aperture="0" cmd="false" archive="false" group="noGroup" luaExpression="" sendId="s0VN1ZqJHpEx" receiveId="rXJ97CiZ835a"/>
+        </Variable>
+        <Variable isIgnored="false" name="test5" id="PJ96JSTOJjc9" rootId="variables" parentId="variables" path="#/variable" node="variable">
+          <Settings type="float" description="" isSpecial="false" specialCycleDelay="2" graph="true" measurement="V" aperture="0" cmd="false" archive="false" group="noGroup" luaExpression=""/>
+        </Variable>
+      </Children>
+    </Root>
+  </Variables>
+</Root>
