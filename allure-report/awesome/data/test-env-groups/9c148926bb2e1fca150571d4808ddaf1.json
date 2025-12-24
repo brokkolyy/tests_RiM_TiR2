@@ -1,1 +1,1 @@
-{"id":"9c148926bb2e1fca150571d4808ddaf1","fullName":"tests/ConfigTest/sectionVariable/listGroupVariable.spec.js:38:5","name":"Выбрать в списке - Аварийные","status":"passed","testResultsByEnv":{"default":"b312290f5aa4f4b41e9f2ff10303993a"}}
+{"id":"9c148926bb2e1fca150571d4808ddaf1","fullName":"tests/ConfigTest/sectionVariable/listGroupVariable.spec.js:38:5","name":"Выбрать в списке - Аварийные","status":"broken","testResultsByEnv":{"default":"f2a319d262fc11a0bbcfbe6c9bc5cb5b"}}

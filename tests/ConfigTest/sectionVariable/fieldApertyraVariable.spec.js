@@ -204,7 +204,7 @@ test.describe('Навигация', () => {
         await field.fill('');
         const inputVal = '0555342342';
         await field.fill(inputVal);*/
-        await page.getByRole('group').filter({ hasText: 'Апертура' }).getByLabel('decrease value').click();
+        await page.getByRole('button', { name: 'decrease value' }).click();
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('-1');

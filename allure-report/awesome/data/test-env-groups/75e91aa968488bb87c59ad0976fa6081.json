@@ -1,1 +1,1 @@
-{"id":"75e91aa968488bb87c59ad0976fa6081","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/logIec104Client.spec.js:6:1","name":"Активация функции логирования","status":"passed","testResultsByEnv":{"default":"b2dd4e485ccfcad23925709b38086578"}}
+{"id":"75e91aa968488bb87c59ad0976fa6081","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/logIec104Client.spec.js:6:1","name":"Активация функции логирования","status":"broken","testResultsByEnv":{"default":"8de095a5eb86f3955be85e081d8035b6"}}

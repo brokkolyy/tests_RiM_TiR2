@@ -1,0 +1,148 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - generic [ref=e78]:
+                    - paragraph [ref=e79]: Прием
+                    - generic [ref=e80]:
+                      - button [ref=e81] [cursor=pointer]:
+                        - img [ref=e82]
+                      - button [ref=e83] [cursor=pointer]:
+                        - img [ref=e84]
+                      - button [ref=e87] [cursor=pointer]:
+                        - img [ref=e88]
+              - treeitem "gpio 5555555 gpio" [expanded] [level=2] [selected] [ref=e91]:
+                - generic [ref=e93]:
+                  - generic [ref=e96]:
+                    - button [ref=e97] [cursor=pointer]:
+                      - img [ref=e98]
+                    - generic [ref=e100]:
+                      - generic "GPIO" [ref=e101]: gpio
+                      - generic "Период дребезга" [ref=e102]: "5555555"
+                      - paragraph [ref=e103]: gpio
+                  - img [ref=e104]
+          - separator [ref=e106]
+          - generic [ref=e108]:
+            - generic [ref=e110]:
+              - img [ref=e111]
+              - paragraph [ref=e113]: Открыть контекстное меню
+              - generic [ref=e114]: ПКМ
+            - tree [ref=e116]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e120]:
+                - generic [ref=e123]:
+                  - button [ref=e124] [cursor=pointer]:
+                    - img [ref=e125]
+                  - paragraph [ref=e129]: Передача
+        - separator [ref=e130]
+        - generic [ref=e135]:
+          - generic [ref=e138]:
+            - navigation "breadcrumb" [ref=e139]:
+              - list [ref=e140]:
+                - listitem [ref=e141]: Прием
+                - listitem [ref=e142]:
+                  - img [ref=e143]
+                - listitem [ref=e145]: gpio
+            - generic [ref=e146]:
+              - paragraph [ref=e148]: NbevHBeDFkyd
+              - group [ref=e151]:
+                - paragraph [ref=e153]: Название
+                - textbox "Название" [ref=e155]: gpio
+              - generic [ref=e156]:
+                - group [ref=e157]:
+                  - paragraph [ref=e159]: Логирование
+                  - checkbox "Логирование" [ref=e162]
+                - group [ref=e165]:
+                  - paragraph [ref=e167]: Период дребезга
+                  - generic [ref=e168]:
+                    - group [ref=e169]:
+                      - button "increment value" [ref=e170] [cursor=pointer]:
+                        - img [ref=e171]
+                      - button "decrease value" [ref=e173] [cursor=pointer]:
+                        - img [ref=e174]
+                    - generic [ref=e176]:
+                      - spinbutton "Период дребезга" [active] [ref=e177]: "5555555"
+                      - img [ref=e179]
+          - separator [ref=e181]:
+            - generic:
+              - img
+          - generic [ref=e186]:
+            - img [ref=e187]
+            - paragraph [ref=e192]: Выберите узел в дереве переменных
+        - separator [ref=e193]
+        - generic [ref=e195]:
+          - generic [ref=e197]:
+            - img [ref=e198]
+            - paragraph [ref=e200]: Открыть контекстное меню
+            - generic [ref=e201]: ПКМ
+          - tree [ref=e203]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e207]:
+              - generic [ref=e210]:
+                - button [ref=e211] [cursor=pointer]:
+                  - img [ref=e212]
+                - paragraph [ref=e216]: Переменные
+    - contentinfo [ref=e217]:
+      - generic [ref=e218]:
+        - generic [ref=e219]:
+          - img [ref=e220]
+          - paragraph [ref=e223]: "-------"
+        - generic [ref=e224]:
+          - img [ref=e225]
+          - paragraph [ref=e228]: "----"
+        - generic [ref=e229]:
+          - img [ref=e230]
+          - paragraph [ref=e232]: "----"
+        - img [ref=e233]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e237]':
+          - paragraph [ref=e238]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

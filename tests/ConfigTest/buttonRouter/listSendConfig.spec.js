@@ -22,7 +22,7 @@ test.describe('Навигация', () => {
         const config = new ConfigPage(page);
         await config.contextMenuReception();
         await config.clickComport();
-        await page.getByText('comport').click();
+        await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click();
         await page.getByRole('textbox', { name: 'Название' }).click();
         await page.getByRole('textbox', { name: 'Название' }).fill('1234');
         await page.getByRole('textbox', { name: 'Название' }).press('Enter');

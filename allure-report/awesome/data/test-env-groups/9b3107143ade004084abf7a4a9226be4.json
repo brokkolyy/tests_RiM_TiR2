@@ -1,1 +1,1 @@
-{"id":"9b3107143ade004084abf7a4a9226be4","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/listLengthAddressIec104Server.spec.js:33:1","name":"Выбрать в списке - 2 байта","status":"passed","testResultsByEnv":{"default":"36bc446f9439267cf6929745b5439fc5"}}
+{"id":"9b3107143ade004084abf7a4a9226be4","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/listLengthAddressIec104Server.spec.js:33:1","name":"Выбрать в списке - 2 байта","status":"failed","testResultsByEnv":{"default":"36bc446f9439267cf6929745b5439fc5"}}

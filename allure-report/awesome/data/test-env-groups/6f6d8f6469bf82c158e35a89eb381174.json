@@ -1,1 +1,1 @@
-{"id":"6f6d8f6469bf82c158e35a89eb381174","fullName":"tests/ConfigTest/sectionVariable/listUnitVariable.spec.js:34:5","name":"Выбрать в списке - B","status":"passed","testResultsByEnv":{"default":"4ab050bc98529a3196e7ce8072474ca5"}}
+{"id":"6f6d8f6469bf82c158e35a89eb381174","fullName":"tests/ConfigTest/sectionVariable/listUnitVariable.spec.js:34:5","name":"Выбрать в списке - B","status":"broken","testResultsByEnv":{"default":"ecbe084e8b15df19ba077888a29983b4"}}

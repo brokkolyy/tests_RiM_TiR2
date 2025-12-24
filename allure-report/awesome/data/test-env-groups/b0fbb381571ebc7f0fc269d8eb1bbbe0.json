@@ -1,1 +1,1 @@
-{"id":"b0fbb381571ebc7f0fc269d8eb1bbbe0","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:99:5","name":"Ввести минимально допустимое число","status":"passed","testResultsByEnv":{"default":"24105750bcc2d3d06c3781bc9863d3bb"}}
+{"id":"b0fbb381571ebc7f0fc269d8eb1bbbe0","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:99:5","name":"Ввести минимально допустимое число","status":"broken","testResultsByEnv":{"default":"1dbb75f232bd240b4d288c3242d64468"}}

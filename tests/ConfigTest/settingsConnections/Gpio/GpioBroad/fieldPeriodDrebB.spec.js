@@ -139,7 +139,7 @@ test.describe('Навигация', () => {
         const val = await field.inputValue();
         expect(val).toBe('');
         
-        const err = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до 10000' }); //page.locator('.chakra-icon.css-pgosud > path').first()
+        const err = page.locator('div').filter({ hasText: /^Это поле обязательно для заполнения$/ }).nth(2); //page.locator('.chakra-icon.css-pgosud > path').first()
         await expect(err).toBeVisible();
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).toBeVisible();

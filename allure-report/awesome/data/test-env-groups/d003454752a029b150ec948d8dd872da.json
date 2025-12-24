@@ -1,1 +1,1 @@
-{"id":"d003454752a029b150ec948d8dd872da","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldAddressModbusTCP.spec.js:159:1","name":"Ввести 0 после чего допустимое значение","status":"passed","testResultsByEnv":{"default":"3a36a43990e2b87dbc4d0f6532a76fd1"}}
+{"id":"d003454752a029b150ec948d8dd872da","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldAddressModbusTCP.spec.js:159:1","name":"Ввести 0 после чего допустимое значение","status":"failed","testResultsByEnv":{"default":"3a36a43990e2b87dbc4d0f6532a76fd1"}}

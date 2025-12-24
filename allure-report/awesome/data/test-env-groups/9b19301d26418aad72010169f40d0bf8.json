@@ -1,1 +1,1 @@
-{"id":"9b19301d26418aad72010169f40d0bf8","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/AsduServer/sporadicaAsduServer.spec.js:6:1","name":"Активация функции спорадики","status":"passed","testResultsByEnv":{"default":"c6e6b00989458646b692ff54ab7e9bb9"}}
+{"id":"9b19301d26418aad72010169f40d0bf8","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/AsduServer/sporadicaAsduServer.spec.js:6:1","name":"Активация функции спорадики","status":"broken","testResultsByEnv":{"default":"34b745c739d39a567ded6513982cd5d0"}}

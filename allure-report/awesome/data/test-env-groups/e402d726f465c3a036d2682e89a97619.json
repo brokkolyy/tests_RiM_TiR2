@@ -1,1 +1,1 @@
-{"id":"e402d726f465c3a036d2682e89a97619","fullName":"tests/ConfigTest/createElement.spec.js:61:1","name":"Создание ModbusRTU Slave, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"1e61cfd065f7f708cf958ba2dbdacee1"}}
+{"id":"e402d726f465c3a036d2682e89a97619","fullName":"tests/ConfigTest/createElement.spec.js:61:1","name":"Создание ModbusRTU Slave, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"cb47949a147a1a46b84cc032788be8ae"}}

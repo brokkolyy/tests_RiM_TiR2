@@ -1,1 +1,1 @@
-{"id":"1ba115c466bbdded47c9ef3742307184","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:200:5","name":"Работоспособность кнопок (Вниз)","status":"passed","testResultsByEnv":{"default":"e50adb5879bae4cfcb6d7ea5dcb1b6a3"}}
+{"id":"1ba115c466bbdded47c9ef3742307184","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:200:5","name":"Работоспособность кнопок (Вниз)","status":"broken","testResultsByEnv":{"default":"e50adb5879bae4cfcb6d7ea5dcb1b6a3"}}
