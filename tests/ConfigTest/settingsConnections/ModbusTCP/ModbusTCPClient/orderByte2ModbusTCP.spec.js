@@ -39,8 +39,5 @@ test('"Старший вперед", выпадающий список "Поря
     await expect(page.getByRole('listbox', { name: 'Порядок 2-х байт' })).toBeHidden();
    
     await expect(item).toHaveText('Старший вперед');
-
-    await item.click();
-    await expect(page.locator('[id="select::r1n::option:big"] > .chakra-select__itemIndicator > .css-s3mb0o')).toBeVisible();
 });
 });

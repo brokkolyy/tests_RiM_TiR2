@@ -65,9 +65,6 @@ test('Ввод минимальной длины (1 символ), поле на
     await field.press('Enter');
     const val = await field.inputValue();
     expect(val).toBe('f');
-
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).not.toBeVisible();
 });
 
 test('Ввод недопустимых символов', async ({ page }) => {

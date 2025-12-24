@@ -184,7 +184,7 @@ test.describe('Навигация', () => {
         await field.fill('');
         const inputVal = '0555342342';
         await field.fill(inputVal);*/
-        await page.locator('[id="number-input::r17::inc"]').click();
+        await page.getByRole('button', { name: 'increment value' }).click();
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('2');
@@ -202,7 +202,7 @@ test.describe('Навигация', () => {
         await field.fill('');
         const inputVal = '0555342342';
         await field.fill(inputVal);*/
-        await page.locator('[id="number-input::r17::dec"]').click();
+        await page.getByRole('button', { name: 'decrease value' }).click();
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('0');

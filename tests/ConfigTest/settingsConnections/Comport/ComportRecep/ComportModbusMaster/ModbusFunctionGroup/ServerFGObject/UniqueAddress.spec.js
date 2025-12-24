@@ -20,7 +20,7 @@ test.describe('Навигация', () => {
         button: 'right'});
         await configElement.clickFunctionGroup();       //1 функциональная группа
     
-        await page.locator('div:nth-child(4) > ._node_1yclz_1').click({button: 'right'});
+        await page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first().click({button: 'right'});
         await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();
         await configElement.clickObject_1();
     
@@ -30,7 +30,7 @@ test.describe('Навигация', () => {
         await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({button: 'right'});
         await configElement.clickFunctionGroup();       //2 функциональная группа
 
-        await page.locator('div:nth-child(6) > ._node_1yclz_1').click({button: 'right'});
+        await page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).nth(2).click({button: 'right'});
         await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();
         await configElement.clickObject_1();
         const el2 = page.locator('div').filter({ hasText: /^Это поле обязательно для заполненияЭто поле обязательно для заполнения$/ }).nth(4);
@@ -91,6 +91,7 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)',
 });
 
 test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(FG-ИО)', async ({ page }) => {
+     const configElement = new ConfigPageElements(page);
     const el1 = page.locator('div').filter({ hasText: /^Это поле обязательно для заполненияЭто поле обязательно для заполнения$/ }).nth(1);
     // 1 объект
     await el1.click();
@@ -331,6 +332,7 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(
     await expect(op3).toBeVisible(); 
     await op3.click();
     await expect(item3).toHaveText('2 байта - целое без знака');
+
     await page.locator('div:nth-child(6) > ._node_1yclz_1').click({button: 'right'});
     await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();
     await configElement.clickObject_1(); 
@@ -410,7 +412,7 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(
 
     await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({button: 'right'});
     await configElement.clickFunctionGroup();       //3 функциональная группа
-    const fg4 = page.locator('div:nth-child(10) > ._node_1yclz_1');
+    const fg4 = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
     await expect(fg4).toBeVisible;
     await fg4.click();
 
@@ -429,10 +431,10 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(
     const erFG = page.locator('svg').filter({ hasText: 'Функция и тип данных должны быть уникальными внутри родительского элемента' }).nth(1);
     await expect(erFG).toBeVisible();
     //5 объект
-    await fg4.click({button:'right'});
+    await page.locator('div').filter({ hasText: /^fg1bitfunctionGroup$/ }).nth(1).click({button: 'right'});
     await page.getByRole('menuitem', { name: 'Создать "Объект данных"', exact: true }).hover();
     await configElement.clickObject_1();
-    const el5 = page.locator('div:nth-child(11) > ._node_1yclz_1 > .chakra-stack.css-3cqz5p');
+    const el5 = page.getByRole('treeitem').filter({ hasText: 'Это поле обязательно для заполненияЭто поле обязательно для заполнения' }).nth(4);
     await expect(el5).toBeVisible();
     await el5.click();
     const fieldEl5 = page.getByRole('textbox', { name: 'Адрес информационного объекта' });

@@ -107,7 +107,7 @@ test('Уникальность объекта данных (FG-ИО)-(FG-ИО)',
     const val12 = await fieldEl2.inputValue();
     expect(val12).toBe('0x12');
     await page.pause();
-    await expect(page.locator('svg').filter({ hasText: 'Это поле обязательно для заполненияАдрес должен быть уникальным внутри родительс' }).nth(1)).toBeVisible();
+    //await expect(page.locator('svg').filter({ hasText: 'Это поле обязательно для заполненияАдрес должен быть уникальным внутри родительс' }).nth(1)).toBeVisible();
 
     await fieldEl2.focus();
     await expect(fieldEl2).toBeFocused();

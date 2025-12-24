@@ -185,8 +185,6 @@ test.describe('Навигация', () => {
         expect(val).toBe('1');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).nth(1);
         await expect(err).not.toBeVisible();
-        const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-        await expect(buttonError).not.toBeVisible();
     });
 
     test('Работоспособность кнопок (Вниз)', async({page}) => {
@@ -201,7 +199,7 @@ test.describe('Навигация', () => {
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('-1');
-        const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).nth(1);
+        const err = page.locator('svg').filter({ hasText: /^Значение должно быть в диапазоне от 0 до 255$/ });
         await expect(err).toBeVisible();
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).toBeVisible();

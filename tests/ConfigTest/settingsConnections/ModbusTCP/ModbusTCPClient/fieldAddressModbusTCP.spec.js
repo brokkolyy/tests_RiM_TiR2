@@ -54,7 +54,7 @@ test('Проверить работоспособность кнопок вве�
 
     await expect(field).toBeFocused();
 
-    const inc = page.locator('[id="number-input::r19::inc"]');
+    const inc = page.getByRole('group').filter({ hasText: 'Адрес устройства' }).getByLabel('increment value');
     await field.fill('1');
     await inc.click();
     await page.locator('.css-1dtqfaw').click();
@@ -68,7 +68,7 @@ test('Проверить работоспособность кнопок вни�
 
     await expect(field).toBeFocused();
 
-    const inc = page.locator('[id="number-input::r19::dec"]');
+    const inc = page.getByRole('group').filter({ hasText: 'Адрес устройства' }).getByLabel('decrease value');
     await field.fill('5');
     await inc.click(3);
     await page.locator('.css-1dtqfaw').click();
