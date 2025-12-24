@@ -28,7 +28,8 @@ test.describe('Навигация', () => {
 
         const fileChooser = await fileChooserPromise;
         await fileChooser.setFiles('test (4).xml');
-
+        const status = page.getByRole('status', { name: 'Файл загружен' });
+        await expect(status).toBeVisible();
     });
 
     test('Выбрать файл с конфигурацией для ТиРа, но с допущенными в ней ошибками', async ({page}) => {
@@ -41,6 +42,8 @@ test.describe('Навигация', () => {
         await fileChooser.setFiles('test (4).xml');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
+        const status = page.getByRole('status', { name: 'Файл загружен' });
+        await expect(status).toBeVisible();
     })
 
     test('Выбрать файл с расширением .xml сторонней программы', async ({page}) => {
@@ -53,17 +56,5 @@ test.describe('Навигация', () => {
         await fileChooser.setFiles('test (4).xml');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
-    })
-
-    test('Выбрать любой файл не  .xml и не  .xml с конфигурацией для ТиРа', async ({page}) => {
-        await expect(page.getByRole('menu', { name: 'Конфигурация' })).toBeVisible();
-        const fileChooserPromise = page.waitForEvent('filechooser');
-
-        await page.getByRole('menuitem', { name: 'Открыть' }).click();
-
-        const fileChooser = await fileChooserPromise;
-        await fileChooser.setFiles('test (4).xml');
-        const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-        await expect(buttonError).not.toBeVisible();
-    })
+    });
 });
