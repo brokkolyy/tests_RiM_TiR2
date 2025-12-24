@@ -17,7 +17,7 @@ class ConfigPage {
         this.variable_10 = this.page.getByRole('menuitem', { name: 'Создать переменную (10)'});
 
         this.buttonConfig = this.page.locator('section').getByRole('button', { name: 'Конфигурация' });
-        this.buttonRouter = this.page.getByRole('menuitem', { name: 'Роутер'});
+        this.buttonRouter = this.page.getByRole('button', { name: 'Роутер' });
 
         this.buttonAddConnectionRecep = this.page.locator('[id=":r8:"]'); //прием 
         this.buttonIgnorRecep = this.page.locator('[id="tooltip::rb::trigger"]');
