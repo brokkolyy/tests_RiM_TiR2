@@ -1,0 +1,219 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - generic [ref=e78]:
+                    - paragraph [ref=e79]: Прием
+                    - generic [ref=e80]:
+                      - button [ref=e81] [cursor=pointer]:
+                        - img [ref=e82]
+                      - button [ref=e83] [cursor=pointer]:
+                        - img [ref=e84]
+                      - button [ref=e87] [cursor=pointer]:
+                        - img [ref=e88]
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e91]:
+                - generic [ref=e96]:
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e98]
+                  - generic [ref=e100]:
+                    - img [ref=e101]
+                    - generic "Comport" [ref=e104]: COM
+                    - generic "Интерфейс" [ref=e105]: ttyS0
+                    - generic "Скорость" [ref=e106]: "115200"
+                    - paragraph [ref=e107]: comport
+              - treeitem "MB RTU 1 modbusRTU_master" [expanded] [level=3] [ref=e108]:
+                - generic [ref=e114]:
+                  - button [ref=e115] [cursor=pointer]:
+                    - img [ref=e116]
+                  - generic [ref=e118]:
+                    - generic "Modbus-RTU Master" [ref=e119]: MB RTU
+                    - generic "Адрес устройства" [ref=e120]: "1"
+                    - paragraph [ref=e121]: modbusRTU_master
+              - treeitem "fg 1 functionGroup" [expanded] [level=4] [ref=e122]:
+                - generic [ref=e129]:
+                  - button [ref=e130] [cursor=pointer]:
+                    - img [ref=e131]
+                  - generic [ref=e133]:
+                    - generic "Функциональная группа" [ref=e134]: fg
+                    - generic "Функция" [ref=e135]: "1"
+                    - paragraph [ref=e136]: functionGroup
+              - treeitem "TCP 127.0.0.1 502 tcpBridge_server" [level=3] [ref=e137]:
+                - generic [ref=e144]:
+                  - generic "TCP-мост (сервер)" [ref=e145]: TCP
+                  - generic "IP-адрес" [ref=e146]: 127.0.0.1
+                  - generic "Порт" [ref=e147]: "502"
+                  - paragraph [ref=e148]: tcpBridge_server
+              - treeitem "folder" [expanded] [level=2] [ref=e149]:
+                - generic [ref=e154]:
+                  - button [ref=e155] [cursor=pointer]:
+                    - img [ref=e156]
+                  - generic [ref=e158]:
+                    - img [ref=e159]
+                    - paragraph [ref=e161]: folder
+              - treeitem "COM ttyS0 115200 comport_copy" [expanded] [level=3] [ref=e162]:
+                - generic [ref=e168]:
+                  - button [ref=e169] [cursor=pointer]:
+                    - img [ref=e170]
+                  - generic [ref=e172]:
+                    - generic "Comport" [ref=e173]: COM
+                    - generic "Интерфейс" [ref=e174]: ttyS0
+                    - generic "Скорость" [ref=e175]: "115200"
+                    - paragraph [ref=e176]: comport_copy
+              - treeitem "MB RTU 1 modbusRTU_master_copy" [expanded] [level=4] [ref=e177]:
+                - generic [ref=e184]:
+                  - button [ref=e185] [cursor=pointer]:
+                    - img [ref=e186]
+                  - generic [ref=e188]:
+                    - generic "Modbus-RTU Master" [ref=e189]: MB RTU
+                    - generic "Адрес устройства" [ref=e190]: "1"
+                    - paragraph [ref=e191]: modbusRTU_master_copy
+              - treeitem "fg 1 functionGroup_copy" [expanded] [level=5] [ref=e192]:
+                - generic [ref=e194]:
+                  - generic [ref=e200]:
+                    - button [ref=e201] [cursor=pointer]:
+                      - img [ref=e202]
+                    - generic [ref=e204]:
+                      - generic "Функциональная группа" [ref=e205]: fg
+                      - generic "Функция" [ref=e206]: "1"
+                      - paragraph [ref=e207]: functionGroup_copy
+                  - img [ref=e208]
+              - treeitem "TCP 127.0.0.1 502 tcpBridge_server_copy" [level=4] [ref=e210]:
+                - generic [ref=e218]:
+                  - generic "TCP-мост (сервер)" [ref=e219]: TCP
+                  - generic "IP-адрес" [ref=e220]: 127.0.0.1
+                  - generic "Порт" [ref=e221]: "502"
+                  - paragraph [ref=e222]: tcpBridge_server_copy
+          - separator [ref=e223]
+          - generic [ref=e225]:
+            - generic [ref=e227]:
+              - img [ref=e228]
+              - paragraph [ref=e230]: Открыть контекстное меню
+              - generic [ref=e231]: ПКМ
+            - tree [ref=e233]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e237]:
+                - generic [ref=e240]:
+                  - button [ref=e241] [cursor=pointer]:
+                    - img [ref=e242]
+                  - paragraph [ref=e246]: Передача
+        - separator [ref=e247]
+        - generic [ref=e252]:
+          - generic [ref=e257]:
+            - img [ref=e258]
+            - paragraph [ref=e269]: Выберите узел в дереве приема или передачи
+          - separator [ref=e270]:
+            - generic:
+              - img
+          - generic [ref=e275]:
+            - img [ref=e276]
+            - paragraph [ref=e281]: Выберите узел в дереве переменных
+        - separator [ref=e282]
+        - generic [ref=e284]:
+          - generic [ref=e286]:
+            - img [ref=e287]
+            - paragraph [ref=e289]: Открыть контекстное меню
+            - generic [ref=e290]: ПКМ
+          - tree [ref=e292]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e296]:
+              - generic [ref=e299]:
+                - button [ref=e300] [cursor=pointer]:
+                  - img [ref=e301]
+                - paragraph [ref=e305]: Переменные
+    - contentinfo [ref=e306]:
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - img [ref=e309]
+          - paragraph [ref=e312]: "-------"
+        - generic [ref=e313]:
+          - img [ref=e314]
+          - paragraph [ref=e317]: "----"
+        - generic [ref=e318]:
+          - img [ref=e319]
+          - paragraph [ref=e321]: "----"
+        - img [ref=e322]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e326]':
+          - paragraph [ref=e327]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e329]:
+    - menuitem "Создать \"Modbus-RTU Master\"" [ref=e330]:
+      - img [ref=e331]
+      - text: Создать "Modbus-RTU Master"
+    - menuitem "Создать \"TCP-мост (сервер)\"" [ref=e333]:
+      - img [ref=e334]
+      - text: Создать "TCP-мост (сервер)"
+    - separator [ref=e336]
+    - menuitem "Переименовать Enter" [ref=e337]:
+      - img [ref=e338]
+      - text: Переименовать
+      - generic [ref=e341]: Enter
+    - menuitem "Удалить Backspace" [ref=e342]:
+      - img [ref=e343]
+      - text: Удалить
+      - generic [ref=e346]: Backspace
+    - menuitem "Использовать Ctrl+I" [ref=e347]:
+      - img [ref=e348]
+      - text: Использовать
+      - generic [ref=e351]: Ctrl+I
+    - separator [ref=e352]
+    - menuitem "Вырезать Ctrl+X" [ref=e353]:
+      - img [ref=e354]
+      - text: Вырезать
+      - generic [ref=e360]: Ctrl+X
+    - menuitem "Копировать Ctrl+C" [ref=e361]:
+      - img [ref=e362]
+      - text: Копировать
+      - generic [ref=e367]: Ctrl+C
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e368]:
+      - img [ref=e369]
+      - text: Вставить
+      - generic [ref=e373]: Ctrl+V
+```

@@ -13,8 +13,7 @@ test.describe('Навигация', () => {
     test('Нажать ЛКМ на “Остановить сервер“', async ({page}) => {
         const stop = page.getByRole('menuitem', { name: 'Остановить сервер' });
         await stop.click();
-
-        const err = page.getByRole('status', { name: 'Произошла ошибка' });
+        const err = page.getByRole('status', { name: 'Произошла ошибка' })
         await expect(err).toBeVisible();
     });
 

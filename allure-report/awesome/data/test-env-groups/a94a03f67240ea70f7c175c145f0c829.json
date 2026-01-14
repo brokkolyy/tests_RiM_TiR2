@@ -1,1 +1,1 @@
-{"id":"a94a03f67240ea70f7c175c145f0c829","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/fieldAddressMaster.spec.js:140:1","name":"Ввод недопустимых символов","status":"passed","testResultsByEnv":{"default":"6b3b9f35febe74b11eee1a59d34b3b0f"}}
+{"id":"a94a03f67240ea70f7c175c145f0c829","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/fieldAddressMaster.spec.js:140:1","name":"Ввод недопустимых символов","status":"failed","testResultsByEnv":{"default":"6b3b9f35febe74b11eee1a59d34b3b0f"}}

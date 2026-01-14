@@ -2,6 +2,14 @@ const path = require('path');
 const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 
+async function prepareField(page) {
+    const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
+    await field.focus();
+    await expect(field).toBeFocused();
+    await field.fill('');
+    return field;
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -14,18 +22,8 @@ test.describe('Навигация', () => {
         await el.click();
     });
 
-    test('Фокус в поле название элемента', async ({ page }) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    });
-
     test('Ввести число больше максимально допустимого значения', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');            
+        const field = await prepareField(page)           
         const inputVal = '10001';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -36,11 +34,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод числа с максимальной длиной (5 символа) и максимально допустимого значение', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '10000';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -51,11 +45,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод числа с большим количеством символов чем у максимального числа (5 и более)', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '1231232';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -66,11 +56,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод минимальной длины (1 символ)', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '1231232';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -81,11 +67,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод недопустимых символов', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ~!@#$%^&*()-_=+[{]}\\|;:",<.>/?';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -96,11 +78,7 @@ test.describe('Навигация', () => {
     });
 
     test('Оставить поле пустым и нажать фон', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('');
@@ -109,11 +87,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести 0 после чего допустимое значение', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '034';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -124,11 +98,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести 0 после чего недопустимое значение', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '0555';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -139,11 +109,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести цифру, пробел и ещё одну цифру', async ({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Пауза между опросами, мс' })
-        await field.focus();
-        await expect(field).toBeFocused();
-    
-        await field.fill('');
+        const field = await prepareField(page)  
         const inputVal = '2 3';
         await field.fill(inputVal);
         await field.press('Enter');

@@ -1,0 +1,1 @@
+{"id":"ab6f000adfc77d386115483e7be15c04","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ModbusFunctionGroup/fieldFunctionGroup.spec.js:52:1","name":"Ввод минимальной длины (1 символ), поле название элемента \"Последовательный порт\"","status":"passed","testResultsByEnv":{"default":"9e9b4ea0903b13a7c9cc1b03dd2c06c1"}}

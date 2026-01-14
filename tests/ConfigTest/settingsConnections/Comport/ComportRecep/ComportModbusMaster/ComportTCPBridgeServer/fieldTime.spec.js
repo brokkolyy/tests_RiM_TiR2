@@ -165,11 +165,11 @@ test.describe('Навигация', () => {
         await expect(field).toBeFocused();
 
         await field.fill('');
-        await field.getByLabel('increment value').click();
+        await page.getByRole('group').filter({ hasText: 'Таймаут соединения, сек' }).getByLabel('increment value').click();
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('1');
-        await field.getByLabel('decrease value').click();
+        await page.getByRole('group').filter({ hasText: 'Таймаут соединения, сек' }).getByLabel('decrease value').click();
         await field.press('Enter');
         const val2 = await field.inputValue();
         expect(val2).toBe('0');

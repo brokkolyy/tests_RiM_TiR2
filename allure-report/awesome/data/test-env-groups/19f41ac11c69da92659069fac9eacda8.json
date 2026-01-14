@@ -1,1 +1,1 @@
-{"id":"19f41ac11c69da92659069fac9eacda8","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:221:1","name":"Создание объектов данных(2) ModbusRTU Master, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"f07303cad8c166786ba68e1057a19f8b"}}
+{"id":"19f41ac11c69da92659069fac9eacda8","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:221:1","name":"Создание объектов данных(2) ModbusRTU Master, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"0991cec87322cdd18e9213751558bba8"}}

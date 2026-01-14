@@ -2,6 +2,14 @@ const path = require('path');
 const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 
+async function prepareField(page) {
+    const field = page.getByRole('spinbutton', { name: 'Порт' });
+    await field.focus();
+    await expect(field).toBeFocused();
+    await field.fill('');
+    return field;
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -15,18 +23,8 @@ test.describe('Навигация', () => {
         await el.click();
     });
 
-    test('Фокус в поле название элемента', async ({ page }) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-    });
-
     test('Ввод числа больше максимально допустимого', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '65536';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -39,11 +37,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод числа максимально допустимого значение', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '65535';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -56,11 +50,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод числа с большим количеством символов чем у максимального числа (4 и более)', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '123123';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -73,11 +63,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод положительного числа меньше минимально допустимого', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '0';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -90,11 +76,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести минимально допустимое число', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '1';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -107,11 +89,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввод недопустимых символов', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ~!@#$%^&*()-_=+[{]}\\|;:",<.>/?';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -122,11 +100,7 @@ test.describe('Навигация', () => {
     });
 
     test('Оставить поле пустым', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('');
@@ -137,11 +111,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести 0 после чего допустимое значение', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '034';
         await field.fill(inputVal);
         await field.press('Enter');
@@ -154,11 +124,7 @@ test.describe('Навигация', () => {
     });
 
     test('Ввести 0 после чего недопустимое значение', async({page}) => {
-        const field = page.getByRole('spinbutton', { name: 'Порт' });
-        await field.focus();
-        await expect(field).toBeFocused();
-
-        await field.fill('');
+        const field = await prepareField(page)
         const inputVal = '0555342342';
         await field.fill(inputVal);
         await field.press('Enter');

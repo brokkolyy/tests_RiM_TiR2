@@ -3,6 +3,19 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
+async function prepareField(page) {
+    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
+    await field.focus();
+    await expect(field).toBeFocused();
+    await field.fill('1');
+    return field;
+}
+
+async function errorM(page) {
+    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
+    await expect(buttonError).toBeVisible();
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -21,12 +34,7 @@ test.describe('Навигация', () => {
 
 
 test('Ввод числа с максимальной длиной (3 символа) и максимально допустимого значение', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = '255';
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
@@ -36,11 +44,7 @@ test('Ввод числа с максимальной длиной (3 симво
 
 
 test('Ввести число больше максимально допустимого значения', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = '256';
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
@@ -50,8 +54,7 @@ test('Ввести число больше максимально допусти
     expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).first();
     await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 
 test('Проверить работоспособность кнопок вверх', async ({ page }) => {
@@ -82,11 +85,7 @@ test('Проверить работоспособность кнопок вни�
 });
 
 test('Ввод числа с большим количеством символов чем у максимального числа (4 и более)', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = '123123';
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
@@ -96,16 +95,11 @@ test('Ввод числа с большим количеством символ�
     expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).first();
     await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 
 test('Ввод минимальной длины (1 символ)', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = '1';
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
@@ -114,11 +108,7 @@ test('Ввод минимальной длины (1 символ)', async ({ pag
 });
 
 test('Ввести число меньше минимального допустимого значения', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = '0';
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
@@ -128,16 +118,11 @@ test('Ввести число меньше минимального допуст
     expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' }).first();
     await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 
 test('Ввод недопустимых символов', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('1');
+    const field = await prepareField(page)
     const inputVal = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZабвгдеёжзийклмнопрстуфхцчшщъыьэюяАБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ~!@#$%^&*()-_=+[{]}\\|;:",<.>/?';
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
@@ -147,9 +132,7 @@ test('Ввод недопустимых символов', async ({ page }) => {
 });
 
 test('Оставить поле пустым и нажать фон', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
+    const field = await prepareField(page)
 
     await field.fill('');
     await page.locator('.css-1dtqfaw').click();
@@ -159,14 +142,11 @@ test('Оставить поле пустым и нажать фон', async ({ p
     expect(error).toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
     await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 
 test('Ввести 0 после чего допустимое значение', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
+    const field = await prepareField(page)
 
     await field.fill('');
     const inputVal = '034';
@@ -178,9 +158,7 @@ test('Ввести 0 после чего допустимое значение',
 });
 
 test('Ввести 0 после чего недопустимое значение', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
+    const field = await prepareField(page)
 
     await field.fill('');
     const inputVal = '0555';
@@ -193,14 +171,11 @@ test('Ввести 0 после чего недопустимое значени
     expect(error).not.toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
     await expect(errIcon).not.toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 
 test('Ввести цифру, пробел и ещё одну цифру', async ({ page }) => {
-    const field = page.getByRole('spinbutton', { name: 'Адрес устройства' });
-    await field.focus();
-    await expect(field).toBeFocused();
+    const field = await prepareField(page)
 
     await field.fill('');
     const inputVal = '2 3';
@@ -213,7 +188,6 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     expect(error).not.toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
     await expect(errIcon).not.toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
 });
 });

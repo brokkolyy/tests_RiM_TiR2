@@ -1,1 +1,1 @@
-{"id":"42e22890a123d27a68fa7d49dce286ca","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldIPModbusTCP.spec.js:106:5","name":"Ввод максимального числа","status":"passed","testResultsByEnv":{"default":"7d2ef02eff7ee3cc628979889e42cddf"}}
+{"id":"42e22890a123d27a68fa7d49dce286ca","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldIPModbusTCP.spec.js:88:5","name":"Ввод максимального числа","status":"failed","testResultsByEnv":{"default":"7d2ef02eff7ee3cc628979889e42cddf"}}

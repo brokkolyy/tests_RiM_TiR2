@@ -3,29 +3,29 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
-test('(0x01) Чтение значений из нескольких регистров флагов', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
+test.describe('Навигация', () => {
+    test.beforeEach(async ({page}) => {
+        const config = new ConfigPage(page);
+        const configElement = new ConfigPageElements(page);
         
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
+        await config.goto();
+        await config.contextMenuReception();
+        await config.clickComport();
         
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
+        await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({button: 'right'});
+        await configElement.clickModbusRTU_Master();
     
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
+        await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({button: 'right'});
+        await configElement.clickFunctionGroup();
     
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
+        const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
+        await expect(el).toBeVisible();
     
-    await el.click();
-    
-    const item = page.getByRole('combobox', { name: 'Функция info' });
+        await el.click();
+    });
 
+test('(0x01) Чтение значений из нескольких регистров флагов', async ({ page }) => {
+    const item = page.getByRole('combobox', { name: 'Функция info' });
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x01' });
@@ -40,28 +40,7 @@ test('(0x01) Чтение значений из нескольких регис�
 });
 
 test('(0x02) Чтение значений из нескольких дискретных входов', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x02' });
@@ -76,28 +55,7 @@ test('(0x02) Чтение значений из нескольких дискр�
 });
 
 test('(0x03) Чтение значений из нескольких регистров хранения', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x03' });
@@ -112,28 +70,7 @@ test('(0x03) Чтение значений из нескольких регис�
 });
 
 test('(0x04) Чтение значений из нескольких регистров ввода', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x04' });
@@ -148,28 +85,7 @@ test('(0x04) Чтение значений из нескольких регис�
 });
 
 test('(0x05) Запись значения одного флага', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x05' });
@@ -184,28 +100,7 @@ test('(0x05) Запись значения одного флага', async ({ pa
 });
 
 test('(0x06) Запись значения в один регистр хранения', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x06' });
@@ -220,28 +115,7 @@ test('(0x06) Запись значения в один регистр хране
 });
 
 test('(0x15) Запись значений в несколько регистров флагов', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
-
     await item.click();
 
     const op1 = page.getByRole('option', { name: '(0x15' });
@@ -256,26 +130,6 @@ test('(0x15) Запись значений в несколько регистр�
 });
 
 test('(0x16) Запись значений в несколько регистров хранения', async ({ page }) => {
-    const config = new ConfigPage(page);
-    const configElement = new ConfigPageElements(page);
-        
-    await config.goto();
-    await config.contextMenuReception();
-    await config.clickComport();
-        
-    await page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickModbusRTU_Master();
-    
-    await await page.locator('div').filter({ hasText: /^MB RTU1modbusRTU_master$/ }).nth(1).click({
-        button: 'right'});
-    await configElement.clickFunctionGroup();
-    
-    const el = page.locator('div').filter({ hasText: /^fg1functionGroup$/ }).first();
-    await expect(el).toBeVisible();
-    
-    await el.click();
-    
     const item = page.getByRole('combobox', { name: 'Функция info' });
     await item.click();
 
@@ -288,4 +142,6 @@ test('(0x16) Запись значений в несколько регистр�
 
     await item.click();
     await expect(page.locator('[id="select::r19::option:16"] > .chakra-select__itemIndicator > .css-s3mb0o')).toBeVisible();
+});
+
 });

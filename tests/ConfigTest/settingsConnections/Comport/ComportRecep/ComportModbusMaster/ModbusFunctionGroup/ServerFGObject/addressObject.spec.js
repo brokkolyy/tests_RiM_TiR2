@@ -3,6 +3,17 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
+async function prepareField(page) {
+    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack')
+    await expect(el1).toBeVisible();
+    await el1.click();
+    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
+    await field.focus();
+    await expect(field).toBeFocused();
+    await field.fill('');
+    return field;
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -22,25 +33,8 @@ test.describe('Навигация', () => {
     });
 
 
-test('Фокус в поле адресс объекта данных', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack')
-    await expect(el1).toBeVisible();
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-});
-
 test('Максимальная длина(0xffff), ', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '0xffff';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -50,15 +44,7 @@ test('Максимальная длина(0xffff), ', async ({ page }) => {
 });
 
 test('Ввод максимальной длины (0xfffff), ', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '0xfffff';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -69,15 +55,7 @@ test('Ввод максимальной длины (0xfffff), ', async ({ page }
 });
 
 test('Ввод минимальной длины (0x0), ', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '0x0';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -88,14 +66,7 @@ test('Ввод минимальной длины (0x0), ', async ({ page }) => {
 });
 
 test('Ввод недопустимых символов', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = 'ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю-.,_=+\/|":;><?!№%?*()`~@#$&';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -106,15 +77,7 @@ test('Ввод недопустимых символов', async ({ page }) => {
 });
 
 test('Оставить поле пустым', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     await field.press('Enter');
     
     const val = await field.inputValue();
@@ -125,15 +88,7 @@ test('Оставить поле пустым', async ({ page }) => {
 });
 
 test('Ввести число в десятичной сс', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '12';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -144,15 +99,7 @@ test('Ввести число в десятичной сс', async ({ page }) =>
 });
 
 test('Ввести недопустимое шестнадцатеричное значение (0+число)x(число)', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '01х0000';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -163,15 +110,7 @@ test('Ввести недопустимое шестнадцатеричное �
 });
 
 test('Ввести допустимое шестнадцатеричное значение без 0 в началеx(допустимое число)', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = 'x0012';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -182,15 +121,7 @@ test('Ввести допустимое шестнадцатеричное зн�
 });
 
 test('Ввести больше максимально допустимого шестнадцатеричного значения ', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '0хFFFFА';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -201,15 +132,7 @@ test('Ввести больше максимально допустимого ш
 });
 
 test('Ввести минимально допустимое шестнадцатеричное значение (5 нулей после х)', async ({ page }) => {
-    const el1 = page.locator('._node_1yclz_1.isLeaf > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack');
-    await expect(el1).toBeVisible();
-
-    await el1.click();
-    const field = page.getByRole('textbox', { name: 'Адрес информационного объекта' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '0x00000';
     await field.fill(inputVal);
     await field.press('Enter');

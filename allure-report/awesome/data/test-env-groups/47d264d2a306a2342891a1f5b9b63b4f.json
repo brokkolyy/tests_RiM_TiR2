@@ -1,1 +1,1 @@
-{"id":"47d264d2a306a2342891a1f5b9b63b4f","fullName":"tests/ConfigTest/createConnection.spec.js:146:1","name":"Создание соединений Modbus client + уникальность соединений","status":"passed","testResultsByEnv":{"default":"3c0959605f4a378712866eeb63013a8c"}}
+{"id":"47d264d2a306a2342891a1f5b9b63b4f","fullName":"tests/ConfigTest/createConnection.spec.js:146:1","name":"Создание соединений Modbus client + уникальность соединений","status":"passed","testResultsByEnv":{"default":"722ab1647b9687f6becf6fdfd8bb2b5f"}}

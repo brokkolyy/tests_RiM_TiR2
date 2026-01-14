@@ -3,6 +3,15 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
+async function errorM(page) {
+    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
+    expect(errIcon).toBeVisible();
+    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
+    await expect(error).toBeVisible();
+    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
+    await expect(buttonError).toBeVisible();
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -23,12 +32,7 @@ test.describe('Навигация', () => {
 
 
 test('1 бит - bool', async ({ page }) => {
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
-    expect(errIcon).toBeVisible();
-    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
-    await expect(error).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
     
     const item = page.getByRole('combobox', { name: 'Тип данных' });
 
@@ -50,12 +54,7 @@ test('1 бит - bool', async ({ page }) => {
 });
 
 test('2 байта - целое без знака', async ({ page }) => {
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
-    expect(errIcon).toBeVisible();
-    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
-    await expect(error).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
     
     const item = page.getByRole('combobox', { name: 'Тип данных' });
 
@@ -77,12 +76,7 @@ test('2 байта - целое без знака', async ({ page }) => {
 });
 
 test('2 байта - целое', async ({ page }) => {
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
-    expect(errIcon).toBeVisible();
-    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
-    await expect(error).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
     
     const item = page.getByRole('combobox', { name: 'Тип данных' });
 
@@ -104,12 +98,7 @@ test('2 байта - целое', async ({ page }) => {
 });
 
 test('4 байта - целое без знака', async ({ page }) => {
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
-    expect(errIcon).toBeVisible();
-    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
-    await expect(error).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
     
     const item = page.getByRole('combobox', { name: 'Тип данных' });
 
@@ -131,12 +120,7 @@ test('4 байта - целое без знака', async ({ page }) => {
 });
 
 test('4 байта - с плавающей точкой', async ({ page }) => {
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).nth(1);
-    expect(errIcon).toBeVisible();
-    const error = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения Данный тип данных не подходит для функций' }).first();
-    await expect(error).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errorM(page)
     
     const item = page.getByRole('combobox', { name: 'Тип данных' });
 

@@ -1,1 +1,1 @@
-{"id":"83e0373c7f29bb80519fe014cc20f608","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/typeDataSlave.spec.js:32:1","name":"1 бит - bool","status":"passed","testResultsByEnv":{"default":"64bd156c313ecb968b95e31101c8062d"}}
+{"id":"83e0373c7f29bb80519fe014cc20f608","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/typeDataSlave.spec.js:35:1","name":"1 бит - bool","status":"failed","testResultsByEnv":{"default":"64bd156c313ecb968b95e31101c8062d"}}

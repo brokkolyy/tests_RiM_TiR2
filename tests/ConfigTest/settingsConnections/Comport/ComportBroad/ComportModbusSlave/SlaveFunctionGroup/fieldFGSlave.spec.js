@@ -3,6 +3,14 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
+async function prepareField(page) {
+    const field = page.getByRole('textbox', { name: 'Название' });
+    await field.focus();
+    await expect(field).toBeFocused();
+    await field.fill('');
+    return field;
+}
+
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
         const config = new ConfigPage(page);
@@ -21,19 +29,8 @@ test.describe('Навигация', () => {
         await el.click();
     });
 
-
-test('Фокус в поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused();
-});
-
 test('Максимальная длина(30 символов), поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused();
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '123456789012345678901234567890';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -42,11 +39,7 @@ test('Максимальная длина(30 символов), поле наз�
 });
 
 test('Ввод больше максимальной длины (31 символ), поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused()
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '1234567890123456789012345678901';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -55,11 +48,7 @@ test('Ввод больше максимальной длины (31 символ
 });
 
 test('Ввод минимальной длины (1 символ), поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused()
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '1';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -68,11 +57,7 @@ test('Ввод минимальной длины (1 символ), поле на
 });
 
 test('Ввод недопустимых символов, поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused()
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = 'ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮйцукенгшщзхъфывапролджэячсмитьбю-.,_=+\/|":;><?!№%?*()`~@#$&';
     await field.fill(inputVal);
     await field.press('Enter');
@@ -81,11 +66,7 @@ test('Ввод недопустимых символов, поле назван�
 });
 
 test('Оставить поле пустым, поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused()
-
-    await field.fill('');
+    const field = await prepareField(page)
     await field.press('Enter');
     const val = await field.inputValue();
     const errIcon = page.locator('svg').filter({ hasText: 'Имя узла должно начинаться с буквы или подчеркивания и содержать только латински' }).nth(1);
@@ -96,11 +77,7 @@ test('Оставить поле пустым, поле название элем
 });
 
 test('Ввести сначала цифру, потом букву, поле название элемента "Последовательный порт"', async ({ page }) => {
-    const field = page.getByRole('textbox', { name: 'Название' });
-    await field.focus();
-    await expect(field).toBeFocused()
-
-    await field.fill('');
+    const field = await prepareField(page)
     const inputVal = '1t';
     await field.fill(inputVal);
     await field.press('Enter');

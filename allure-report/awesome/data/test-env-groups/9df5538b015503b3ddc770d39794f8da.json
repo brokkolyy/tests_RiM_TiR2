@@ -1,1 +1,1 @@
-{"id":"9df5538b015503b3ddc770d39794f8da","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportTCPBridgeClient/fieldTime.spec.js:162:5","name":"Проверить работоспособность кнопок","status":"broken","testResultsByEnv":{"default":"74ebe7c9a2128f2449c11f041460af9f"}}
+{"id":"9df5538b015503b3ddc770d39794f8da","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/ComportTCPBridgeClient/fieldTime.spec.js:132:5","name":"Проверить работоспособность кнопок","status":"failed","testResultsByEnv":{"default":"add72016f800939affc868aa28c59f61"}}
