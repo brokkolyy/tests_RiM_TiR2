@@ -61,6 +61,7 @@ test('Выпадающий список переменные', async ({ page }) 
     //await expect(cbx).toHaveText('a');
 
     const opB = page.getByText('b', { exact: true }).nth(2);
+    await buttunList.click();
     await opB.click();
     await expect(page.getByText('ab', { exact: true })).toBeHidden();
     await expect(cbx).toHaveText('b');

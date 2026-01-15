@@ -25,7 +25,7 @@ test.describe('Навигация', () => {
         await page.getByRole('menuitem', { name: 'Остановить сервер' }).click();
 
         await run.click();
-        const status = page.getByRole('status', { name: 'Сервер запущен' });
+        const status = page.getByRole('status', { name: 'Сервер запущен' })
         await expect(status).toBeVisible();
     })
 });

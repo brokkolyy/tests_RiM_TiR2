@@ -1,1 +1,1 @@
-{"id":"04ac051d3ab15e00938f839e54c49912","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/logModbusServer.spec.js:23:1","name":"Отключение функции логирования","status":"passed","testResultsByEnv":{"default":"ce048156a896856a64da6cfa0ebf5bca"}}
+{"id":"04ac051d3ab15e00938f839e54c49912","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/logModbusServer.spec.js:23:1","name":"Отключение функции логирования","status":"passed","testResultsByEnv":{"default":"e7c0fea29cedef241c491043e453fa50"}}

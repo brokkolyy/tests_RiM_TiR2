@@ -1,1 +1,1 @@
-{"id":"dab17bf0442093a39b3f13b5fa9ae066","fullName":"tests/ConfigTest/createConnection.spec.js:164:1","name":"Создание соединения Modbus server","status":"passed","testResultsByEnv":{"default":"ab921b8447c0bac2067c477e71a6b158"}}
+{"id":"dab17bf0442093a39b3f13b5fa9ae066","fullName":"tests/ConfigTest/createConnection.spec.js:164:1","name":"Создание соединения Modbus server","status":"broken","testResultsByEnv":{"default":"ab921b8447c0bac2067c477e71a6b158"}}

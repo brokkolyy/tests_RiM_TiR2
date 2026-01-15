@@ -1,0 +1,140 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: Открыть контекстное меню
+              - generic [ref=e65]: ПКМ
+            - tree [ref=e67]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e71]:
+                - generic [ref=e74]:
+                  - button [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - paragraph [ref=e80]: Прием
+          - separator [ref=e81]
+          - tree [ref=e85]:
+            - generic [ref=e88]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e89]:
+                - generic [ref=e92]:
+                  - button [ref=e93] [cursor=pointer]:
+                    - img [ref=e94]
+                  - generic [ref=e97]:
+                    - paragraph [ref=e98]: Передача
+                    - generic [ref=e99]:
+                      - button [ref=e100] [cursor=pointer]:
+                        - img [ref=e101]
+                      - button [ref=e102] [cursor=pointer]:
+                        - img [ref=e103]
+                      - button [ref=e106] [cursor=pointer]:
+                        - img [ref=e107]
+              - treeitem "gpio 200 qwertyuiopasdfghjklzxcvbnmqw_1r" [expanded] [level=2] [selected] [ref=e110]:
+                - generic [ref=e115]:
+                  - button [ref=e116] [cursor=pointer]:
+                    - img [ref=e117]
+                  - generic [ref=e119]:
+                    - generic "GPIO" [ref=e120]: gpio
+                    - generic "Период дребезга" [ref=e121]: "200"
+                    - paragraph [ref=e122]: qwertyuiopasdfghjklzxcvbnmqw_1r
+        - separator [ref=e123]
+        - generic [ref=e128]:
+          - generic [ref=e131]:
+            - navigation "breadcrumb" [ref=e132]:
+              - list [ref=e133]:
+                - listitem [ref=e134]: Передача
+                - listitem [ref=e135]:
+                  - img [ref=e136]
+                - listitem [ref=e138]: qwertyuiopas...
+            - generic [ref=e139]:
+              - paragraph [ref=e141]: tbudSVDltd_C
+              - group [ref=e144]:
+                - paragraph [ref=e146]: Название
+                - textbox "Название" [active] [ref=e148]: qwertyuiopasdfghjklzxcvbnmqw_1r
+              - generic [ref=e149]:
+                - group [ref=e150]:
+                  - paragraph [ref=e152]: Логирование
+                  - checkbox "Логирование" [ref=e155]
+                - group [ref=e158]:
+                  - paragraph [ref=e160]: Период дребезга
+                  - generic [ref=e161]:
+                    - group [ref=e162]:
+                      - button "increment value" [ref=e163] [cursor=pointer]:
+                        - img [ref=e164]
+                      - button "decrease value" [ref=e166] [cursor=pointer]:
+                        - img [ref=e167]
+                    - spinbutton "Период дребезга" [ref=e170]: "200"
+          - separator [ref=e171]:
+            - generic:
+              - img
+          - generic [ref=e176]:
+            - img [ref=e177]
+            - paragraph [ref=e182]: Выберите узел в дереве переменных
+        - separator [ref=e183]
+        - generic [ref=e185]:
+          - generic [ref=e187]:
+            - img [ref=e188]
+            - paragraph [ref=e190]: Открыть контекстное меню
+            - generic [ref=e191]: ПКМ
+          - tree [ref=e193]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e197]:
+              - generic [ref=e200]:
+                - button [ref=e201] [cursor=pointer]:
+                  - img [ref=e202]
+                - paragraph [ref=e206]: Переменные
+    - contentinfo [ref=e207]:
+      - generic [ref=e208]:
+        - generic [ref=e209]:
+          - img [ref=e210]
+          - paragraph [ref=e213]: "-------"
+        - generic [ref=e214]:
+          - img [ref=e215]
+          - paragraph [ref=e218]: "----"
+        - generic [ref=e219]:
+          - img [ref=e220]
+          - paragraph [ref=e222]: "----"
+        - img [ref=e223]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e227]':
+          - paragraph [ref=e228]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

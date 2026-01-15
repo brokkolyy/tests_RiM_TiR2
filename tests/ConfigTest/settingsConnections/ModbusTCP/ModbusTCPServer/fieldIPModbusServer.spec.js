@@ -3,15 +3,11 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 
 async function prepareField(page) {
-    const field = page.getByRole('textbox', { name: 'Название' });
+    const field = page.getByRole('textbox', { name: 'IP-адрес' })
     await field.focus();
     await expect(field).toBeFocused();
     await field.fill('');
     return field;
-}
-async function errB(page) {
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
 }
 
 test.describe('Навигация', () => {
@@ -34,6 +30,7 @@ test.describe('Навигация', () => {
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('127.0.0.1');
+        await page.screenshot({path:'error.png'})
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
     });

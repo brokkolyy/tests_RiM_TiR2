@@ -1,0 +1,128 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: Открыть контекстное меню
+              - generic [ref=e65]: ПКМ
+            - tree [ref=e67]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e71]:
+                - generic [ref=e74]:
+                  - button [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - paragraph [ref=e80]: Прием
+          - separator [ref=e81]
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - paragraph [ref=e88]: Открыть контекстное меню
+              - generic [ref=e89]: ПКМ
+            - tree [ref=e91]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e95]:
+                - generic [ref=e98]:
+                  - button [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - paragraph [ref=e104]: Передача
+        - separator [ref=e105]
+        - generic [ref=e110]:
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - paragraph [ref=e127]: Выберите узел в дереве приема или передачи
+          - separator [ref=e128]:
+            - generic:
+              - img
+          - generic [ref=e133]:
+            - img [ref=e134]
+            - paragraph [ref=e139]: Выберите узел в дереве переменных
+        - separator [ref=e140]
+        - tree [ref=e144]:
+          - generic [ref=e147]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e148]:
+              - generic [ref=e151]:
+                - button [ref=e152] [cursor=pointer]:
+                  - img [ref=e153]
+                - generic [ref=e156]:
+                  - paragraph [ref=e157]: Переменные
+                  - generic [ref=e158]:
+                    - button [ref=e159] [cursor=pointer]:
+                      - img [ref=e160]
+                    - button [ref=e163] [cursor=pointer]:
+                      - img [ref=e164]
+                    - button [ref=e166] [cursor=pointer]:
+                      - img [ref=e167]
+                    - button [ref=e170] [cursor=pointer]:
+                      - img [ref=e171]
+            - treeitem "variable" [level=2] [ref=e174]:
+              - generic [ref=e180]:
+                - img [ref=e181]
+                - paragraph [ref=e186]: variable
+    - contentinfo [ref=e187]:
+      - generic [ref=e188]:
+        - generic [ref=e189]:
+          - img [ref=e190]
+          - paragraph [ref=e193]: "-------"
+        - generic [ref=e194]:
+          - img [ref=e195]
+          - paragraph [ref=e198]: "----"
+        - generic [ref=e199]:
+          - img [ref=e200]
+          - paragraph [ref=e202]: "----"
+        - img [ref=e203]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e207]':
+          - paragraph [ref=e208]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e210]:
+    - menuitem "Создать папку" [ref=e211]:
+      - img [ref=e212]
+      - text: Создать папку
+    - menuitem "Создать переменную" [ref=e214]:
+      - img [ref=e215]
+      - text: Создать переменную
+      - img [ref=e220]
+    - menuitem "Вставить Ctrl+V" [ref=e222]:
+      - img [ref=e223]
+      - text: Вставить
+      - generic [ref=e227]: Ctrl+V
+```
