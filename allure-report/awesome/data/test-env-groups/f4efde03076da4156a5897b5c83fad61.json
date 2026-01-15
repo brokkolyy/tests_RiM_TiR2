@@ -1,0 +1,1 @@
+{"id":"f4efde03076da4156a5897b5c83fad61","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/AsduClient/ObjectIec104Client/uniqueAddressClient.spec.js:37:5","name":"Уникальность адреса ИО (ИО - папка - ИО)","status":"failed","testResultsByEnv":{"default":"74d38304761ed8def6dbec747a08ba51"}}

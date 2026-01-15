@@ -1,0 +1,134 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - tree [ref=e61]:
+            - generic [ref=e64]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e65]:
+                - generic [ref=e68]:
+                  - button [ref=e69] [cursor=pointer]:
+                    - img [ref=e70]
+                  - paragraph [ref=e74]: Прием
+              - treeitem "gpio 200 gpio" [expanded] [level=2] [ref=e75]:
+                - generic [ref=e78]:
+                  - button [ref=e79] [cursor=pointer]:
+                    - img [ref=e80]
+                  - generic [ref=e82]:
+                    - generic "GPIO" [ref=e83]: gpio
+                    - generic "Период дребезга" [ref=e84]: "200"
+                    - paragraph [ref=e85]: gpio
+          - separator [ref=e86]
+          - tree [ref=e90]:
+            - generic [ref=e93]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e94]:
+                - generic [ref=e97]:
+                  - button [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+                  - paragraph [ref=e103]: Передача
+              - treeitem "gpio 200 gpio" [expanded] [level=2] [ref=e104]:
+                - generic [ref=e107]:
+                  - button [ref=e108] [cursor=pointer]:
+                    - img [ref=e109]
+                  - generic [ref=e111]:
+                    - generic "GPIO" [ref=e112]: gpio
+                    - generic "Период дребезга" [ref=e113]: "200"
+                    - paragraph [ref=e114]: gpio
+        - separator [ref=e115]
+        - generic [ref=e120]:
+          - generic [ref=e125]:
+            - img [ref=e126]
+            - paragraph [ref=e137]: Выберите узел в дереве приема или передачи
+          - separator [ref=e138]:
+            - generic:
+              - img
+          - generic [ref=e143]:
+            - img [ref=e144]
+            - paragraph [ref=e149]: Выберите узел в дереве переменных
+        - separator [ref=e150]
+        - generic [ref=e152]:
+          - generic [ref=e154]:
+            - img [ref=e155]
+            - paragraph [ref=e157]: Открыть контекстное меню
+            - generic [ref=e158]: ПКМ
+          - tree [ref=e160]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e164]:
+              - generic [ref=e167]:
+                - button [ref=e168] [cursor=pointer]:
+                  - img [ref=e169]
+                - paragraph [ref=e173]: Переменные
+    - contentinfo [ref=e174]:
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - img [ref=e177]
+          - paragraph [ref=e180]: "-------"
+        - generic [ref=e181]:
+          - img [ref=e182]
+          - paragraph [ref=e185]: "----"
+        - generic [ref=e186]:
+          - img [ref=e187]
+          - paragraph [ref=e189]: "----"
+        - img [ref=e190]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e194]':
+          - paragraph [ref=e195]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e197]:
+    - menuitem "Создать \"Папка\"" [ref=e198]:
+      - img [ref=e199]
+      - text: Создать "Папка"
+    - menuitem "Создать \"Comport\"" [ref=e201]:
+      - img [ref=e202]
+      - text: Создать "Comport"
+    - menuitem "Создать \"GPIO\"" [ref=e204]:
+      - img [ref=e205]
+      - text: Создать "GPIO"
+    - menuitem "Создать \"IEC-104 Сервер\"" [ref=e207]:
+      - img [ref=e208]
+      - text: Создать "IEC-104 Сервер"
+    - menuitem "Создать \"Modbus-TCP Сервер\"" [ref=e210]:
+      - img [ref=e211]
+      - text: Создать "Modbus-TCP Сервер"
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e213]:
+      - img [ref=e214]
+      - text: Вставить
+      - generic [ref=e218]: Ctrl+V
+```

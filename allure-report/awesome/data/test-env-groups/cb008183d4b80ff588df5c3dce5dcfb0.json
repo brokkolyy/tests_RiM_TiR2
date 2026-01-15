@@ -1,1 +1,1 @@
-{"id":"cb008183d4b80ff588df5c3dce5dcfb0","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfig.spec.js:45:5","name":"Ввод меньше минимальной длины имени(3 символа)","status":"failed","testResultsByEnv":{"default":"0cbf1dbdf18820f6440eaab1a242872f"}}
+{"id":"cb008183d4b80ff588df5c3dce5dcfb0","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfig.spec.js:49:5","name":"Ввод меньше минимальной длины имени(3 символа)","status":"failed","testResultsByEnv":{"default":"0cbf1dbdf18820f6440eaab1a242872f"}}

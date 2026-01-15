@@ -431,8 +431,15 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(
     await configElement.clickObject_1();
     /**page.locator('div:nth-child(11) > ._node_1yclz_1 > .chakra-stack.css-3cqz5p > .chakra-stack.css-n3uhkm > .chakra-stack').click();
   await page.locator('._node_1yclz_1.isLeaf.isSelected > .chakra-stack.css-3cqz5p').click();
-  await page.locator('._node_1yclz_1.isLeaf.isSelected') */
-    const el5 = page.locator('div:nth-child(11)');
+  await page.locator('._node_1yclz_1.isLeaf.isSelected') 
+        page.locator('div:nth-child(11) > ._node_1yclz_1').click();
+  await page.getByRole('treeitem').filter({ hasText: 'Это поле обязательно для заполненияЭто поле обязательно для заполнения' }).nth(4)
+  */
+    const el5 = page.getByRole('treeitem').filter({ hasText: 'Это поле обязательно для заполненияЭто поле обязательно для заполнения' }).nth(4)
+    /*await page.evaluate(() => {
+        window.scrollBy(0,1000)
+    })*/
+    await page.screenshot({path:'err.png'})
     await expect(el5).toBeVisible();
     //await el5.click();
     const fieldEl5 = page.getByRole('textbox', { name: 'Адрес информационного объекта' });

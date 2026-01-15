@@ -114,6 +114,7 @@ test.describe('Навигация', () => {
         await field.fill(inputVal);
         await field.press('Enter');
         const val = await field.inputValue();
+        await page.screenshot({path:'error.png'})
         expect(val).toBe('2 3');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();

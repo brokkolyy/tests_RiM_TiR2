@@ -1,1 +1,1 @@
-{"id":"40089a60595185bf7d8e01cd36a8a09e","fullName":"tests/ConfigTest/createElement.spec.js:93:1","name":"Создание функциональной группы, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"668cce93f56e359dbe7c0d12f8c0a286"}}
+{"id":"40089a60595185bf7d8e01cd36a8a09e","fullName":"tests/ConfigTest/createElement.spec.js:93:1","name":"Создание функциональной группы, раздел \"Передача\"","status":"failed","testResultsByEnv":{"default":"231eb784ad8fc4558d2e1f0d1cebcfff"}}

@@ -1,0 +1,170 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - tree [ref=e61]:
+            - generic [ref=e64]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e65]:
+                - generic [ref=e68]:
+                  - button [ref=e69] [cursor=pointer]:
+                    - img [ref=e70]
+                  - paragraph [ref=e74]: Прием
+              - treeitem "gpio 200 test" [expanded] [level=2] [selected] [ref=e75]:
+                - generic [ref=e78]:
+                  - button [ref=e79] [cursor=pointer]:
+                    - img [ref=e80]
+                  - generic [ref=e82]:
+                    - generic "GPIO" [ref=e83]: gpio
+                    - generic "Период дребезга" [ref=e84]: "200"
+                    - paragraph [ref=e85]: test
+          - separator [ref=e86]
+          - tree [ref=e90]:
+            - generic [ref=e93]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e94]:
+                - generic [ref=e97]:
+                  - button [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+                  - paragraph [ref=e103]: Передача
+              - treeitem "gpio 200 gpio" [expanded] [level=2] [ref=e104]:
+                - generic [ref=e107]:
+                  - button [ref=e108] [cursor=pointer]:
+                    - img [ref=e109]
+                  - generic [ref=e111]:
+                    - generic "GPIO" [ref=e112]: gpio
+                    - generic "Период дребезга" [ref=e113]: "200"
+                    - paragraph [ref=e114]: gpio
+        - separator [ref=e115]
+        - generic [ref=e120]:
+          - generic [ref=e123]:
+            - navigation "breadcrumb" [ref=e124]:
+              - list [ref=e125]:
+                - listitem [ref=e126]: Прием
+                - listitem [ref=e127]:
+                  - img [ref=e128]
+                - listitem [ref=e130]: test
+            - generic [ref=e131]:
+              - paragraph [ref=e133]: DuwmGwZ8fJkj
+              - group [ref=e136]:
+                - paragraph [ref=e138]: Название
+                - textbox "Название" [ref=e140]: test
+              - generic [ref=e141]:
+                - group [ref=e142]:
+                  - paragraph [ref=e144]: Логирование
+                  - checkbox "Логирование" [ref=e147]
+                - group [ref=e150]:
+                  - paragraph [ref=e152]: Период дребезга
+                  - generic [ref=e153]:
+                    - group [ref=e154]:
+                      - button "increment value" [ref=e155] [cursor=pointer]:
+                        - img [ref=e156]
+                      - button "decrease value" [ref=e158] [cursor=pointer]:
+                        - img [ref=e159]
+                    - spinbutton "Период дребезга" [ref=e162]: "200"
+          - separator [ref=e163]:
+            - generic:
+              - img
+          - generic [ref=e168]:
+            - img [ref=e169]
+            - paragraph [ref=e174]: Выберите узел в дереве переменных
+        - separator [ref=e175]
+        - generic [ref=e177]:
+          - generic [ref=e179]:
+            - img [ref=e180]
+            - paragraph [ref=e182]: Открыть контекстное меню
+            - generic [ref=e183]: ПКМ
+          - tree [ref=e185]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e189]:
+              - generic [ref=e192]:
+                - button [ref=e193] [cursor=pointer]:
+                  - img [ref=e194]
+                - paragraph [ref=e198]: Переменные
+    - contentinfo [ref=e199]:
+      - generic [ref=e200]:
+        - generic [ref=e201]:
+          - img [ref=e202]
+          - paragraph [ref=e205]: "-------"
+        - generic [ref=e206]:
+          - img [ref=e207]
+          - paragraph [ref=e210]: "----"
+        - generic [ref=e211]:
+          - img [ref=e212]
+          - paragraph [ref=e214]: "----"
+        - img [ref=e215]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e219]':
+          - paragraph [ref=e220]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e222]:
+    - menuitem "Создать \"Объект данных\"" [ref=e223]:
+      - img [ref=e224]
+      - text: Создать "Объект данных"
+      - img [ref=e229]
+    - menuitem "Создать \"Папка\"" [ref=e231]:
+      - img [ref=e232]
+      - text: Создать "Папка"
+    - separator [ref=e234]
+    - menuitem "Переименовать Enter" [ref=e235]:
+      - img [ref=e236]
+      - text: Переименовать
+      - generic [ref=e239]: Enter
+    - menuitem "Удалить Backspace" [ref=e240]:
+      - img [ref=e241]
+      - text: Удалить
+      - generic [ref=e244]: Backspace
+    - menuitem "Игнорировать Ctrl+I" [ref=e245]:
+      - img [ref=e246]
+      - text: Игнорировать
+      - generic [ref=e249]: Ctrl+I
+    - separator [ref=e250]
+    - menuitem "Вырезать Ctrl+X" [ref=e251]:
+      - img [ref=e252]
+      - text: Вырезать
+      - generic [ref=e258]: Ctrl+X
+    - menuitem "Копировать Ctrl+C" [ref=e259]:
+      - img [ref=e260]
+      - text: Копировать
+      - generic [ref=e265]: Ctrl+C
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e266]:
+      - img [ref=e267]
+      - text: Вставить
+      - generic [ref=e271]: Ctrl+V
+```

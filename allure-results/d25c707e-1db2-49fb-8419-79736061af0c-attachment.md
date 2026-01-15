@@ -1,0 +1,346 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - tree [ref=e61]:
+            - generic [ref=e64]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e65]:
+                - generic [ref=e68]:
+                  - button [ref=e69] [cursor=pointer]:
+                    - img [ref=e70]
+                  - generic [ref=e73]:
+                    - paragraph [ref=e74]: Прием
+                    - generic [ref=e75]:
+                      - button [ref=e76] [cursor=pointer]:
+                        - img [ref=e77]
+                      - button [ref=e78] [cursor=pointer]:
+                        - img [ref=e79]
+                      - button [ref=e82] [cursor=pointer]:
+                        - img [ref=e83]
+              - treeitem "iec104 127.0.0.1 102 test" [expanded] [level=2] [selected] [ref=e86]:
+                - generic [ref=e91]:
+                  - button [ref=e92] [cursor=pointer]:
+                    - img [ref=e93]
+                  - generic [ref=e95]:
+                    - img [ref=e96]
+                    - generic "IEC-104 Клиент" [ref=e99]: iec104
+                    - generic "IP-адрес" [ref=e100]: 127.0.0.1
+                    - generic "Порт" [ref=e101]: "102"
+                    - paragraph [ref=e102]: test
+              - treeitem "asdu 1 asdu" [expanded] [level=3] [ref=e103]:
+                - generic [ref=e109]:
+                  - button [ref=e110] [cursor=pointer]:
+                    - img [ref=e111]
+                  - generic [ref=e113]:
+                    - img [ref=e114]
+                    - generic "ASDU" [ref=e117]: asdu
+                    - generic "Адрес ASDU" [ref=e118]: "1"
+                    - paragraph [ref=e119]: asdu
+              - treeitem "asdu 1 asdu" [expanded] [level=3] [ref=e120]:
+                - generic [ref=e126]:
+                  - button [ref=e127] [cursor=pointer]:
+                    - img [ref=e128]
+                  - generic [ref=e130]:
+                    - generic "ASDU" [ref=e131]: asdu
+                    - generic "Адрес ASDU" [ref=e132]: "1"
+                    - paragraph [ref=e133]: asdu
+              - treeitem "folder" [expanded] [level=2] [ref=e134]:
+                - generic [ref=e139]:
+                  - button [ref=e140] [cursor=pointer]:
+                    - img [ref=e141]
+                  - generic [ref=e143]:
+                    - img [ref=e144]
+                    - paragraph [ref=e146]: folder
+              - treeitem "iec104 127.0.0.1 102 test_copy" [expanded] [level=3] [ref=e147]:
+                - generic [ref=e153]:
+                  - button [ref=e154] [cursor=pointer]:
+                    - img [ref=e155]
+                  - generic [ref=e157]:
+                    - generic "IEC-104 Клиент" [ref=e158]: iec104
+                    - generic "IP-адрес" [ref=e159]: 127.0.0.1
+                    - generic "Порт" [ref=e160]: "102"
+                    - paragraph [ref=e161]: test_copy
+              - treeitem "asdu 1 asdu_copy" [expanded] [level=4] [ref=e162]:
+                - generic [ref=e169]:
+                  - button [ref=e170] [cursor=pointer]:
+                    - img [ref=e171]
+                  - generic [ref=e173]:
+                    - img [ref=e174]
+                    - generic "ASDU" [ref=e177]: asdu
+                    - generic "Адрес ASDU" [ref=e178]: "1"
+                    - paragraph [ref=e179]: asdu_copy
+              - treeitem "asdu 1 asdu_copy" [expanded] [level=4] [ref=e180]:
+                - generic [ref=e187]:
+                  - button [ref=e188] [cursor=pointer]:
+                    - img [ref=e189]
+                  - generic [ref=e191]:
+                    - generic "ASDU" [ref=e192]: asdu
+                    - generic "Адрес ASDU" [ref=e193]: "1"
+                    - paragraph [ref=e194]: asdu_copy
+          - separator [ref=e195]
+          - generic [ref=e197]:
+            - generic [ref=e199]:
+              - img [ref=e200]
+              - paragraph [ref=e202]: Открыть контекстное меню
+              - generic [ref=e203]: ПКМ
+            - tree [ref=e205]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e209]:
+                - generic [ref=e212]:
+                  - button [ref=e213] [cursor=pointer]:
+                    - img [ref=e214]
+                  - paragraph [ref=e218]: Передача
+        - separator [ref=e219]
+        - generic [ref=e224]:
+          - generic [ref=e227]:
+            - navigation "breadcrumb" [ref=e228]:
+              - list [ref=e229]:
+                - listitem [ref=e230]: Прием
+                - listitem [ref=e231]:
+                  - img [ref=e232]
+                - listitem [ref=e234]: test
+            - generic [ref=e235]:
+              - paragraph [ref=e237]: Plft_Moerut2
+              - generic [ref=e238]:
+                - group [ref=e240]:
+                  - paragraph [ref=e242]: Название
+                  - textbox "Название" [ref=e244]: test
+                - 'heading "Элементов: 2" [level=2] [ref=e246]'
+              - generic [ref=e247]:
+                - group [ref=e248]:
+                  - paragraph [ref=e250]: Логирование
+                  - checkbox "Логирование" [ref=e253]
+                - group [ref=e256]:
+                  - paragraph [ref=e258]: IP-адрес
+                  - textbox "IP-адрес" [ref=e260]: 127.0.0.1
+                - group [ref=e261]:
+                  - paragraph [ref=e263]: Порт
+                  - generic [ref=e264]:
+                    - group [ref=e265]:
+                      - button "increment value" [ref=e266] [cursor=pointer]:
+                        - img [ref=e267]
+                      - button "decrease value" [ref=e269] [cursor=pointer]:
+                        - img [ref=e270]
+                    - spinbutton "Порт" [ref=e273]: "102"
+                - group [ref=e274]:
+                  - paragraph [ref=e276]: Длина адреса ASDU
+                  - generic [ref=e277]:
+                    - combobox [ref=e278]
+                    - generic [ref=e280]:
+                      - combobox "Длина адреса ASDU" [ref=e281]:
+                        - generic [ref=e282]: 1 байт
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e283]:
+                  - paragraph [ref=e285]: Длина причины передачи
+                  - generic [ref=e286]:
+                    - combobox [ref=e287]
+                    - generic [ref=e289]:
+                      - combobox "Длина причины передачи" [ref=e290]:
+                        - generic [ref=e291]: 1 байт
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e292]:
+                  - paragraph [ref=e294]: Длина адреса объекта
+                  - generic [ref=e295]:
+                    - combobox [ref=e296]
+                    - generic [ref=e298]:
+                      - combobox "Длина адреса объекта" [ref=e299]:
+                        - generic [ref=e300]: 1 байт
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e301]:
+                  - paragraph [ref=e303]: k
+                  - generic [ref=e304]:
+                    - group [ref=e305]:
+                      - button "increment value" [ref=e306] [cursor=pointer]:
+                        - img [ref=e307]
+                      - button "decrease value" [ref=e309] [cursor=pointer]:
+                        - img [ref=e310]
+                    - spinbutton "k" [ref=e313]: "1"
+                - group [ref=e314]:
+                  - paragraph [ref=e316]: w
+                  - generic [ref=e317]:
+                    - group [ref=e318]:
+                      - button "increment value" [ref=e319] [cursor=pointer]:
+                        - img [ref=e320]
+                      - button "decrease value" [ref=e322] [cursor=pointer]:
+                        - img [ref=e323]
+                    - spinbutton "w" [ref=e326]: "1"
+                - group [ref=e327]:
+                  - paragraph [ref=e329]: t0
+                  - generic [ref=e330]:
+                    - group [ref=e331]:
+                      - button "increment value" [ref=e332] [cursor=pointer]:
+                        - img [ref=e333]
+                      - button "decrease value" [ref=e335] [cursor=pointer]:
+                        - img [ref=e336]
+                    - spinbutton "t0" [ref=e339]: "1"
+                - group [ref=e340]:
+                  - paragraph [ref=e342]: t1
+                  - generic [ref=e343]:
+                    - group [ref=e344]:
+                      - button "increment value" [ref=e345] [cursor=pointer]:
+                        - img [ref=e346]
+                      - button "decrease value" [ref=e348] [cursor=pointer]:
+                        - img [ref=e349]
+                    - spinbutton "t1" [ref=e352]: "1"
+                - group [ref=e353]:
+                  - paragraph [ref=e355]: t2
+                  - generic [ref=e356]:
+                    - group [ref=e357]:
+                      - button "increment value" [ref=e358] [cursor=pointer]:
+                        - img [ref=e359]
+                      - button "decrease value" [ref=e361] [cursor=pointer]:
+                        - img [ref=e362]
+                    - spinbutton "t2" [ref=e365]: "1"
+                - group [ref=e366]:
+                  - paragraph [ref=e368]: t3
+                  - generic [ref=e369]:
+                    - group [ref=e370]:
+                      - button "increment value" [ref=e371] [cursor=pointer]:
+                        - img [ref=e372]
+                      - button "decrease value" [ref=e374] [cursor=pointer]:
+                        - img [ref=e375]
+                    - spinbutton "t3" [ref=e378]: "1"
+            - table [ref=e379]:
+              - rowgroup [ref=e380]:
+                - row "Адрес ASDU Режим опроса Период опроса, мин." [ref=e381]:
+                  - columnheader "Адрес ASDU" [ref=e382]
+                  - columnheader "Режим опроса" [ref=e383]
+                  - columnheader "Период опроса, мин." [ref=e384]
+              - rowgroup [ref=e385]:
+                - row [ref=e386]:
+                  - cell [ref=e387]:
+                    - group [ref=e388]:
+                      - generic [ref=e389]:
+                        - group [ref=e390]:
+                          - button "increment value" [ref=e391] [cursor=pointer]:
+                            - img [ref=e392]
+                          - button "decrease value" [ref=e394] [cursor=pointer]:
+                            - img [ref=e395]
+                        - spinbutton [ref=e398]: "1"
+                  - cell [ref=e399]:
+                    - group [ref=e400]:
+                      - generic [ref=e401]:
+                        - combobox [ref=e402]
+                        - generic [ref=e404]:
+                          - combobox [ref=e405]:
+                            - generic [ref=e406]: Ручной
+                          - generic:
+                            - generic:
+                              - img
+                  - cell [ref=e407]:
+                    - group [ref=e408]:
+                      - generic [ref=e409]:
+                        - group [ref=e410]:
+                          - button "increment value" [ref=e411] [cursor=pointer]:
+                            - img [ref=e412]
+                          - button "decrease value" [ref=e414] [cursor=pointer]:
+                            - img [ref=e415]
+                        - spinbutton [ref=e418]: "1"
+                - row [ref=e419]:
+                  - cell [ref=e420]:
+                    - group [ref=e421]:
+                      - generic [ref=e422]:
+                        - group [ref=e423]:
+                          - button "increment value" [ref=e424] [cursor=pointer]:
+                            - img [ref=e425]
+                          - button "decrease value" [ref=e427] [cursor=pointer]:
+                            - img [ref=e428]
+                        - spinbutton [ref=e431]: "1"
+                  - cell [ref=e432]:
+                    - group [ref=e433]:
+                      - generic [ref=e434]:
+                        - combobox [ref=e435]
+                        - generic [ref=e437]:
+                          - combobox [ref=e438]:
+                            - generic [ref=e439]: Ручной
+                          - generic:
+                            - generic:
+                              - img
+                  - cell [ref=e440]:
+                    - group [ref=e441]:
+                      - generic [ref=e442]:
+                        - group [ref=e443]:
+                          - button "increment value" [ref=e444] [cursor=pointer]:
+                            - img [ref=e445]
+                          - button "decrease value" [ref=e447] [cursor=pointer]:
+                            - img [ref=e448]
+                        - spinbutton [ref=e451]: "1"
+          - separator [ref=e452]:
+            - generic:
+              - img
+          - generic [ref=e457]:
+            - img [ref=e458]
+            - paragraph [ref=e463]: Выберите узел в дереве переменных
+        - separator [ref=e464]
+        - generic [ref=e466]:
+          - generic [ref=e468]:
+            - img [ref=e469]
+            - paragraph [ref=e471]: Открыть контекстное меню
+            - generic [ref=e472]: ПКМ
+          - tree [ref=e474]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e478]:
+              - generic [ref=e481]:
+                - button [ref=e482] [cursor=pointer]:
+                  - img [ref=e483]
+                - paragraph [ref=e487]: Переменные
+    - contentinfo [ref=e488]:
+      - generic [ref=e489]:
+        - generic [ref=e490]:
+          - img [ref=e491]
+          - paragraph [ref=e494]: "-------"
+        - generic [ref=e495]:
+          - img [ref=e496]
+          - paragraph [ref=e499]: "----"
+        - generic [ref=e500]:
+          - img [ref=e501]
+          - paragraph [ref=e503]: "----"
+        - img [ref=e504]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e508]':
+          - paragraph [ref=e509]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

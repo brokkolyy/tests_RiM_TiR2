@@ -49,10 +49,11 @@ class ConfigPage {
         await this.page.locator('div').filter({ hasText: /^Переменные$/ }).nth(2).click({button: 'right'});
     }
 
-    async clickFolder(){ await this.folder.click();}
+    async clickFolder(){ await this.folder.click({force: true});}
     async clickComport(){ await this.comport.click();}
     async clickGpio(){ await this.gpio.click();}
-    async clickIec104_C(){ await this.iec104_C.click();}
+    //async clickIec104_C(){ await this.iec104_C.click();}
+    async clickIec104_C() {await this.iec104_C.evaluate(el => el.click());}
     async clickIec104_S(){ await this.iec104_S.click();}
     async clickModbusTCP_C(){ await this.modbusTCP_C.click();}
     async clickModbusTCP_S(){ await this.modbusTCP_S.click();}
