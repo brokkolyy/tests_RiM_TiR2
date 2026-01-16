@@ -1,0 +1,151 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - paragraph [ref=e79]: Прием
+              - treeitem "MB TCP 127.0.0.1 502 modbusTCP_client" [expanded] [level=2] [ref=e80]:
+                - generic [ref=e83]:
+                  - button [ref=e84] [cursor=pointer]:
+                    - img [ref=e85]
+                  - generic [ref=e87]:
+                    - generic "Modbus-TCP Клиент" [ref=e88]: MB TCP
+                    - generic "IP-адрес" [ref=e89]: 127.0.0.1
+                    - generic "Порт" [ref=e90]: "502"
+                    - paragraph [ref=e91]: modbusTCP_client
+              - treeitem "fg 1 functionGroup" [expanded] [level=3] [ref=e92]:
+                - generic [ref=e94]:
+                  - generic [ref=e95]:
+                    - button [ref=e96] [cursor=pointer]:
+                      - img [ref=e97]
+                    - generic [ref=e99]:
+                      - generic "Функциональная группа" [ref=e100]: fg
+                      - generic "Функция" [ref=e101]: "1"
+                      - paragraph [ref=e102]: functionGroup
+                  - img [ref=e103]
+              - treeitem [level=4] [ref=e105]:
+                - generic [ref=e107]:
+                  - img [ref=e110]
+                  - img [ref=e115]
+          - separator [ref=e117]
+          - generic [ref=e119]:
+            - generic [ref=e121]:
+              - img [ref=e122]
+              - paragraph [ref=e124]: Открыть контекстное меню
+              - generic [ref=e125]: ПКМ
+            - tree [ref=e127]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e131]:
+                - generic [ref=e134]:
+                  - button [ref=e135] [cursor=pointer]:
+                    - img [ref=e136]
+                  - paragraph [ref=e140]: Передача
+        - separator [ref=e141]
+        - generic [ref=e146]:
+          - generic [ref=e151]:
+            - img [ref=e152]
+            - paragraph [ref=e163]: Выберите узел в дереве приема или передачи
+          - separator [ref=e164]:
+            - generic:
+              - img
+          - generic [ref=e169]:
+            - img [ref=e170]
+            - paragraph [ref=e175]: Выберите узел в дереве переменных
+        - separator [ref=e176]
+        - generic [ref=e178]:
+          - generic [ref=e180]:
+            - img [ref=e181]
+            - paragraph [ref=e183]: Открыть контекстное меню
+            - generic [ref=e184]: ПКМ
+          - tree [ref=e186]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e190]:
+              - generic [ref=e193]:
+                - button [ref=e194] [cursor=pointer]:
+                  - img [ref=e195]
+                - generic [ref=e198]:
+                  - paragraph [ref=e199]: Переменные
+                  - generic [ref=e200]:
+                    - button [ref=e201] [cursor=pointer]:
+                      - img [ref=e202]
+                    - button [ref=e205] [cursor=pointer]:
+                      - img [ref=e206]
+                    - button [ref=e208] [cursor=pointer]:
+                      - img [ref=e209]
+                    - button [ref=e212] [cursor=pointer]:
+                      - img [ref=e213]
+    - contentinfo [ref=e216]:
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - img [ref=e219]
+          - paragraph [ref=e222]: "-------"
+        - generic [ref=e223]:
+          - img [ref=e224]
+          - paragraph [ref=e227]: "----"
+        - generic [ref=e228]:
+          - img [ref=e229]
+          - paragraph [ref=e231]: "----"
+        - img [ref=e232]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e236]':
+          - paragraph [ref=e237]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e239]:
+    - menuitem "Создать папку" [ref=e240]:
+      - img [ref=e241]
+      - text: Создать папку
+    - menuitem "Создать переменную" [ref=e243]:
+      - img [ref=e244]
+      - text: Создать переменную
+      - img [ref=e249]
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e251]:
+      - img [ref=e252]
+      - text: Вставить
+      - generic [ref=e256]: Ctrl+V
+```

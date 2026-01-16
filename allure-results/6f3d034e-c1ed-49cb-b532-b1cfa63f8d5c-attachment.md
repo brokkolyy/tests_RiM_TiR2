@@ -1,0 +1,141 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: Открыть контекстное меню
+              - generic [ref=e65]: ПКМ
+            - tree [ref=e67]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e71]:
+                - generic [ref=e74]:
+                  - button [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - paragraph [ref=e80]: Прием
+          - separator [ref=e81]
+          - tree [ref=e85]:
+            - generic [ref=e88]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e89]:
+                - generic [ref=e92]:
+                  - button [ref=e93] [cursor=pointer]:
+                    - img [ref=e94]
+                  - paragraph [ref=e98]: Передача
+              - treeitem "iec104 127.0.0.1 102 iec104_server" [expanded] [level=2] [ref=e99]:
+                - generic [ref=e102]:
+                  - button [ref=e103] [cursor=pointer]:
+                    - img [ref=e104]
+                  - generic [ref=e106]:
+                    - generic "IEC-104 Сервер" [ref=e107]: iec104
+                    - generic "IP-адрес" [ref=e108]: 127.0.0.1
+                    - generic "Порт" [ref=e109]: "102"
+                    - paragraph [ref=e110]: iec104_server
+        - separator [ref=e111]
+        - generic [ref=e116]:
+          - generic [ref=e121]:
+            - img [ref=e122]
+            - paragraph [ref=e133]: Выберите узел в дереве приема или передачи
+          - separator [ref=e134]:
+            - generic:
+              - img
+          - generic [ref=e139]:
+            - img [ref=e140]
+            - paragraph [ref=e145]: Выберите узел в дереве переменных
+        - separator [ref=e146]
+        - generic [ref=e148]:
+          - generic [ref=e150]:
+            - img [ref=e151]
+            - paragraph [ref=e153]: Открыть контекстное меню
+            - generic [ref=e154]: ПКМ
+          - tree [ref=e156]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e160]:
+              - generic [ref=e163]:
+                - button [ref=e164] [cursor=pointer]:
+                  - img [ref=e165]
+                - paragraph [ref=e169]: Переменные
+    - contentinfo [ref=e170]:
+      - generic [ref=e171]:
+        - generic [ref=e172]:
+          - img [ref=e173]
+          - paragraph [ref=e176]: "-------"
+        - generic [ref=e177]:
+          - img [ref=e178]
+          - paragraph [ref=e181]: "----"
+        - generic [ref=e182]:
+          - img [ref=e183]
+          - paragraph [ref=e185]: "----"
+        - img [ref=e186]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e190]':
+          - paragraph [ref=e191]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e193]:
+    - menuitem "Создать \"ASDU\"" [ref=e194]:
+      - img [ref=e195]
+      - text: Создать "ASDU"
+    - separator [ref=e197]
+    - menuitem "Переименовать Enter" [ref=e198]:
+      - img [ref=e199]
+      - text: Переименовать
+      - generic [ref=e202]: Enter
+    - menuitem "Удалить Backspace" [ref=e203]:
+      - img [ref=e204]
+      - text: Удалить
+      - generic [ref=e207]: Backspace
+    - menuitem "Игнорировать Ctrl+I" [ref=e208]:
+      - img [ref=e209]
+      - text: Игнорировать
+      - generic [ref=e212]: Ctrl+I
+    - separator [ref=e213]
+    - menuitem "Вырезать Ctrl+X" [ref=e214]:
+      - img [ref=e215]
+      - text: Вырезать
+      - generic [ref=e221]: Ctrl+X
+    - menuitem "Копировать Ctrl+C" [ref=e222]:
+      - img [ref=e223]
+      - text: Копировать
+      - generic [ref=e228]: Ctrl+C
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e229]:
+      - img [ref=e230]
+      - text: Вставить
+      - generic [ref=e234]: Ctrl+V
+```
