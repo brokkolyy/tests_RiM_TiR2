@@ -1,1 +1,1 @@
-{"id":"ecab2b61d1e2baa83362b63309993c2a","fullName":"tests/ConfigTest/sectionVariable/fieldApertyraVariable.spec.js:151:5","name":"Ввести 0 после чего допустимое значение","status":"passed","testResultsByEnv":{"default":"f0257ff18f6a92fa0104fb74ca09e4fe"}}
+{"id":"ecab2b61d1e2baa83362b63309993c2a","fullName":"tests/ConfigTest/sectionVariable/fieldApertyraVariable.spec.js:151:5","name":"Ввести 0 после чего допустимое значение","status":"failed","testResultsByEnv":{"default":"06c396eb6153546b95cebbce325114b5"}}

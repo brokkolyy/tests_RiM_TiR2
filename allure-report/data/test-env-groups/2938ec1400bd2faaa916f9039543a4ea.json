@@ -1,1 +1,1 @@
-{"id":"2938ec1400bd2faaa916f9039543a4ea","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldIPModbusTCP.spec.js:24:4","name":"Ввод в поле “IP-адреса”","status":"passed","testResultsByEnv":{"default":"6c9eed9c5ee46490128654fbe7a072db"}}
+{"id":"2938ec1400bd2faaa916f9039543a4ea","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldIPModbusTCP.spec.js:26:4","name":"Ввод в поле “IP-адреса”","status":"failed","testResultsByEnv":{"default":"27c02488881a3454171a9ab2f3d2d850"}}

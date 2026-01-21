@@ -1,1 +1,1 @@
-{"id":"fb7a912bf67e6ff37d0437f40ed6cd28","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldIPModbusServer.spec.js:71:5","name":"Ввод одной цифры","status":"passed","testResultsByEnv":{"default":"676f4e41d2eb7b09b41196706964c5ad"}}
+{"id":"fb7a912bf67e6ff37d0437f40ed6cd28","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldIPModbusServer.spec.js:65:5","name":"Ввод одной цифры","status":"failed","testResultsByEnv":{"default":"0b156c99f2de319ffaca9a516d9e4ab9"}}

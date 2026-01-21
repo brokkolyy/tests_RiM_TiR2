@@ -1,1 +1,1 @@
-{"id":"58e6cd5f8933e3b74ac90ef89a46bbc1","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/AsduServer/fieldNameAsduServer.spec.js:64:5","name":"Ввод минимальной длины (1 символ)","status":"passed","testResultsByEnv":{"default":"89c52b637c6aa8ccffd541271bec23dc"}}
+{"id":"58e6cd5f8933e3b74ac90ef89a46bbc1","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Server/AsduServer/fieldNameAsduServer.spec.js:64:5","name":"Ввод минимальной длины (1 символ)","status":"passed","testResultsByEnv":{"default":"71322d127f7b23d3aef5c27f689b0bc2"}}

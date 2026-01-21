@@ -1,1 +1,1 @@
-{"id":"4e73f5f97b9d0cd171dfc27f5b11ea5f","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfigRed.spec.js:127:5","name":"Ввод специальных символов","status":"passed","testResultsByEnv":{"default":"1aea4cb1ea39bd9a1ad31e2707c8be82"}}
+{"id":"4e73f5f97b9d0cd171dfc27f5b11ea5f","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfigRed.spec.js:127:5","name":"Ввод специальных символов","status":"failed","testResultsByEnv":{"default":"0e84d6defebb9a7ef9fbca97138ba891"}}

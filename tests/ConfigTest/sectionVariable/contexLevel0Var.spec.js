@@ -4,6 +4,7 @@ const { exec } = require('child_process');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 
 async function prepare(page) {
+    const config = new ConfigPage(page);
     await config.contextMenuVariable();
     await page.getByRole('menuitem', { name: 'Создать переменную', exact: true }).hover();
 }

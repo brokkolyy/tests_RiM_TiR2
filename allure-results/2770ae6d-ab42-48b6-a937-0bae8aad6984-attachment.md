@@ -1,0 +1,305 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - paragraph [ref=e79]: Прием
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e80]:
+                - generic [ref=e83]:
+                  - button [ref=e84] [cursor=pointer]:
+                    - img [ref=e85]
+                  - generic [ref=e87]:
+                    - generic "Comport" [ref=e88]: COM
+                    - generic "Интерфейс" [ref=e89]: ttyS0
+                    - generic "Скорость" [ref=e90]: "115200"
+                    - paragraph [ref=e91]: comport
+          - separator [ref=e92]
+          - tree [ref=e96]:
+            - generic [ref=e99]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e100]:
+                - generic [ref=e103]:
+                  - button [ref=e104] [cursor=pointer]:
+                    - img [ref=e105]
+                  - generic [ref=e108]:
+                    - paragraph [ref=e109]: Передача
+                    - generic [ref=e110]:
+                      - button [ref=e111] [cursor=pointer]:
+                        - img [ref=e112]
+                      - button [ref=e113] [cursor=pointer]:
+                        - img [ref=e114]
+                      - button [ref=e117] [cursor=pointer]:
+                        - img [ref=e118]
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e121]:
+                - generic [ref=e123]:
+                  - generic [ref=e126]:
+                    - button [ref=e127] [cursor=pointer]:
+                      - img [ref=e128]
+                    - generic [ref=e130]:
+                      - generic "Comport" [ref=e131]: COM
+                      - generic "Интерфейс" [ref=e132]: ttyS0
+                      - generic "Скорость" [ref=e133]: "115200"
+                      - paragraph [ref=e134]: comport
+                  - img [ref=e135]
+              - treeitem "MB RTU 1 modbusRTU_slave" [expanded] [level=3] [ref=e137]:
+                - generic [ref=e143]:
+                  - button [ref=e144] [cursor=pointer]:
+                    - img [ref=e145]
+                  - generic [ref=e147]:
+                    - generic "Modbus-RTU Slave" [ref=e148]: MB RTU
+                    - generic "Адрес устройства" [ref=e149]: "1"
+                    - paragraph [ref=e150]: modbusRTU_slave
+              - treeitem "fg 1 test" [expanded] [level=4] [selected] [ref=e151]:
+                - generic [ref=e158]:
+                  - button [ref=e159] [cursor=pointer]:
+                    - img [ref=e160]
+                  - generic [ref=e162]:
+                    - img [ref=e163]
+                    - generic "Функциональная группа" [ref=e166]: fg
+                    - generic "Функция" [ref=e167]: "1"
+                    - paragraph [ref=e168]: test
+              - treeitem [level=5] [ref=e169]:
+                - img [ref=e179]
+              - treeitem "folder" [expanded] [level=5] [ref=e184]:
+                - generic [ref=e192]:
+                  - button [ref=e193] [cursor=pointer]:
+                    - img [ref=e194]
+                  - generic [ref=e196]:
+                    - img [ref=e197]
+                    - paragraph [ref=e199]: folder
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e200]:
+                - generic [ref=e202]:
+                  - generic [ref=e205]:
+                    - button [ref=e206] [cursor=pointer]:
+                      - img [ref=e207]
+                    - generic [ref=e209]:
+                      - generic "Comport" [ref=e210]: COM
+                      - generic "Интерфейс" [ref=e211]: ttyS0
+                      - generic "Скорость" [ref=e212]: "115200"
+                      - paragraph [ref=e213]: comport
+                  - img [ref=e214]
+              - treeitem "gpio 200 gpio" [expanded] [level=2] [ref=e216]:
+                - generic [ref=e221]:
+                  - button [ref=e222] [cursor=pointer]:
+                    - img [ref=e223]
+                  - generic [ref=e225]:
+                    - generic "GPIO" [ref=e226]: gpio
+                    - generic "Период дребезга" [ref=e227]: "200"
+                    - paragraph [ref=e228]: gpio
+              - treeitem "iec104 127.0.0.1 102 iec104_server" [expanded] [level=2] [ref=e229]:
+                - generic [ref=e234]:
+                  - button [ref=e235] [cursor=pointer]:
+                    - img [ref=e236]
+                  - generic [ref=e238]:
+                    - generic "IEC-104 Сервер" [ref=e239]: iec104
+                    - generic "IP-адрес" [ref=e240]: 127.0.0.1
+                    - generic "Порт" [ref=e241]: "102"
+                    - paragraph [ref=e242]: iec104_server
+              - treeitem "MB TCP 127.0.0.1 502 modbusTCP_server" [expanded] [level=2] [ref=e243]:
+                - generic [ref=e248]:
+                  - button [ref=e249] [cursor=pointer]:
+                    - img [ref=e250]
+                  - generic [ref=e252]:
+                    - generic "Modbus-TCP Сервер" [ref=e253]: MB TCP
+                    - generic "IP-адрес" [ref=e254]: 127.0.0.1
+                    - generic "Порт" [ref=e255]: "502"
+                    - paragraph [ref=e256]: modbusTCP_server
+              - treeitem "folder" [expanded] [level=2] [ref=e257]:
+                - generic [ref=e262]:
+                  - button [ref=e263] [cursor=pointer]:
+                    - img [ref=e264]
+                  - generic [ref=e266]:
+                    - img [ref=e267]
+                    - paragraph [ref=e269]: folder
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=3] [ref=e270]:
+                - generic [ref=e272]:
+                  - generic [ref=e276]:
+                    - button [ref=e277] [cursor=pointer]:
+                      - img [ref=e278]
+                    - generic [ref=e280]:
+                      - generic "Comport" [ref=e281]: COM
+                      - generic "Интерфейс" [ref=e282]: ttyS0
+                      - generic "Скорость" [ref=e283]: "115200"
+                      - paragraph [ref=e284]: comport
+                  - img [ref=e285]
+        - separator [ref=e287]
+        - generic [ref=e292]:
+          - generic [ref=e295]:
+            - navigation "breadcrumb" [ref=e296]:
+              - list [ref=e297]:
+                - listitem [ref=e298]: Передача
+                - listitem [ref=e299]:
+                  - img [ref=e300]
+                - listitem [ref=e302]: comport
+                - listitem [ref=e303]:
+                  - img [ref=e304]
+                - listitem [ref=e306]: modbusRTU_slave
+                - listitem [ref=e307]:
+                  - img [ref=e308]
+                - listitem [ref=e310]: test
+            - generic [ref=e311]:
+              - paragraph [ref=e313]: ksxBAd0_TTwK
+              - generic [ref=e314]:
+                - group [ref=e316]:
+                  - paragraph [ref=e318]: Название
+                  - textbox "Название" [ref=e320]: test
+                - 'heading "Элементов: 2" [level=2] [ref=e322]'
+              - generic [ref=e323]:
+                - group [ref=e324]:
+                  - paragraph [ref=e326]: Функция
+                  - generic [ref=e327]:
+                    - combobox [ref=e328]
+                    - generic [ref=e330]:
+                      - combobox "Функция" [ref=e331]:
+                        - generic [ref=e332]: (0x01) Чтение значений из нескольких регистров флагов
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e333]:
+                  - paragraph [ref=e335]: Тип данных
+                  - generic [ref=e336]:
+                    - combobox [ref=e337]
+                    - generic [ref=e339]:
+                      - combobox "Тип данных" [ref=e340]:
+                        - generic [ref=e341]: Выберите параметр
+                      - generic:
+                        - generic:
+                          - img
+            - table [ref=e343]:
+              - rowgroup [ref=e344]:
+                - row "Адрес информационного объекта Описание Переменная" [ref=e345]:
+                  - columnheader "Адрес информационного объекта" [ref=e346]
+                  - columnheader "Описание" [ref=e347]
+                  - columnheader "Переменная" [ref=e348]
+              - rowgroup [ref=e349]:
+                - row [ref=e350]:
+                  - cell [ref=e351]:
+                    - group [ref=e352]:
+                      - textbox [ref=e354]
+                  - cell [ref=e355]:
+                    - group [ref=e356]:
+                      - textbox [ref=e358]
+                  - cell [ref=e359]:
+                    - group [ref=e360]:
+                      - generic [ref=e362]:
+                        - combobox "Введите название переменной" [ref=e363]
+                        - generic [ref=e364]:
+                          - button "Clear value" [ref=e365]:
+                            - img [ref=e366]
+                          - button "Toggle suggestions" [ref=e368]:
+                            - img [ref=e369]
+          - separator [ref=e371]:
+            - generic:
+              - img
+          - generic [ref=e376]:
+            - img [ref=e377]
+            - paragraph [ref=e382]: Выберите узел в дереве переменных
+        - separator [ref=e383]
+        - generic [ref=e385]:
+          - generic [ref=e387]:
+            - img [ref=e388]
+            - paragraph [ref=e390]: Открыть контекстное меню
+            - generic [ref=e391]: ПКМ
+          - tree [ref=e393]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e397]:
+              - generic [ref=e400]:
+                - button [ref=e401] [cursor=pointer]:
+                  - img [ref=e402]
+                - paragraph [ref=e406]: Переменные
+    - contentinfo [ref=e407]:
+      - generic [ref=e408]:
+        - generic [ref=e409]:
+          - img [ref=e410]
+          - paragraph [ref=e413]: "-------"
+        - generic [ref=e414]:
+          - img [ref=e415]
+          - paragraph [ref=e418]: "----"
+        - generic [ref=e419]:
+          - img [ref=e420]
+          - paragraph [ref=e422]: "----"
+        - img [ref=e423]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e427]':
+          - paragraph [ref=e428]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - menu [active] [ref=e430]:
+    - menuitem "Создать \"Modbus-RTU Slave\"" [ref=e431]:
+      - img [ref=e432]
+      - text: Создать "Modbus-RTU Slave"
+    - menuitem "Создать \"TCP-мост (клиент)\"" [ref=e434]:
+      - img [ref=e435]
+      - text: Создать "TCP-мост (клиент)"
+    - separator [ref=e437]
+    - menuitem "Переименовать Enter" [ref=e438]:
+      - img [ref=e439]
+      - text: Переименовать
+      - generic [ref=e442]: Enter
+    - menuitem "Удалить Backspace" [ref=e443]:
+      - img [ref=e444]
+      - text: Удалить
+      - generic [ref=e447]: Backspace
+    - menuitem "Игнорировать Ctrl+I" [ref=e448]:
+      - img [ref=e449]
+      - text: Игнорировать
+      - generic [ref=e452]: Ctrl+I
+    - separator [ref=e453]
+    - menuitem "Вырезать Ctrl+X" [ref=e454]:
+      - img [ref=e455]
+      - text: Вырезать
+      - generic [ref=e461]: Ctrl+X
+    - menuitem "Копировать Ctrl+C" [ref=e462]:
+      - img [ref=e463]
+      - text: Копировать
+      - generic [ref=e468]: Ctrl+C
+    - menuitem "Вставить Ctrl+V" [disabled] [ref=e469]:
+      - img [ref=e470]
+      - text: Вставить
+      - generic [ref=e474]: Ctrl+V
+```

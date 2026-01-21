@@ -1,1 +1,0 @@
-{"id":"f59c0a590f7429bb9e51f0cda5699ac1","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/AsduClient/ObjectIec104Client/fieldAddressObj1Client.spec.js:156:5","name":"Ввести 0 после чего недопустимое значение","status":"failed","testResultsByEnv":{"default":"51476cb24e24de7e705385c2e70c0d6c"}}

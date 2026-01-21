@@ -1,0 +1,183 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\glotova\\Desktop\\tests\\playwright.config.js",
+    "rootDir": "C:/Users/glotova/Desktop/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "C:\\Users\\glotova\\Desktop\\tests\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "testit-report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/glotova/Desktop/tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "Chromium",
+        "name": "Chromium",
+        "testDir": "C:/Users/glotova/Desktop/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "tests/**/*.spec.js",
+          "tests/**/*.spec.ts",
+          "other-tests/**/*.spec.js",
+          "other-tests/**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "tests\\ConfigTest\\settingsConnections\\ContextMenu\\comport\\ComportLevel_1.spec.js",
+      "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Навигация",
+          "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "На 1 уровне - COM-порт (раздел \"Прием\")",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "testit",
+                      "externalId": "83"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6392,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-21T08:35:11.215Z",
+                      "annotations": [
+                        {
+                          "type": "testit",
+                          "externalId": "83"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fe4abb5e79caea5d6326-cc6cdde4e144ccb9bf08",
+              "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 20,
+              "column": 5
+            },
+            {
+              "title": "На 1 уровне - COM-порт (раздел \"Передача\")",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [
+                    {
+                      "type": "testit",
+                      "externalId": "83"
+                    }
+                  ],
+                  "expectedStatus": "passed",
+                  "projectId": "Chromium",
+                  "projectName": "Chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6185,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-21T08:35:17.678Z",
+                      "annotations": [
+                        {
+                          "type": "testit",
+                          "externalId": "83"
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fe4abb5e79caea5d6326-aa9ec68766b1732524bb",
+              "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 83,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-21T08:35:10.425Z",
+    "duration": 13524.135,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

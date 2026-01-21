@@ -1,1 +1,1 @@
-{"id":"3a698e6ff532a35f44a40c282ea9e292","fullName":"tests/ConfigTest/createObjectElementsBroad.spec.js:270:1","name":"Создание объектов данных(5) ModbusRTU Slave, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"c6184de39d79670d457505262ab28c36"}}
+{"id":"3a698e6ff532a35f44a40c282ea9e292","fullName":"tests/ConfigTest/createObjectElementsBroad.spec.js:270:1","name":"Создание объектов данных(5) ModbusRTU Slave, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"c0d8ba8087b6ee49089a50de6299cd87"}}

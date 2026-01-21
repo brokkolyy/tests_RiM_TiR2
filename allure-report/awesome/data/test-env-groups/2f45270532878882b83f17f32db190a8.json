@@ -1,1 +1,0 @@
-{"id":"2f45270532878882b83f17f32db190a8","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/functionGroupClient/listFunctionModbusTCP.spec.js:53:1","name":"(0x03) Чтение значений из нескольких регистров хранения","status":"passed","testResultsByEnv":{"default":"c040899606ee927b3e92781e4335c9c5"}}

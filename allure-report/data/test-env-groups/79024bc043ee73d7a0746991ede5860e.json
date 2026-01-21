@@ -1,1 +1,1 @@
-{"id":"79024bc043ee73d7a0746991ede5860e","fullName":"tests/ConfigTest/createElement.spec.js:9:1","name":"Создание ModbusRTU Master, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"593aca026d8c8496291c2c61239c2c58"}}
+{"id":"79024bc043ee73d7a0746991ede5860e","fullName":"tests/ConfigTest/createElement.spec.js:9:1","name":"Создание ModbusRTU Master, раздел \"Прием\"","status":"failed","testResultsByEnv":{"default":"ff85e7eae543caa9f448764fcd2b64d1"}}

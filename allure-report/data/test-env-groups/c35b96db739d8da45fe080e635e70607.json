@@ -1,1 +1,1 @@
-{"id":"c35b96db739d8da45fe080e635e70607","fullName":"tests/ConfigTest/sectionVariable/attribyteVariable.spec.js:58:5","name":"График","status":"passed","testResultsByEnv":{"default":"234640688c7477536320cd53cf64c27a"}}
+{"id":"c35b96db739d8da45fe080e635e70607","fullName":"tests/ConfigTest/sectionVariable/attribyteVariable.spec.js:58:5","name":"График","status":"failed","testResultsByEnv":{"default":"5e58fc652f3197683ae8aef365ec5a7c"}}

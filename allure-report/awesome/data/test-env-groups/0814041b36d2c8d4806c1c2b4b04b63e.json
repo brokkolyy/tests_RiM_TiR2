@@ -1,1 +1,0 @@
-{"id":"0814041b36d2c8d4806c1c2b4b04b63e","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/functionGroupServer/fieldFGModbusServer.spec.js:43:5","name":"Ввод больше максимальной длины (31 символ)","status":"passed","testResultsByEnv":{"default":"68d1d62843c7ae94fc53a8e1e4b894b9"}}

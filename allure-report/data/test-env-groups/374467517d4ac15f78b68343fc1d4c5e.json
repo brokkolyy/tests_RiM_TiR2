@@ -1,1 +1,1 @@
-{"id":"374467517d4ac15f78b68343fc1d4c5e","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfigRed.spec.js:95:5","name":"Ввод символов через пробел","status":"passed","testResultsByEnv":{"default":"43a7c24f606402620e6d68b3c348ecb3"}}
+{"id":"374467517d4ac15f78b68343fc1d4c5e","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfigRed.spec.js:95:5","name":"Ввод символов через пробел","status":"failed","testResultsByEnv":{"default":"abfec48ec8234c59d9f6855605101565"}}

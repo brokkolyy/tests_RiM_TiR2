@@ -1,1 +1,1 @@
-{"id":"ca81d1bf840f2eb60f2a11344cda47c6","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldIPModbusServer.spec.js:39:5","name":"Оставить поле “IP-адреса” пустым","status":"passed","testResultsByEnv":{"default":"308e61e05331c8cb3bdede883de37974"}}
+{"id":"ca81d1bf840f2eb60f2a11344cda47c6","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/fieldIPModbusServer.spec.js:38:5","name":"Оставить поле “IP-адреса” пустым","status":"failed","testResultsByEnv":{"default":"308e61e05331c8cb3bdede883de37974"}}

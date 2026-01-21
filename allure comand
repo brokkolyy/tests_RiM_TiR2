@@ -1,0 +1,11 @@
+# Генерация отчета
+npx allure generate ./allure-results -o ./allure-report
+
+# Генерация с указанием имени
+npx allure generate ./allure-results --report-name "My Test Report"
+
+# Прямой сервинг результатов
+npx allure serve ./allure-results --port 8080
+
+# Просмотр существующего отчета
+npx allure open ./allure-report

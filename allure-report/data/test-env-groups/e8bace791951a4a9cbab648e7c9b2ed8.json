@@ -1,1 +1,1 @@
-{"id":"e8bace791951a4a9cbab648e7c9b2ed8","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfig.spec.js:32:5","name":"Ввод больше максимальной длины имени конфигурации(51 символ)","status":"passed","testResultsByEnv":{"default":"3efa0b86aede256be6a897ac3bd464de"}}
+{"id":"e8bace791951a4a9cbab648e7c9b2ed8","fullName":"tests/ConfigTest/buttonConfiguration/fieldNameConfig.spec.js:34:5","name":"Ввод больше максимальной длины имени конфигурации(51 символ)","status":"failed","testResultsByEnv":{"default":"35d8e917270411337d5ae6985a0a343d"}}

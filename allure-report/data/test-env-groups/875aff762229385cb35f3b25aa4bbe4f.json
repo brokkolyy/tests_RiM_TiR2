@@ -1,1 +1,1 @@
-{"id":"875aff762229385cb35f3b25aa4bbe4f","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:321:1","name":"Создание объектов данных(1) ModbusTCP client, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"4bdcb6575342e41e00fee5077ade8957"}}
+{"id":"875aff762229385cb35f3b25aa4bbe4f","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:321:1","name":"Создание объектов данных(1) ModbusTCP client, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"22562de327be5668dcb9b1bc88640e88"}}

@@ -1,1 +1,1 @@
-{"id":"a1ea8fd281a6dbffc3e61573c93c7cf3","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/functionGroupServer/typeDataModbusServer.spec.js:76:1","name":"2 байта - целое","status":"passed","testResultsByEnv":{"default":"3a726166e6b4285c8f90063dd883c703"}}
+{"id":"a1ea8fd281a6dbffc3e61573c93c7cf3","fullName":"tests/ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/functionGroupServer/typeDataModbusServer.spec.js:70:1","name":"2 байта - целое","status":"passed","testResultsByEnv":{"default":"27593de52f46cf7c1384563d0c030948"}}

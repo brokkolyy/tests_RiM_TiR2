@@ -1,1 +1,1 @@
-{"id":"be3b79b773ff2b9b05ed340068804d8f","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:148:5","name":"Ввести 0 после чего допустимое значение","status":"passed","testResultsByEnv":{"default":"2fd3639570619d0a5ab1df6675058a1e"}}
+{"id":"be3b79b773ff2b9b05ed340068804d8f","fullName":"tests/ConfigTest/sectionVariable/fieldDelayVariable.spec.js:148:5","name":"Ввести 0 после чего допустимое значение","status":"failed","testResultsByEnv":{"default":"39daf908d14e159428e0de6b84eaec99"}}

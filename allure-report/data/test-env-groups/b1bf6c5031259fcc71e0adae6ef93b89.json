@@ -1,1 +1,1 @@
-{"id":"b1bf6c5031259fcc71e0adae6ef93b89","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/field_t3_Iec104Client.spec.js:141:5","name":"Ввести 0 после чего допустимое значение","status":"passed","testResultsByEnv":{"default":"1c044efec3518003de90cf9f5a3224df"}}
+{"id":"b1bf6c5031259fcc71e0adae6ef93b89","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/field_t3_Iec104Client.spec.js:141:5","name":"Ввести 0 после чего допустимое значение","status":"failed","testResultsByEnv":{"default":"cd64dcd3f5d4fa960f63827cfd2a0da9"}}

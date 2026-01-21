@@ -6,6 +6,7 @@ const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configurat
 
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
+        test.info().annotations.push({ type: 'externalId', description: '9bc4ae00-1ddc-4128-9fa5-4990f93e2d70'});
         const config = new ConfigPage(page);     
         await config.goto();
 
@@ -17,6 +18,7 @@ test.describe('Навигация', () => {
     });
 
     test('На 1 уровне - COM-порт (раздел "Прием")', async ({page}) => {
+        
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);
         const comport = page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1);
@@ -26,15 +28,6 @@ test.describe('Навигация', () => {
 
         await comport.click({button:'right'});
         await configElement.clickTcpBridge_Server();
-
-        /*
-        await comport.click({button: 'right'});
-        await page.getByRole('menuitem', { name: 'Переименовать Enter' }).click();
-        const field = page.getByRole('textbox');
-        await field.focus();
-        await expect(field).toBeFocused();
-        await field.fill('test');
-        await field.press('Enter');*/
 
         await comport.click({button: 'right'});
         await page.getByRole('menuitem', { name: 'Игнорировать Ctrl+I' }).click();
@@ -77,6 +70,7 @@ test.describe('Навигация', () => {
         await page.locator('div').filter({ hasText: /^folder$/ }).nth(2).click({button: 'right'});
         await page.getByRole('menuitem', { name: 'Вставить Ctrl+V' }).click();
     })
+    
 
     test('На 1 уровне - COM-порт (раздел "Передача")', async ({page}) => {
         const config = new ConfigPage(page);

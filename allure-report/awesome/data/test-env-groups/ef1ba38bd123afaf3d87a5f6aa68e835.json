@@ -1,1 +1,0 @@
-{"id":"ef1ba38bd123afaf3d87a5f6aa68e835","fullName":"tests/ConfigTest/settingsConnections/Iec104/Iec104Client/field_t2_Iec104Client.spec.js:58:5","name":"Ввод числа с большим количеством символов чем у максимального числа (4 и более)","status":"passed","testResultsByEnv":{"default":"443b62112fbca73928acfc9ed87fb1f7"}}

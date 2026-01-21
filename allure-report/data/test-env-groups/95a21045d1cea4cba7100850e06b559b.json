@@ -1,1 +1,1 @@
-{"id":"95a21045d1cea4cba7100850e06b559b","fullName":"tests/ConfigTest/sectionVariable/listGroupVariable.spec.js:51:5","name":"Выбрать в списке - Оперативного состояния","status":"passed","testResultsByEnv":{"default":"13748c5d60c4119c1a4372b2fe577230"}}
+{"id":"95a21045d1cea4cba7100850e06b559b","fullName":"tests/ConfigTest/sectionVariable/listGroupVariable.spec.js:51:5","name":"Выбрать в списке - Оперативного состояния","status":"broken","testResultsByEnv":{"default":"aa4289c57364f68d7d5eb9afc514bc0e"}}

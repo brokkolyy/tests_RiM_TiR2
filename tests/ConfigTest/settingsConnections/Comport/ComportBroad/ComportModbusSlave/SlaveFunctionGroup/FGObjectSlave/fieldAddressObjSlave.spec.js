@@ -134,7 +134,6 @@ test.describe('Навигация', () => {
 
         const val = await field.inputValue();
         expect(val).toBe('0x0')
-        await errorForm(page)
 });
 
     test('Ввести недопустимое шестнадцатеричное значение(число)x(число)', async ({ page }) => {

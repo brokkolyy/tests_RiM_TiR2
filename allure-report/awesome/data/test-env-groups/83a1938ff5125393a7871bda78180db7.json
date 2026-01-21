@@ -1,1 +1,0 @@
-{"id":"83a1938ff5125393a7871bda78180db7","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/FieldModbusMaster.spec.js:46:1","name":"Ввод больше максимальной длины (31 символ), поле название элемента \"Последовательный порт\"","status":"passed","testResultsByEnv":{"default":"cfecb073e12061ba1d71c33537a52bdf"}}

@@ -1,1 +1,0 @@
-{"id":"568ab42ebd3d23caa4fce4f08c110654","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportRecep/fieldNameComport.spec.js:43:1","name":"Ввод больше максимальной длины (31 символ), поле название элемента \"Последовательный порт\"","status":"passed","testResultsByEnv":{"default":"40b7a07ec28e2951185d7049b6a87e48"}}

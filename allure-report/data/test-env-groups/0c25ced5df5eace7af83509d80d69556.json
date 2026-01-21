@@ -1,1 +1,1 @@
-{"id":"0c25ced5df5eace7af83509d80d69556","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/listFastComportB.spec.js:66:5","name":"Выбрать 115200 в выпадающем списке \"Скорость\"","status":"passed","testResultsByEnv":{"default":"46ef33772cd67491657a372586e352ac"}}
+{"id":"0c25ced5df5eace7af83509d80d69556","fullName":"tests/ConfigTest/settingsConnections/Comport/ComportBroad/listFastComportB.spec.js:66:5","name":"Выбрать 115200 в выпадающем списке \"Скорость\"","status":"passed","testResultsByEnv":{"default":"22c09a0a28132445583744a15021a5aa"}}

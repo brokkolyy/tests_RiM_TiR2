@@ -1,1 +1,1 @@
-{"id":"6cac76e0b7b33eda019b58b603ea2d75","fullName":"tests/ConfigTest/settingsConnections/Gpio/GpioBroad/fieldNameGpioB.spec.js:60:5","name":"Ввод минимальной длины (1 символ)","status":"passed","testResultsByEnv":{"default":"74acb1f11c917630844308dfc947d963"}}
+{"id":"6cac76e0b7b33eda019b58b603ea2d75","fullName":"tests/ConfigTest/settingsConnections/Gpio/GpioBroad/fieldNameGpioB.spec.js:60:5","name":"Ввод минимальной длины (1 символ)","status":"passed","testResultsByEnv":{"default":"5ca9d7693688519e945df7c1ed340005"}}

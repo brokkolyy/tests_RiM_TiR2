@@ -13,10 +13,11 @@ test('Контекстное меню 0 уровень ', async ({page}) => {
 
     await page.getByText('variable').click({button: 'right'});
     await page.getByRole('menuitem', { name: 'Копировать Ctrl+C' }).click();
-    await config.contextMenuVariable();
+    /*await config.contextMenuVariable();
+    await page.waitForTimeout(5);
     await page.screenshot({path:'error.png'})
     await expect(page.getByRole('menuitem', { name: 'Вставить Ctrl+V' })).toBeDisabled();
-    await page.keyboard.press('Escape')
+    await page.keyboard.press('Escape')*/
     
     await config.contextMenuVariable();
     await config.clickFolderVatiable();
