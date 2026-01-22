@@ -16,7 +16,7 @@ test.describe('Навигация', () => {
         await configElement.clickAsdu();
 
         await page.locator('div').filter({ hasText: /^asdu1asdu$/ }).nth(1).click();
-        const clickLog = page.locator('[id="switch::r17::thumb"]');
+        const clickLog = page.locator('span').nth(5);
         await clickLog.click();
 
         await page.locator('div').filter({ hasText: /^asdu1asdu$/ }).nth(1).click({button:'right'});

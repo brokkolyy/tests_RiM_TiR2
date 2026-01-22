@@ -133,6 +133,7 @@ test('Ввод недопустимых символов', async ({ page }) => {
 
 test('Оставить поле пустым и нажать фон', async ({ page }) => {
     const field = await prepareField(page)
+    await field.fill('1');
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
     const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });

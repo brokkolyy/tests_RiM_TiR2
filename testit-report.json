@@ -1,7 +1,7 @@
 {
   "config": {
     "configFile": "C:\\Users\\glotova\\Desktop\\tests\\playwright.config.js",
-    "rootDir": "C:/Users/glotova/Desktop/tests",
+    "rootDir": "C:/Users/glotova/Desktop/tests/tests",
     "forbidOnly": false,
     "fullyParallel": false,
     "globalSetup": null,
@@ -20,14 +20,14 @@
         null
       ],
       [
-        "C:\\Users\\glotova\\Desktop\\tests\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
-        null
-      ],
-      [
         "json",
         {
           "outputFile": "testit-report.json"
         }
+      ],
+      [
+        "C:\\Users\\glotova\\Desktop\\tests\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -43,15 +43,12 @@
         "metadata": {
           "actualWorkers": 1
         },
-        "id": "Chromium",
-        "name": "Chromium",
-        "testDir": "C:/Users/glotova/Desktop/tests",
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/glotova/Desktop/tests/tests",
         "testIgnore": [],
         "testMatch": [
-          "tests/**/*.spec.js",
-          "tests/**/*.spec.ts",
-          "other-tests/**/*.spec.js",
-          "other-tests/**/*.spec.ts"
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
         "timeout": 30000
       }
@@ -66,16 +63,16 @@
   },
   "suites": [
     {
-      "title": "tests\\ConfigTest\\settingsConnections\\ContextMenu\\comport\\ComportLevel_1.spec.js",
-      "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+      "title": "ConfigTest\\settingsConnections\\ContextMenu\\comport\\ComportLevel_1.spec.js",
+      "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
           "title": "Навигация",
-          "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
-          "line": 7,
+          "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+          "line": 8,
           "column": 6,
           "specs": [
             {
@@ -85,41 +82,42 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "testit",
-                      "externalId": "83"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Chromium",
-                  "projectName": "Chromium",
+                  "projectId": "",
+                  "projectName": "",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6392,
+                      "duration": 6510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-21T08:35:11.215Z",
-                      "annotations": [
+                      "startTime": "2026-01-22T10:53:03.588Z",
+                      "annotations": [],
+                      "attachments": [
                         {
-                          "type": "testit",
-                          "externalId": "83"
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJleHRlcm5hbElkIjoiODMifQ=="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJkZXNjcmlwdGlvbiI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0YDQuNC10LxcIikifQ=="
                         }
-                      ],
-                      "attachments": []
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "fe4abb5e79caea5d6326-cc6cdde4e144ccb9bf08",
-              "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
-              "line": 20,
+              "id": "91ee27881252185736a4-cf4381fa10df928b5375",
+              "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 21,
               "column": 5
             },
             {
@@ -129,41 +127,42 @@
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "testit",
-                      "externalId": "83"
-                    }
-                  ],
+                  "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Chromium",
-                  "projectName": "Chromium",
+                  "projectId": "",
+                  "projectName": "",
                   "results": [
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6185,
+                      "duration": 5836,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-21T08:35:17.678Z",
-                      "annotations": [
+                      "startTime": "2026-01-22T10:53:10.175Z",
+                      "annotations": [],
+                      "attachments": [
                         {
-                          "type": "testit",
-                          "externalId": "83"
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJleHRlcm5hbElkIjoiODMifQ=="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJkZXNjcmlwdGlvbiI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0LXRgNC10LTQsNGH0LBcIikifQ=="
                         }
-                      ],
-                      "attachments": []
+                      ]
                     }
                   ],
                   "status": "expected"
                 }
               ],
-              "id": "fe4abb5e79caea5d6326-aa9ec68766b1732524bb",
-              "file": "tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
-              "line": 83,
+              "id": "91ee27881252185736a4-78701a0be67b2c6b9577",
+              "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 76,
               "column": 5
             }
           ]
@@ -173,8 +172,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-21T08:35:10.425Z",
-    "duration": 13524.135,
+    "startTime": "2026-01-22T10:53:01.966Z",
+    "duration": 14128.871,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

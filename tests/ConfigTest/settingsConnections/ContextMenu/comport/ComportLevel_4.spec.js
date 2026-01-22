@@ -89,6 +89,7 @@ test.describe('Навигация', () => {
         await escape(page);
         await config.contextMenuReception()
         await config.clickModbusTCP_C();
+        await page.screenshot({path:'error.png'})
         await page.getByText('MB TCP127.0.0.').click({button:'right'});
         await escape(page);
         await config.contextMenuReception();
@@ -96,8 +97,9 @@ test.describe('Навигация', () => {
         await config.contextMenuReception();
         await config.clickComport()
         await page.locator('div').filter({ hasText: /^Прием$/ }).nth(1).click({button:'right'});
+        await config.contextMenuReception();
         await config.clickGpio();
-        await page.screenshot({path:'error.png'})
+        
         await page.getByText('gpio200gpio').click({button:'right'});
         await escape(page)
         await config.contextMenuReception();

@@ -1,12 +1,13 @@
 const path = require('path');
 const { test, expect } = require('@playwright/test');
+const { testit } = require('testit-adapter-playwright');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
-
+//const { testit } = require('testit-adapter-playwright');
 
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
-        test.info().annotations.push({ type: 'externalId', description: '9bc4ae00-1ddc-4128-9fa5-4990f93e2d70'});
+        testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
         const config = new ConfigPage(page);     
         await config.goto();
 
@@ -18,7 +19,8 @@ test.describe('Навигация', () => {
     });
 
     test('На 1 уровне - COM-порт (раздел "Прием")', async ({page}) => {
-        
+        testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
+        testit.description('На 1 уровне - COM-порт (раздел "Прием")')
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);
         const comport = page.locator('div').filter({ hasText: /^COMttyS0115200comport$/ }).nth(1);
@@ -73,6 +75,8 @@ test.describe('Навигация', () => {
     
 
     test('На 1 уровне - COM-порт (раздел "Передача")', async ({page}) => {
+        
+        testit.description('На 1 уровне - COM-порт (раздел "Передача")')
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);
         const comport = page.locator('[id=":re:"] > .group > .css-uwwqev > div > ._tree_1yclz_105 > div:nth-child(2) > div:nth-child(2) > ._node_1yclz_1')

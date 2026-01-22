@@ -71,6 +71,8 @@ test('2 байта - целое', async ({ page }) => {
     await expect(item).toHaveText('2 байта - целое');
 
     await item.click();
+    await item.click();
+    await page.screenshot({path:'error.png'})
     await expect(page.locator('[id="select::r1a::option:short"] > .chakra-select__itemIndicator > .css-s3mb0o')).toBeVisible();
 });
 
