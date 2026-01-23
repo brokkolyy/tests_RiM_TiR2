@@ -1,0 +1,175 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - banner:
+      - navigation:
+        - link:
+          - /url: /configuration
+          - button: Конфигурация
+        - link:
+          - /url: /monitoring
+          - button: Мониторинг
+        - link:
+          - /url: /log
+          - button: Логирование
+        - link:
+          - /url: /journal
+          - button: Журналирование
+        - link:
+          - /url: /graph
+          - button: Графики
+        - link:
+          - /url: /HMIEditor
+          - button: Редактор HMI
+      - button:
+        - img
+      - button:
+        - img
+      - button:
+        - img
+    - generic:
+      - generic:
+        - generic:
+          - button:
+            - img
+          - button [expanded]: Конфигурация
+          - button: Роутер
+          - generic:
+            - paragraph: Конфигурация без названия
+            - button:
+              - img
+          - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - paragraph: Открыть контекстное меню
+                      - generic: ПКМ
+                  - generic:
+                    - tree:
+                      - generic:
+                        - generic:
+                          - treeitem [expanded] [level=1]:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button:
+                                    - img
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Прием
+              - separator
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - img
+                      - paragraph: Открыть контекстное меню
+                      - generic: ПКМ
+                  - generic:
+                    - tree:
+                      - generic:
+                        - generic:
+                          - treeitem [expanded] [level=1]:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - button:
+                                    - img
+                                  - generic:
+                                    - generic:
+                                      - paragraph: Передача
+          - separator
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - paragraph: Выберите узел в дереве приема или передачи
+                    - separator:
+                      - generic:
+                        - img
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - paragraph: Выберите узел в дереве переменных
+          - separator
+          - generic:
+            - generic:
+              - generic:
+                - generic:
+                  - img
+                  - paragraph: Открыть контекстное меню
+                  - generic: ПКМ
+              - generic:
+                - tree:
+                  - generic:
+                    - generic:
+                      - treeitem [expanded] [level=1]:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - button:
+                                - img
+                              - generic:
+                                - generic:
+                                  - paragraph: Переменные
+    - contentinfo:
+      - generic:
+        - generic:
+          - img
+          - paragraph: 1:55:27 PM
+        - generic:
+          - img
+          - paragraph: 18%
+        - generic:
+          - img
+          - paragraph: 29%
+        - img
+        - generic:
+          - paragraph: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - generic:
+    - menu:
+      - menuitem: Создать...
+      - generic:
+        - button
+        - menuitem: Открыть...
+      - menuitem [expanded]: Редактировать
+      - menuitem: Сохранить
+      - menuitem: Закрыть
+  - dialog "Редактирование конфигурации" [ref=e2]:
+    - button "Close" [ref=e3] [cursor=pointer]:
+      - img [ref=e4]
+    - heading "Редактирование конфигурации" [level=2] [ref=e7]
+    - generic [ref=e9]:
+      - group [ref=e10]:
+        - generic [ref=e11]: Имя конфигурации
+        - generic [ref=e12]:
+          - textbox "Имя конфигурации" [ref=e13]: Конфигурация без названия
+          - generic [ref=e15]: 25 / 50
+        - generic [ref=e16]: Минимум 4 символа
+      - group [ref=e17]:
+        - generic [ref=e18]: Описание
+        - textbox "Описание" [active] [ref=e19]: "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ0123456789~`!@#$%^&*()-_=+[{]}|;:\",<.>/?"
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: "Дата изменения:"
+        - paragraph [ref=e23]: 1/22/2026, 1:55:27 PM
+    - button "Сохранить" [ref=e25] [cursor=pointer]
+```

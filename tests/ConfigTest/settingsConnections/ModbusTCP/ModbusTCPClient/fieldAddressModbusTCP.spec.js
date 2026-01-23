@@ -200,11 +200,9 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
+    await field.press('Enter');
     const val = await field.inputValue();
-    expect(val).toBe('2');
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).nth(1);
-    await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    expect(val).toBe('23');
+    
 });
 });

@@ -1,1 +1,1 @@
-{"id":"b151829b1c09274be3c6d07549ba4fc8","fullName":"tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_2.spec.js:163:5","name":"На 2 уровне - COM-порт-Modbus-RTU (раздел \"Передача\")","status":"failed","testResultsByEnv":{"default":"bd80079833d6fe562e16c95f6de70fe9"}}
+{"id":"b151829b1c09274be3c6d07549ba4fc8","fullName":"tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_2.spec.js:163:5","name":"На 2 уровне - COM-порт-Modbus-RTU (раздел \"Передача\")","status":"failed","testResultsByEnv":{"default":"97e417d0a8375d45bfffc8bb124d1c51"}}

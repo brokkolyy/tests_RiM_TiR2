@@ -20,6 +20,12 @@
         null
       ],
       [
+        "junit",
+        {
+          "outputFile": "./test-results/junit-report.xml"
+        }
+      ],
+      [
         "json",
         {
           "outputFile": "testit-report.json"
@@ -91,18 +97,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6510,
+                      "duration": 6475,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-22T10:53:03.588Z",
+                      "startTime": "2026-01-23T04:27:10.528Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "tms-metadata.json",
                           "contentType": "application/vnd.tms.metadata+json",
-                          "body": "eyJleHRlcm5hbElkIjoiODMifQ=="
+                          "body": "eyJleHRlcm5hbElkIjoiOWJjNGFlMDAtMWRkYy00MTI4LTlmYTUtNDk5MGY5M2UyZDcwIn0="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJ0aXRsZSI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0YDQuNC10LxcIikifQ=="
                         },
                         {
                           "name": "tms-metadata.json",
@@ -136,18 +147,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5836,
+                      "duration": 5983,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-01-22T10:53:10.175Z",
+                      "startTime": "2026-01-23T04:27:17.073Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "tms-metadata.json",
                           "contentType": "application/vnd.tms.metadata+json",
-                          "body": "eyJleHRlcm5hbElkIjoiODMifQ=="
+                          "body": "eyJleHRlcm5hbElkIjoiOWJjNGFlMDAtMWRkYy00MTI4LTlmYTUtNDk5MGY5M2UyZDcwIn0="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJ0aXRsZSI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0LXRgNC10LTQsNGH0LBcIikifQ=="
                         },
                         {
                           "name": "tms-metadata.json",
@@ -162,7 +178,7 @@
               ],
               "id": "91ee27881252185736a4-78701a0be67b2c6b9577",
               "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
-              "line": 76,
+              "line": 78,
               "column": 5
             }
           ]
@@ -172,8 +188,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-22T10:53:01.966Z",
-    "duration": 14128.871,
+    "startTime": "2026-01-23T04:27:09.191Z",
+    "duration": 13952.742,
     "expected": 2,
     "skipped": 0,
     "unexpected": 0,

@@ -1,0 +1,163 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - tree [ref=e61]:
+            - generic [ref=e64]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e65]:
+                - generic [ref=e68]:
+                  - button [ref=e69] [cursor=pointer]:
+                    - img [ref=e70]
+                  - paragraph [ref=e74]: Прием
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e75]:
+                - generic [ref=e78]:
+                  - button [ref=e79] [cursor=pointer]:
+                    - img [ref=e80]
+                  - generic [ref=e82]:
+                    - generic "Comport" [ref=e83]: COM
+                    - generic "Интерфейс" [ref=e84]: ttyS0
+                    - generic "Скорость" [ref=e85]: "115200"
+                    - paragraph [ref=e86]: comport
+              - treeitem "TCP 127.0.0.1 502 tcpBridge_server" [level=3] [selected] [ref=e87]:
+                - generic [ref=e91]:
+                  - generic "TCP-мост (сервер)" [ref=e92]: TCP
+                  - generic "IP-адрес" [ref=e93]: 127.0.0.1
+                  - generic "Порт" [ref=e94]: "502"
+                  - paragraph [ref=e95]: tcpBridge_server
+          - separator [ref=e96]
+          - generic [ref=e98]:
+            - generic [ref=e100]:
+              - img [ref=e101]
+              - paragraph [ref=e103]: Открыть контекстное меню
+              - generic [ref=e104]: ПКМ
+            - tree [ref=e106]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e110]:
+                - generic [ref=e113]:
+                  - button [ref=e114] [cursor=pointer]:
+                    - img [ref=e115]
+                  - paragraph [ref=e119]: Передача
+        - separator [ref=e120]
+        - generic [ref=e125]:
+          - generic [ref=e128]:
+            - navigation "breadcrumb" [ref=e129]:
+              - list [ref=e130]:
+                - listitem [ref=e131]: Прием
+                - listitem [ref=e132]:
+                  - img [ref=e133]
+                - listitem [ref=e135]: comport
+                - listitem [ref=e136]:
+                  - img [ref=e137]
+                - listitem [ref=e139]: tcpBridge_se...
+            - generic [ref=e140]:
+              - paragraph [ref=e142]: aLxK2vhnlc-_
+              - group [ref=e145]:
+                - paragraph [ref=e147]: Название
+                - textbox "Название" [ref=e149]: tcpBridge_server
+              - generic [ref=e150]:
+                - group [ref=e151]:
+                  - paragraph [ref=e153]: Логирование
+                  - checkbox "Логирование" [ref=e156]
+                - group [ref=e159]:
+                  - paragraph [ref=e161]: IP-адрес
+                  - textbox "IP-адрес" [ref=e163]: 127.0.0.1
+                - group [ref=e164]:
+                  - paragraph [ref=e166]: Порт
+                  - generic [ref=e167]:
+                    - group [ref=e168]:
+                      - button "increment value" [ref=e169] [cursor=pointer]:
+                        - img [ref=e170]
+                      - button "decrease value" [ref=e172] [cursor=pointer]:
+                        - img [ref=e173]
+                    - spinbutton "Порт" [ref=e176]: "502"
+                - group [ref=e177]:
+                  - paragraph [ref=e179]: Таймаут приема, сек.
+                  - generic [ref=e180]:
+                    - group [ref=e181]:
+                      - button "increment value" [ref=e182] [cursor=pointer]:
+                        - img [ref=e183]
+                      - button "decrease value" [ref=e185] [cursor=pointer]:
+                        - img [ref=e186]
+                    - spinbutton "Таймаут приема, сек." [active] [ref=e189]: "0"
+                - group [ref=e190]:
+                  - paragraph [ref=e192]: Таймаут соединения, сек.
+                  - generic [ref=e193]:
+                    - group [ref=e194]:
+                      - button "increment value" [ref=e195] [cursor=pointer]:
+                        - img [ref=e196]
+                      - button "decrease value" [ref=e198] [cursor=pointer]:
+                        - img [ref=e199]
+                    - spinbutton "Таймаут соединения, сек." [ref=e202]: "1"
+          - separator [ref=e203]:
+            - generic:
+              - img
+          - generic [ref=e208]:
+            - img [ref=e209]
+            - paragraph [ref=e214]: Выберите узел в дереве переменных
+        - separator [ref=e215]
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - img [ref=e220]
+            - paragraph [ref=e222]: Открыть контекстное меню
+            - generic [ref=e223]: ПКМ
+          - tree [ref=e225]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e229]:
+              - generic [ref=e232]:
+                - button [ref=e233] [cursor=pointer]:
+                  - img [ref=e234]
+                - paragraph [ref=e238]: Переменные
+    - contentinfo [ref=e239]:
+      - generic [ref=e240]:
+        - generic [ref=e241]:
+          - img [ref=e242]
+          - paragraph [ref=e245]: 1:13:01 PM
+        - generic [ref=e246]:
+          - img [ref=e247]
+          - paragraph [ref=e250]: 11%
+        - generic [ref=e251]:
+          - img [ref=e252]
+          - paragraph [ref=e254]: 25%
+        - img [ref=e255]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e259]':
+          - paragraph [ref=e260]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

@@ -1,1 +1,1 @@
-{"id":"ef6a9cf62bbd0f18061ff96e0a03b1fa","fullName":"tests/ConfigTest/buttonRouter/listSendConfig.spec.js:21:5","name":"Нажать ЛКМ на “Отправить конфигурацию“ с ошибкой","status":"failed","testResultsByEnv":{"default":"fd5b66d75bd95d6c4e949e2104d70356"}}
+{"id":"ef6a9cf62bbd0f18061ff96e0a03b1fa","fullName":"tests/ConfigTest/buttonRouter/listSendConfig.spec.js:21:5","name":"Нажать ЛКМ на “Отправить конфигурацию“ с ошибкой","status":"failed","testResultsByEnv":{"default":"8f443ed38d6210b9e6da2d5e02102ae1"}}

@@ -1,0 +1,1 @@
+{"id":"76521ebbea9611f3f3d8574f7ce7e0b9","fullName":"ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ComportTCPBridgeServer/fieldAddressIPTcp.spec.js:128:5","name":"Ввод больше максимального ip-адреса","status":"failed","testResultsByEnv":{"default":"42e1c87473d876b855f62980fefb3c10"}}

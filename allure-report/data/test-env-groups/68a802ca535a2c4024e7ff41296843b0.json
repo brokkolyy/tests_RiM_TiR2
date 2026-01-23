@@ -1,1 +1,1 @@
-{"id":"68a802ca535a2c4024e7ff41296843b0","fullName":"tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_2.spec.js:23:5","name":"На 2 уровне - COM-порт-TCP-мост (раздел \"Прием\")","status":"broken","testResultsByEnv":{"default":"962a092642f4bbed1b6681e4e4aee91c"}}
+{"id":"68a802ca535a2c4024e7ff41296843b0","fullName":"tests/ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_2.spec.js:28:5","name":"На 2 уровне - COM-порт-TCP-мост (раздел \"Прием\")","status":"failed","testResultsByEnv":{"default":"040c2f1356255a7c24fe089b7c2066d8"}}

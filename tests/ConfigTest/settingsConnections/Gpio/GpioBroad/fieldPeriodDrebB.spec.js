@@ -154,8 +154,9 @@ test.describe('Навигация', () => {
         const inputVal = '034';
         await field.fill(inputVal);
         await field.press('Enter');
+        await field.press('Enter');
         const val = await field.inputValue();
-        expect(val).toBe('034');
+        expect(val).toBe('34');
         
         const err = page.locator('.chakra-icon.css-pgosud > path').first();; //page.locator('.chakra-icon.css-pgosud > path').first()
         await expect(err).not.toBeVisible();

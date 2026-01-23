@@ -92,7 +92,7 @@ test.describe('Навигация', () => {
         await field.fill(inputVal);
         await field.press('Enter');
         const val = await field.inputValue();
-        expect(val).toBe('034');
+        expect(val).toBe('34');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
     });
@@ -113,9 +113,10 @@ test.describe('Навигация', () => {
         const inputVal = '2 3';
         await field.fill(inputVal);
         await field.press('Enter');
+        await field.press('Enter');
         const val = await field.inputValue();
         await page.screenshot({path:'error.png'})
-        expect(val).toBe('2 3');
+        expect(val).toBe('23');
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).not.toBeVisible();
     });

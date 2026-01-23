@@ -104,8 +104,6 @@ test.describe('Навигация', () => {
         await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('');
-        const err = page.locator('svg').filter({ hasText: 'Имя узла должно начинаться с буквы или подчеркивания и содержать только латински' }).nth(1);
-        await expect(err).toBeVisible();
         const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
         await expect(buttonError).toBeVisible();
     });

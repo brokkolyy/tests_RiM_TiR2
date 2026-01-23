@@ -1,0 +1,1 @@
+{"id":"5bf1186a10cd1f2bf9851f1820c50040","fullName":"ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/listFunctionSlave.spec.js:71:1","name":"(0x04) Чтение значений из нескольких регистров ввода","status":"failed","testResultsByEnv":{"default":"4e48364c6a197f4a209f9605a1e8c4b3"}}

@@ -1,1 +1,1 @@
-{"id":"ee537334dd4f7da7b569a99ece85eadb","fullName":"tests/ConfigTest/createConnection.spec.js:114:1","name":"Создание соединений IEC server + уникальность названий","status":"passed","testResultsByEnv":{"default":"64ca5e2d0beb69e46e827e241ca6b0aa"}}
+{"id":"ee537334dd4f7da7b569a99ece85eadb","fullName":"tests/ConfigTest/createConnection.spec.js:114:1","name":"Создание соединений IEC server + уникальность названий","status":"passed","testResultsByEnv":{"default":"748da98b0b7a042e3654474cc49d0e5f"}}

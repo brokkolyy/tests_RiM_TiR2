@@ -134,6 +134,7 @@ test.describe('Навигация', () => {
         const inputVal = '034';
         await field.fill(inputVal);
         await field.press('Enter');
+        await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('34');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 0 до' }).nth(1);
@@ -165,11 +166,12 @@ test.describe('Навигация', () => {
         await expect(field).toBeFocused();
 
         await field.fill('');
-        await page.getByRole('group').filter({ hasText: 'Таймаут соединения, сек' }).getByLabel('increment value').click();
+        await page.getByRole('group').filter({ hasText: 'Таймаут приема, сек' }).getByLabel('increment value').click();
         await field.press('Enter');
         const val = await field.inputValue();
+        await page.screenshot({path:'error.png'})
         expect(val).toBe('1');
-        await page.getByRole('group').filter({ hasText: 'Таймаут соединения, сек' }).getByLabel('decrease value').click();
+        await page.getByRole('group').filter({ hasText: 'Таймаут приема, сек' }).getByLabel('decrease value').click();
         await field.press('Enter');
         const val2 = await field.inputValue();
         expect(val2).toBe('0');

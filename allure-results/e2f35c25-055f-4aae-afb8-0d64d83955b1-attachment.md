@@ -1,0 +1,127 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [expanded] [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - img [ref=e46]
+      - generic [ref=e55]:
+        - generic [ref=e57]:
+          - generic [ref=e59]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e64]: Открыть контекстное меню
+              - generic [ref=e65]: ПКМ
+            - tree [ref=e67]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e71]:
+                - generic [ref=e74]:
+                  - button [ref=e75] [cursor=pointer]:
+                    - img [ref=e76]
+                  - paragraph [ref=e80]: Прием
+          - separator [ref=e81]
+          - generic [ref=e83]:
+            - generic [ref=e85]:
+              - img [ref=e86]
+              - paragraph [ref=e88]: Открыть контекстное меню
+              - generic [ref=e89]: ПКМ
+            - tree [ref=e91]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e95]:
+                - generic [ref=e98]:
+                  - button [ref=e99] [cursor=pointer]:
+                    - img [ref=e100]
+                  - paragraph [ref=e104]: Передача
+        - separator [ref=e105]
+        - generic [ref=e110]:
+          - generic [ref=e115]:
+            - img [ref=e116]
+            - paragraph [ref=e127]: Выберите узел в дереве приема или передачи
+          - separator [ref=e128]:
+            - generic:
+              - img
+          - generic [ref=e133]:
+            - img [ref=e134]
+            - paragraph [ref=e139]: Выберите узел в дереве переменных
+        - separator [ref=e140]
+        - generic [ref=e142]:
+          - generic [ref=e144]:
+            - img [ref=e145]
+            - paragraph [ref=e147]: Открыть контекстное меню
+            - generic [ref=e148]: ПКМ
+          - tree [ref=e150]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e154]:
+              - generic [ref=e157]:
+                - button [ref=e158] [cursor=pointer]:
+                  - img [ref=e159]
+                - paragraph [ref=e163]: Переменные
+    - contentinfo [ref=e164]:
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - img [ref=e167]
+          - paragraph [ref=e170]: 2:35:55 PM
+        - generic [ref=e171]:
+          - img [ref=e172]
+          - paragraph [ref=e175]: 29%
+        - generic [ref=e176]:
+          - img [ref=e177]
+          - paragraph [ref=e179]: 20%
+        - img [ref=e180]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e184]':
+          - paragraph [ref=e185]: 1.99.999
+  - region "bottom-end Notifications alt+T":
+    - status "Сервер запущен" [ref=e186]:
+      - img [ref=e187]
+      - generic [ref=e189]:
+        - generic [ref=e190]: Сервер запущен
+        - generic [ref=e191]: Сервер успешно запущен
+    - status "Сервер остановлен" [ref=e193]:
+      - img [ref=e194]
+      - generic [ref=e196]:
+        - generic [ref=e197]: Сервер остановлен
+        - generic [ref=e198]: Сервер успешно остановлен
+    - status "Сервер запущен" [ref=e200]:
+      - img [ref=e201]
+      - generic [ref=e203]:
+        - generic [ref=e204]: Сервер запущен
+        - generic [ref=e205]: Сервер успешно запущен
+  - menu "Роутер" [active] [ref=e208]:
+    - menuitem "Отправить конфигурацию" [ref=e209]
+    - menuitem "Получить конфигурацию" [ref=e210]
+    - menuitem "Запустить сервер" [ref=e211]
+    - menuitem "Остановить сервер" [ref=e212]
+    - menuitem "Перезапустить сервер" [ref=e213]
+```

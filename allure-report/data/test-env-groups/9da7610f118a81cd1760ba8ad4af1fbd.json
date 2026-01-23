@@ -1,0 +1,1 @@
+{"id":"9da7610f118a81cd1760ba8ad4af1fbd","fullName":"ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ModbusFunctionGroup/listFuction.spec.js:72:1","name":"(0x04) Чтение значений из нескольких регистров ввода","status":"failed","testResultsByEnv":{"default":"297c244a44bd7a77da9a4185e4d4876b"}}

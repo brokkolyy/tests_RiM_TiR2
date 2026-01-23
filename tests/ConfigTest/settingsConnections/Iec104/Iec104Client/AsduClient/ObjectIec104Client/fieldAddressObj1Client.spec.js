@@ -129,6 +129,7 @@ test.describe('Навигация', () => {
         const inputVal = '0555342342';
         await field.fill(inputVal);
         await field.press('Enter');
+        await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('555342342');
         const err = page.locator('svg').filter({ hasText: /^Значение должно быть в диапазоне от 0 до 255$/ });

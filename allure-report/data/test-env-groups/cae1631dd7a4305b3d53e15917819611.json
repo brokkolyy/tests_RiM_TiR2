@@ -1,0 +1,1 @@
+{"id":"cae1631dd7a4305b3d53e15917819611","fullName":"ConfigTest/settingsConnections/Comport/ComportBroad/ComportTCPBridgeClient/fieldNameTCP.spec.js:41:5","name":"Ввод больше максимальной длины (31 символ)","status":"failed","testResultsByEnv":{"default":"4decf03ce403d5f46c6b2af34eb0165b"}}

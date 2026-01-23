@@ -1,0 +1,1 @@
+{"id":"c42dc30ea6f4d9f8917a7dbdc825a524","fullName":"ConfigTest/settingsConnections/Comport/ComportBroad/ComportModbusSlave/SlaveFunctionGroup/listFunctionSlave.spec.js:26:1","name":"(0x01) Чтение значений из нескольких регистров флагов","status":"passed","testResultsByEnv":{"default":"cd50f4ae76a5abc8397d3fb91845c793"}}

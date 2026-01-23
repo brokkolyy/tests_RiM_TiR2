@@ -1,0 +1,176 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - generic [ref=e78]:
+                    - paragraph [ref=e79]: Прием
+                    - generic [ref=e80]:
+                      - button [ref=e81] [cursor=pointer]:
+                        - img [ref=e82]
+                      - button [ref=e83] [cursor=pointer]:
+                        - img [ref=e84]
+                      - button [ref=e87] [cursor=pointer]:
+                        - img [ref=e88]
+              - treeitem "iec104 127.0.0.1 102 iec104_client" [expanded] [level=2] [ref=e91]:
+                - generic [ref=e96]:
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e98]
+                  - generic [ref=e100]:
+                    - generic "IEC-104 Клиент" [ref=e101]: iec104
+                    - generic "IP-адрес" [ref=e102]: 127.0.0.1
+                    - generic "Порт" [ref=e103]: "102"
+                    - paragraph [ref=e104]: iec104_client
+              - treeitem "asdu 65536 asdu" [expanded] [level=3] [selected] [ref=e105]:
+                - generic [ref=e107]:
+                  - generic [ref=e111]:
+                    - button [ref=e112] [cursor=pointer]:
+                      - img [ref=e113]
+                    - generic [ref=e115]:
+                      - generic "ASDU" [ref=e116]: asdu
+                      - generic "Адрес ASDU" [ref=e117]: "65536"
+                      - paragraph [ref=e118]: asdu
+                  - img [ref=e119]
+          - separator [ref=e121]
+          - generic [ref=e123]:
+            - generic [ref=e125]:
+              - img [ref=e126]
+              - paragraph [ref=e128]: Открыть контекстное меню
+              - generic [ref=e129]: ПКМ
+            - tree [ref=e131]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e135]:
+                - generic [ref=e138]:
+                  - button [ref=e139] [cursor=pointer]:
+                    - img [ref=e140]
+                  - paragraph [ref=e144]: Передача
+        - separator [ref=e145]
+        - generic [ref=e150]:
+          - generic [ref=e153]:
+            - navigation "breadcrumb" [ref=e154]:
+              - list [ref=e155]:
+                - listitem [ref=e156]: Прием
+                - listitem [ref=e157]:
+                  - img [ref=e158]
+                - listitem [ref=e160]: iec104_client
+                - listitem [ref=e161]:
+                  - img [ref=e162]
+                - listitem [ref=e164]: asdu
+            - generic [ref=e165]:
+              - paragraph [ref=e167]: ZE3_Xd0Pk4Lj
+              - group [ref=e170]:
+                - paragraph [ref=e172]: Название
+                - textbox "Название" [ref=e174]: asdu
+              - generic [ref=e175]:
+                - group [ref=e176]:
+                  - paragraph [ref=e178]: Адрес ASDU
+                  - generic [ref=e179]:
+                    - group [ref=e180]:
+                      - button "increment value" [ref=e181] [cursor=pointer]:
+                        - img [ref=e182]
+                      - button "decrease value" [ref=e184] [cursor=pointer]:
+                        - img [ref=e185]
+                    - generic [ref=e187]:
+                      - spinbutton "Адрес ASDU" [active] [ref=e188]: "65536"
+                      - img [ref=e190]
+                - group [ref=e192]:
+                  - paragraph [ref=e194]: Режим опроса
+                  - generic [ref=e195]:
+                    - combobox [ref=e196]
+                    - generic [ref=e198]:
+                      - combobox "Режим опроса" [ref=e199]:
+                        - generic [ref=e200]: Ручной
+                      - generic:
+                        - generic:
+                          - img
+                - group [ref=e201]:
+                  - paragraph [ref=e203]: Период опроса, мин.
+                  - generic [ref=e204]:
+                    - group [ref=e205]:
+                      - button "increment value" [ref=e206] [cursor=pointer]:
+                        - img [ref=e207]
+                      - button "decrease value" [ref=e209] [cursor=pointer]:
+                        - img [ref=e210]
+                    - spinbutton "Период опроса, мин." [ref=e213]: "1"
+          - separator [ref=e214]:
+            - generic:
+              - img
+          - generic [ref=e219]:
+            - img [ref=e220]
+            - paragraph [ref=e225]: Выберите узел в дереве переменных
+        - separator [ref=e226]
+        - generic [ref=e228]:
+          - generic [ref=e230]:
+            - img [ref=e231]
+            - paragraph [ref=e233]: Открыть контекстное меню
+            - generic [ref=e234]: ПКМ
+          - tree [ref=e236]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e240]:
+              - generic [ref=e243]:
+                - button [ref=e244] [cursor=pointer]:
+                  - img [ref=e245]
+                - paragraph [ref=e249]: Переменные
+    - contentinfo [ref=e250]:
+      - generic [ref=e251]:
+        - generic [ref=e252]:
+          - img [ref=e253]
+          - paragraph [ref=e256]: 2:39:08 PM
+        - generic [ref=e257]:
+          - img [ref=e258]
+          - paragraph [ref=e261]: 32%
+        - generic [ref=e262]:
+          - img [ref=e263]
+          - paragraph [ref=e265]: 22%
+        - img [ref=e266]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e270]':
+          - paragraph [ref=e271]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

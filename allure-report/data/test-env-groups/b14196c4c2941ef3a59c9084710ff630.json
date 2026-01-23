@@ -1,0 +1,1 @@
+{"id":"b14196c4c2941ef3a59c9084710ff630","fullName":"ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/functionGroupClient/listFunctionModbusTCP.spec.js:23:1","name":"(0x01) Чтение значений из нескольких регистров флагов","status":"passed","testResultsByEnv":{"default":"52bd76e168181bf6aaa1e540546f2592"}}

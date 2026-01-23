@@ -1,0 +1,228 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button [ref=e6]: Конфигурация
+        - link [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button [ref=e8]: Мониторинг
+        - link [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button [ref=e10]: Логирование
+        - link [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button [ref=e12]: Журналирование
+        - link [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button [ref=e14]: Графики
+        - link [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button [ref=e16]: Редактор HMI
+      - button [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button [ref=e39] [cursor=pointer]: Конфигурация
+        - button [ref=e40] [cursor=pointer]: Роутер
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - paragraph [ref=e79]: Прием
+              - treeitem [expanded] [level=2] [ref=e80]:
+                - generic [ref=e83]:
+                  - button [ref=e84] [cursor=pointer]:
+                    - img [ref=e85]
+                  - generic [ref=e87]:
+                    - generic [ref=e88]: COM
+                    - generic [ref=e89]: ttyS0
+                    - generic [ref=e90]: "115200"
+                    - paragraph [ref=e91]: comport
+              - treeitem [expanded] [level=3] [ref=e92]:
+                - generic [ref=e95]:
+                  - button [ref=e96] [cursor=pointer]:
+                    - img [ref=e97]
+                  - generic [ref=e99]:
+                    - generic [ref=e100]: MB RTU
+                    - generic [ref=e101]: "1"
+                    - paragraph [ref=e102]: modbusRTU_master
+              - treeitem [expanded] [level=4] [ref=e103]:
+                - generic [ref=e105]:
+                  - generic [ref=e106]:
+                    - button [ref=e107] [cursor=pointer]:
+                      - img [ref=e108]
+                    - generic [ref=e110]:
+                      - generic [ref=e111]: fg
+                      - generic [ref=e112]: "1"
+                      - paragraph [ref=e113]: functionGroup
+                  - img [ref=e114]
+              - treeitem [level=5] [selected] [ref=e116]:
+                - generic [ref=e118]:
+                  - img [ref=e121]
+                  - img [ref=e126]
+          - separator [ref=e128]
+          - generic [ref=e130]:
+            - generic [ref=e132]:
+              - img [ref=e133]
+              - paragraph [ref=e135]: Открыть контекстное меню
+              - generic [ref=e136]: ПКМ
+            - tree [ref=e138]:
+              - treeitem [expanded] [level=1] [ref=e142]:
+                - generic [ref=e145]:
+                  - button [ref=e146] [cursor=pointer]:
+                    - img [ref=e147]
+                  - paragraph [ref=e151]: Передача
+        - separator [ref=e152]
+        - generic [ref=e157]:
+          - generic [ref=e160]:
+            - navigation [ref=e161]:
+              - list [ref=e162]:
+                - listitem [ref=e163]: Прием
+                - listitem [ref=e164]:
+                  - img [ref=e165]
+                - listitem [ref=e167]: comport
+                - listitem [ref=e168]:
+                  - img [ref=e169]
+                - listitem [ref=e171]: modbusRTU_ma...
+                - listitem [ref=e172]:
+                  - img [ref=e173]
+                - listitem [ref=e175]: functionGroup
+                - listitem [ref=e176]:
+                  - img [ref=e177]
+                - listitem [ref=e179]: puPsy_ljKoRp
+            - generic [ref=e180]:
+              - paragraph [ref=e182]: puPsy_ljKoRp
+              - heading [level=2] [ref=e185]: Объект данных
+              - generic [ref=e186]:
+                - group [ref=e187]:
+                  - paragraph [ref=e189]: Адрес информационного объекта
+                  - generic [ref=e190]:
+                    - textbox [ref=e191]
+                    - img [ref=e193]
+                - group [ref=e195]:
+                  - paragraph [ref=e197]: Описание
+                  - textbox [ref=e199]
+                - group [ref=e200]:
+                  - paragraph [ref=e202]: Переменная
+                  - generic [ref=e204]:
+                    - combobox "Переменная" [expanded] [active] [ref=e205]
+                    - generic [ref=e206]:
+                      - img [ref=e207]
+                      - button "Clear value" [ref=e209]:
+                        - img [ref=e210]
+                      - button "Toggle suggestions" [expanded] [ref=e212]:
+                        - img [ref=e213]
+          - separator [ref=e215]:
+            - generic:
+              - img
+          - generic [ref=e218]:
+            - navigation [ref=e219]:
+              - list [ref=e220]:
+                - listitem [ref=e221]: Переменные
+                - listitem [ref=e222]:
+                  - img [ref=e223]
+                - listitem [ref=e225]: b
+            - generic [ref=e226]:
+              - paragraph [ref=e228]: 63u4embpKD07
+              - group [ref=e231]:
+                - paragraph [ref=e233]: Название
+                - textbox [ref=e235]: b
+              - generic [ref=e236]:
+                - generic [ref=e237]:
+                  - group [ref=e238]:
+                    - paragraph [ref=e240]: Тип переменной
+                    - generic [ref=e241]:
+                      - combobox [ref=e242]
+                      - generic [ref=e244]:
+                        - combobox [ref=e245]:
+                          - generic [ref=e246]: 1 бит - bool
+                        - generic:
+                          - generic:
+                            - img
+                  - group [ref=e247]:
+                    - paragraph [ref=e249]: Описание переменной
+                    - textbox [ref=e251]
+                - generic [ref=e252]:
+                  - generic [ref=e254]:
+                    - generic [ref=e256]:
+                      - checkbox [ref=e257]
+                      - img [ref=e259]
+                    - generic [ref=e260]:
+                      - img [ref=e261]
+                      - paragraph [ref=e267]: Специальная переменная
+                  - generic [ref=e269]:
+                    - generic [ref=e271]:
+                      - checkbox [ref=e272]
+                      - img [ref=e274]
+                    - generic [ref=e275]:
+                      - img [ref=e276]
+                      - paragraph [ref=e279]: Архив
+                  - generic [ref=e281]:
+                    - generic [ref=e283]:
+                      - checkbox [ref=e284]
+                      - img [ref=e286]
+                    - generic [ref=e287]:
+                      - img [ref=e288]
+                      - paragraph [ref=e291]: Команда пользователя
+                - code [ref=e294]:
+                  - generic [ref=e295]:
+                    - textbox [ref=e296]
+                    - generic [ref=e301]: "1"
+        - separator [ref=e308]
+        - tree [ref=e312]:
+          - generic [ref=e315]:
+            - treeitem [expanded] [level=1] [ref=e316]:
+              - generic [ref=e319]:
+                - button [ref=e320] [cursor=pointer]:
+                  - img [ref=e321]
+                - paragraph [ref=e325]: Переменные
+            - treeitem [level=2] [ref=e326]:
+              - generic [ref=e330]:
+                - img [ref=e331]
+                - paragraph [ref=e336]: a
+            - treeitem [level=2] [selected] [ref=e337]:
+              - generic [ref=e341]:
+                - img [ref=e342]
+                - paragraph [ref=e347]: b
+    - contentinfo [ref=e348]:
+      - generic [ref=e349]:
+        - generic [ref=e350]:
+          - img [ref=e351]
+          - paragraph [ref=e354]: 12:50:54 PM
+        - generic [ref=e355]:
+          - img [ref=e356]
+          - paragraph [ref=e359]: 16%
+        - generic [ref=e360]:
+          - img [ref=e361]
+          - paragraph [ref=e363]: 6%
+        - img [ref=e364]
+        - paragraph [ref=e369]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - listbox [ref=e372]:
+    - option [ref=e373]: a
+    - option [ref=e374]: b
+```

@@ -1,0 +1,1 @@
+{"id":"4d98051eba086c005285d2872f5c692e","fullName":"ConfigTest/settingsConnections/Comport/ComportRecep/ComportModbusMaster/ComportTCPBridgeServer/fieldPortTCP.spec.js:79:5","name":"Ввод положительного числа меньше минимально допустимого","status":"failed","testResultsByEnv":{"default":"1798b868bd96ed0837ff955c01faa66c"}}

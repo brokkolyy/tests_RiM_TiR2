@@ -1,0 +1,261 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - generic [ref=e64]:
+            - generic [ref=e66]:
+              - img [ref=e67]
+              - paragraph [ref=e69]: Открыть контекстное меню
+              - generic [ref=e70]: ПКМ
+            - tree [ref=e72]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e76]:
+                - generic [ref=e79]:
+                  - button [ref=e80] [cursor=pointer]:
+                    - img [ref=e81]
+                  - paragraph [ref=e85]: Прием
+          - separator [ref=e86]
+          - tree [ref=e90]:
+            - generic [ref=e93]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e94]:
+                - generic [ref=e97]:
+                  - button [ref=e98] [cursor=pointer]:
+                    - img [ref=e99]
+                  - generic [ref=e102]:
+                    - paragraph [ref=e103]: Передача
+                    - generic [ref=e104]:
+                      - button [ref=e105] [cursor=pointer]:
+                        - img [ref=e106]
+                      - button [ref=e107] [cursor=pointer]:
+                        - img [ref=e108]
+                      - button [ref=e111] [cursor=pointer]:
+                        - img [ref=e112]
+              - treeitem "iec104 127.0.0.1 102 iec104_server" [expanded] [level=2] [ref=e115]:
+                - generic [ref=e117]:
+                  - generic [ref=e120]:
+                    - button [ref=e121] [cursor=pointer]:
+                      - img [ref=e122]
+                    - generic [ref=e124]:
+                      - generic "IEC-104 Сервер" [ref=e125]: iec104
+                      - generic "IP-адрес" [ref=e126]: 127.0.0.1
+                      - generic "Порт" [ref=e127]: "102"
+                      - paragraph [ref=e128]: iec104_server
+                  - img [ref=e129]
+              - treeitem "asdu 1 test" [expanded] [level=3] [selected] [ref=e131]:
+                - generic [ref=e137]:
+                  - button [ref=e138] [cursor=pointer]:
+                    - img [ref=e139]
+                  - generic [ref=e141]:
+                    - img [ref=e142]
+                    - generic "ASDU" [ref=e145]: asdu
+                    - generic "Адрес ASDU" [ref=e146]: "1"
+                    - paragraph [ref=e147]: test
+              - treeitem "folder" [expanded] [level=4] [ref=e148]:
+                - generic [ref=e155]:
+                  - button [ref=e156] [cursor=pointer]:
+                    - img [ref=e157]
+                  - generic [ref=e159]:
+                    - img [ref=e160]
+                    - paragraph [ref=e162]: folder
+              - treeitem "ts1" [level=4] [ref=e163]:
+                - generic [ref=e171]:
+                  - img [ref=e172]
+                  - img [ref=e175]
+                  - generic "Тип сигнала" [ref=e180]: ts1
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e181]:
+                - generic [ref=e186]:
+                  - button [ref=e187] [cursor=pointer]:
+                    - img [ref=e188]
+                  - generic [ref=e190]:
+                    - generic "Comport" [ref=e191]: COM
+                    - generic "Интерфейс" [ref=e192]: ttyS0
+                    - generic "Скорость" [ref=e193]: "115200"
+                    - paragraph [ref=e194]: comport
+              - treeitem "gpio 200 gpio" [expanded] [level=2] [ref=e195]:
+                - generic [ref=e200]:
+                  - button [ref=e201] [cursor=pointer]:
+                    - img [ref=e202]
+                  - generic [ref=e204]:
+                    - generic "GPIO" [ref=e205]: gpio
+                    - generic "Период дребезга" [ref=e206]: "200"
+                    - paragraph [ref=e207]: gpio
+              - treeitem "iec104 127.0.0.1 102 iec104_server" [expanded] [level=2] [ref=e208]:
+                - generic [ref=e210]:
+                  - generic [ref=e213]:
+                    - button [ref=e214] [cursor=pointer]:
+                      - img [ref=e215]
+                    - generic [ref=e217]:
+                      - generic "IEC-104 Сервер" [ref=e218]: iec104
+                      - generic "IP-адрес" [ref=e219]: 127.0.0.1
+                      - generic "Порт" [ref=e220]: "102"
+                      - paragraph [ref=e221]: iec104_server
+                  - img [ref=e222]
+              - treeitem "MB TCP 127.0.0.1 502 modbusTCP_server" [expanded] [level=2] [ref=e224]:
+                - generic [ref=e229]:
+                  - button [ref=e230] [cursor=pointer]:
+                    - img [ref=e231]
+                  - generic [ref=e233]:
+                    - generic "Modbus-TCP Сервер" [ref=e234]: MB TCP
+                    - generic "IP-адрес" [ref=e235]: 127.0.0.1
+                    - generic "Порт" [ref=e236]: "502"
+                    - paragraph [ref=e237]: modbusTCP_server
+              - treeitem "folder" [expanded] [level=2] [ref=e238]:
+                - generic [ref=e243]:
+                  - button [ref=e244] [cursor=pointer]:
+                    - img [ref=e245]
+                  - generic [ref=e247]:
+                    - img [ref=e248]
+                    - paragraph [ref=e250]: folder
+        - separator [ref=e251]
+        - generic [ref=e256]:
+          - generic [ref=e259]:
+            - navigation "breadcrumb" [ref=e260]:
+              - list [ref=e261]:
+                - listitem [ref=e262]: Передача
+                - listitem [ref=e263]:
+                  - img [ref=e264]
+                - listitem [ref=e266]: iec104_server
+                - listitem [ref=e267]:
+                  - img [ref=e268]
+                - listitem [ref=e270]: test
+            - generic [ref=e271]:
+              - paragraph [ref=e273]: n8bJux4BfblC
+              - generic [ref=e274]:
+                - group [ref=e276]:
+                  - paragraph [ref=e278]: Название
+                  - textbox "Название" [ref=e280]: test
+                - 'heading "Элементов: 2" [level=2] [ref=e282]'
+              - generic [ref=e283]:
+                - group [ref=e284]:
+                  - paragraph [ref=e286]: Спорадика
+                  - checkbox "Спорадика" [ref=e289]
+                - group [ref=e292]:
+                  - paragraph [ref=e294]: Адрес ASDU
+                  - generic [ref=e295]:
+                    - group [ref=e296]:
+                      - button "increment value" [ref=e297] [cursor=pointer]:
+                        - img [ref=e298]
+                      - button "decrease value" [ref=e300] [cursor=pointer]:
+                        - img [ref=e301]
+                    - spinbutton "Адрес ASDU" [ref=e304]: "1"
+            - table [ref=e306]:
+              - rowgroup [ref=e307]:
+                - row "Адрес информационного объекта Тип сигнала Апертура Команда Описание Переменная" [ref=e308]:
+                  - columnheader "Адрес информационного объекта" [ref=e309]
+                  - columnheader "Тип сигнала" [ref=e310]
+                  - columnheader "Апертура" [ref=e311]
+                  - columnheader "Команда" [ref=e312]
+                  - columnheader "Описание" [ref=e313]
+                  - columnheader "Переменная" [ref=e314]
+              - rowgroup [ref=e315]:
+                - row [ref=e316]:
+                  - cell [ref=e317]:
+                    - group [ref=e318]:
+                      - generic [ref=e319]:
+                        - group [ref=e320]:
+                          - button "increment value" [ref=e321] [cursor=pointer]:
+                            - img [ref=e322]
+                          - button "decrease value" [ref=e324] [cursor=pointer]:
+                            - img [ref=e325]
+                        - spinbutton [ref=e328]
+                  - cell [ref=e329]:
+                    - group [ref=e330]:
+                      - generic [ref=e331]:
+                        - combobox [ref=e332]
+                        - generic [ref=e334]:
+                          - combobox [ref=e335]:
+                            - generic [ref=e336]: Однопозиционный ТС
+                          - generic:
+                            - generic:
+                              - img
+                  - cell [ref=e337]
+                  - cell [ref=e338]
+                  - cell [ref=e339]:
+                    - group [ref=e340]:
+                      - textbox [ref=e342]
+                  - cell [ref=e343]:
+                    - group [ref=e344]:
+                      - generic [ref=e346]:
+                        - combobox "Введите название переменной" [ref=e347]
+                        - generic [ref=e348]:
+                          - button "Clear value" [ref=e349]:
+                            - img [ref=e350]
+                          - button "Toggle suggestions" [ref=e352]:
+                            - img [ref=e353]
+          - separator [ref=e355]:
+            - generic:
+              - img
+          - generic [ref=e360]:
+            - img [ref=e361]
+            - paragraph [ref=e366]: Выберите узел в дереве переменных
+        - separator [ref=e367]
+        - generic [ref=e369]:
+          - generic [ref=e371]:
+            - img [ref=e372]
+            - paragraph [ref=e374]: Открыть контекстное меню
+            - generic [ref=e375]: ПКМ
+          - tree [ref=e377]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e381]:
+              - generic [ref=e384]:
+                - button [ref=e385] [cursor=pointer]:
+                  - img [ref=e386]
+                - paragraph [ref=e390]: Переменные
+    - contentinfo [ref=e391]:
+      - generic [ref=e392]:
+        - generic [ref=e393]:
+          - img [ref=e394]
+          - paragraph [ref=e397]: 2:01:22 PM
+        - generic [ref=e398]:
+          - img [ref=e399]
+          - paragraph [ref=e402]: 24%
+        - generic [ref=e403]:
+          - img [ref=e404]
+          - paragraph [ref=e406]: 14%
+        - img [ref=e407]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e411]':
+          - paragraph [ref=e412]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

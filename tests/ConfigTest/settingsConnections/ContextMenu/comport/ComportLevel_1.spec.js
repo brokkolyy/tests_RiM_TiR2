@@ -7,7 +7,7 @@ const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configurat
 
 test.describe('Навигация', () => {
     test.beforeEach(async ({page}) => {
-        testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
+        //testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
         const config = new ConfigPage(page);     
         await config.goto();
 
@@ -20,6 +20,7 @@ test.describe('Навигация', () => {
 
     test('На 1 уровне - COM-порт (раздел "Прием")', async ({page}) => {
         testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
+        testit.title('На 1 уровне - COM-порт (раздел "Прием")')
         testit.description('На 1 уровне - COM-порт (раздел "Прием")')
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);
@@ -75,7 +76,8 @@ test.describe('Навигация', () => {
     
 
     test('На 1 уровне - COM-порт (раздел "Передача")', async ({page}) => {
-        
+        testit.externalId('9bc4ae00-1ddc-4128-9fa5-4990f93e2d70')
+        testit.title('На 1 уровне - COM-порт (раздел "Передача")')
         testit.description('На 1 уровне - COM-порт (раздел "Передача")')
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);

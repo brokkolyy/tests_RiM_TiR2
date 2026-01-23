@@ -1,1 +1,1 @@
-{"id":"a89551c66ed75a16528c4410206886cf","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:175:1","name":"Создание объектов данных(10) IEC104, раздел \"Прием\"","status":"passed","testResultsByEnv":{"default":"93acb15a074d8cfb8ae3345a782c4588"}}
+{"id":"a89551c66ed75a16528c4410206886cf","fullName":"tests/ConfigTest/createObjectElementsRecep.spec.js:175:1","name":"Создание объектов данных(10) IEC104, раздел \"Прием\"","status":"failed","testResultsByEnv":{"default":"40ff9b3889c763c9674f0cda02d7565c"}}

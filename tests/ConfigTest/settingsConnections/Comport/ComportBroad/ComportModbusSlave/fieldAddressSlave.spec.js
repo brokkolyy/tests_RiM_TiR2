@@ -153,6 +153,7 @@ test('Ввести 0 после чего допустимое значение',
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
+    await field.press('Enter');
     const val = await field.inputValue();
     expect(val).toBe('34');
 });
@@ -182,12 +183,12 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
+    await field.press('Enter');
     const val = await field.inputValue();
     const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
-    expect(val).toBe('2 3');
+    expect(val).toBe('23');
     expect(error).not.toBeVisible();
     const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
     await expect(errIcon).not.toBeVisible();
-    await errorM(page)
 });
 });

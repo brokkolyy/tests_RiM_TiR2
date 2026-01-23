@@ -108,6 +108,7 @@ test.describe('Навигация', () => {
         const inputVal = '034';
         await field.fill(inputVal);
         await field.press('Enter');
+        await field.press('Enter');
         const val = await field.inputValue();
         expect(val).toBe('34');
         const err = page.locator('svg').filter({ hasText: 'Значение должно быть в диапазоне от 0 до' }).nth(1);

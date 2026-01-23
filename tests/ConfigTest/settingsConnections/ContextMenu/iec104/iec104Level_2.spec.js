@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 const ConfigPage = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPage.js'));
 const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configuration', 'ConfigPageElements.js'));
 
-    test('На 1 уровне: IEC104 Раздел "Прием"', async ({page}) => {
+    test('На 2 уровне: IEC104 Раздел "Прием"', async ({page}) => {
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);   
         await config.goto();
@@ -73,7 +73,7 @@ const ConfigPageElements = require(path.join(process.cwd(), 'pages', 'Configurat
         await page.getByRole('menuitem', { name: 'Вырезать Ctrl+X' }).click();
     })
 
-    test('На 1 уровне: IEC104 Раздел "Передача"', async ({page}) => {
+    test('На 2 уровне: IEC104 Раздел "Передача"', async ({page}) => {
         const config = new ConfigPage(page);
         const configElement = new ConfigPageElements(page);   
         await config.goto();

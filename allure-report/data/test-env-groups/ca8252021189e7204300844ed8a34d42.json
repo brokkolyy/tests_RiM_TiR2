@@ -1,0 +1,1 @@
+{"id":"ca8252021189e7204300844ed8a34d42","fullName":"ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/fieldPeriodOprModbusTCP.spec.js:100:5","name":"Ввести 0 после чего недопустимое значение","status":"failed","testResultsByEnv":{"default":"035b64f945ac0d6a96e80b40abdf5612"}}

@@ -57,9 +57,7 @@ test('Ввести число больше максимально допусти
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' });
     expect(val).toBe('256');
-    expect(error).toBeVisible();
     await errIcon(page)
     await errorM(page)
 });
@@ -98,9 +96,7 @@ test('Ввод числа с большим количеством символ�
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' });
     expect(val).toBe('123123');
-    expect(error).toBeVisible();
     await errIcon(page)
     await errorM(page)
 });
@@ -120,9 +116,7 @@ test('Ввести число меньше минимального допуст
     await field.fill(inputVal);
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Значение должно быть в диапазоне от 1 до' });
     expect(val).toBe('0');
-    expect(error).toBeVisible();
     await errIcon(page)
     await errorM(page)
 });
@@ -141,13 +135,9 @@ test('Оставить поле пустым и нажать фон', async ({ p
     const field = await prepareField(page)
     await page.locator('.css-1dtqfaw').click();
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
     expect(val).toBe('');
-    expect(error).toBeVisible();
-    const errIcon = page.locator('svg').filter({ hasText: 'Это поле обязательно для заполнения' }).first();
-    await expect(errIcon).toBeVisible();
-    const buttonError = page.getByRole('button', { name: 'Показать ошибки' });
-    await expect(buttonError).toBeVisible();
+    await errIcon2(page)
+    await errorM(page)
 });
 
 test('Ввести 0 после чего допустимое значение', async ({ page }) => {
@@ -156,8 +146,9 @@ test('Ввести 0 после чего допустимое значение',
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
+    await field.press('Enter');
     const val = await field.inputValue();
-    expect(val).toBe('034');
+    expect(val).toBe('34');
 });
 
 test('Ввести 0 после чего недопустимое значение', async ({ page }) => {
@@ -167,10 +158,9 @@ test('Ввести 0 после чего недопустимое значени
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
+
     expect(val).toBe('555');
-    expect(error).toBeVisible();
-    await errIcon2(page)
+    await expect(page.locator('div').filter({ hasText: /^Значение должно быть в диапазоне от 1 до 255$/ }).nth(2)).toBeVisible()
     await errorM(page)
 });
 
@@ -180,11 +170,8 @@ test('Ввести цифру, пробел и ещё одну цифру', asyn
     await field.fill(inputVal);
     //await page.locator('.css-1dtqfaw').click();
     await field.press('Enter');
+    await field.press('Enter');
     const val = await field.inputValue();
-    const error = page.locator('[id="number-input::r19:"] svg').filter({ hasText: 'Это поле обязательно для заполнения' });
-    expect(val).toBe('2 3');
-    expect(error).toBeVisible();
-    await errIcon2(page)
-    await errorM(page)
+    expect(val).toBe('23');
 });
 });

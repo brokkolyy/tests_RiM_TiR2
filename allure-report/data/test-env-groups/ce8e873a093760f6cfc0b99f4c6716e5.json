@@ -1,0 +1,1 @@
+{"id":"ce8e873a093760f6cfc0b99f4c6716e5","fullName":"ConfigTest/settingsConnections/ModbusTCP/ModbusTCPClient/functionGroupClient/fieldFGModbusTCP.spec.js:57:1","name":"Ввод минимальной длины (1 символ), поле название элемента \"Последовательный порт\"","status":"passed","testResultsByEnv":{"default":"c17299f0cf86cdfe2e12fc7b5d964fb9"}}

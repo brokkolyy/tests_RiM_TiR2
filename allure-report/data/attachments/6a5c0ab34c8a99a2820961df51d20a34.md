@@ -1,0 +1,238 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e32]:
+      - generic [ref=e34]:
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button "Конфигурация" [ref=e39] [cursor=pointer]
+        - button "Роутер" [ref=e40] [cursor=pointer]
+        - generic [ref=e41]:
+          - paragraph [ref=e42]: Конфигурация без названия
+          - button "info" [ref=e43] [cursor=pointer]:
+            - img [ref=e44]
+        - button "Показать ошибки" [ref=e46] [cursor=pointer]:
+          - img [ref=e47]
+          - text: Показать ошибки
+          - img [ref=e49]
+        - img [ref=e51]
+      - generic [ref=e60]:
+        - generic [ref=e62]:
+          - tree [ref=e66]:
+            - generic [ref=e69]:
+              - treeitem "Прием" [expanded] [level=1] [ref=e70]:
+                - generic [ref=e73]:
+                  - button [ref=e74] [cursor=pointer]:
+                    - img [ref=e75]
+                  - generic [ref=e78]:
+                    - paragraph [ref=e79]: Прием
+                    - generic [ref=e80]:
+                      - button [ref=e81] [cursor=pointer]:
+                        - img [ref=e82]
+                      - button [ref=e83] [cursor=pointer]:
+                        - img [ref=e84]
+                      - button [ref=e87] [cursor=pointer]:
+                        - img [ref=e88]
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e91]:
+                - generic [ref=e96]:
+                  - button [ref=e97] [cursor=pointer]:
+                    - img [ref=e98]
+                  - generic [ref=e100]:
+                    - generic "Comport" [ref=e101]: COM
+                    - generic "Интерфейс" [ref=e102]: ttyS0
+                    - generic "Скорость" [ref=e103]: "115200"
+                    - paragraph [ref=e104]: comport
+              - treeitem "MB RTU 1 modbusRTU_master" [expanded] [level=3] [ref=e105]:
+                - generic [ref=e111]:
+                  - button [ref=e112] [cursor=pointer]:
+                    - img [ref=e113]
+                  - generic [ref=e115]:
+                    - generic "Modbus-RTU Master" [ref=e116]: MB RTU
+                    - generic "Адрес устройства" [ref=e117]: "1"
+                    - paragraph [ref=e118]: modbusRTU_master
+              - treeitem "fg 1 functionGroup" [expanded] [level=4] [ref=e119]:
+                - generic [ref=e121]:
+                  - generic [ref=e126]:
+                    - button [ref=e127] [cursor=pointer]:
+                      - img [ref=e128]
+                    - generic [ref=e130]:
+                      - generic "Функциональная группа" [ref=e131]: fg
+                      - generic "Функция" [ref=e132]: "1"
+                      - paragraph [ref=e133]: functionGroup
+                  - img [ref=e134]
+              - treeitem "test" [level=5] [selected] [ref=e136]:
+                - generic [ref=e145]:
+                  - img [ref=e146]
+                  - img [ref=e149]
+                  - code [ref=e154]:
+                    - paragraph [ref=e155]: test
+          - separator [ref=e156]
+          - tree [ref=e160]:
+            - generic [ref=e163]:
+              - treeitem "Передача" [expanded] [level=1] [ref=e164]:
+                - generic [ref=e167]:
+                  - button [ref=e168] [cursor=pointer]:
+                    - img [ref=e169]
+                  - paragraph [ref=e173]: Передача
+              - treeitem "COM ttyS0 115200 comport" [expanded] [level=2] [ref=e174]:
+                - generic [ref=e177]:
+                  - button [ref=e178] [cursor=pointer]:
+                    - img [ref=e179]
+                  - generic [ref=e181]:
+                    - generic "Comport" [ref=e182]: COM
+                    - generic "Интерфейс" [ref=e183]: ttyS0
+                    - generic "Скорость" [ref=e184]: "115200"
+                    - paragraph [ref=e185]: comport
+        - separator [ref=e186]
+        - generic [ref=e191]:
+          - generic [ref=e194]:
+            - navigation "breadcrumb" [ref=e195]:
+              - list [ref=e196]:
+                - listitem [ref=e197]: Прием
+                - listitem [ref=e198]:
+                  - img [ref=e199]
+                - listitem [ref=e201]: comport
+                - listitem [ref=e202]:
+                  - img [ref=e203]
+                - listitem [ref=e205]: modbusRTU_ma...
+                - listitem [ref=e206]:
+                  - img [ref=e207]
+                - listitem [ref=e209]: functionGroup
+                - listitem [ref=e210]:
+                  - img [ref=e211]
+                - listitem [ref=e213]: PWHJhAkUW0EM
+            - generic [ref=e214]:
+              - paragraph [ref=e216]: PWHJhAkUW0EM
+              - heading "Объект данных" [level=2] [ref=e219]
+              - generic [ref=e220]:
+                - group [ref=e221]:
+                  - paragraph [ref=e223]: Адрес информационного объекта
+                  - textbox "Адрес информационного объекта" [ref=e225]
+                - group [ref=e226]:
+                  - paragraph [ref=e228]: Описание
+                  - textbox "Описание" [ref=e230]
+                - group [ref=e231]:
+                  - paragraph [ref=e233]: Переменная
+                  - generic [ref=e235]:
+                    - combobox "Переменная" [ref=e236]: test
+                    - generic [ref=e237]:
+                      - button "Clear value" [ref=e238]:
+                        - img [ref=e239]
+                      - button "Toggle suggestions" [ref=e241]:
+                        - img [ref=e242]
+          - separator [ref=e244]:
+            - generic:
+              - img
+          - generic [ref=e247]:
+            - navigation "breadcrumb" [ref=e248]:
+              - list [ref=e249]:
+                - listitem [ref=e250]: Переменные
+                - listitem [ref=e251]:
+                  - img [ref=e252]
+                - listitem [ref=e254]: test
+            - generic [ref=e255]:
+              - paragraph [ref=e257]: zqSTovo7XofZ
+              - group [ref=e260]:
+                - paragraph [ref=e262]: Название
+                - textbox "Название" [ref=e264]: test
+              - generic [ref=e265]:
+                - generic [ref=e266]:
+                  - group [ref=e267]:
+                    - paragraph [ref=e269]: Тип переменной
+                    - generic [ref=e270]:
+                      - combobox [ref=e271]
+                      - generic [ref=e273]:
+                        - combobox "Тип переменной" [ref=e274]:
+                          - generic [ref=e275]: 1 бит - bool
+                        - generic:
+                          - generic:
+                            - img
+                  - group [ref=e276]:
+                    - paragraph [ref=e278]: Описание переменной
+                    - textbox "Описание переменной" [ref=e280]
+                - generic [ref=e281]:
+                  - generic [ref=e283]:
+                    - generic [ref=e285]:
+                      - checkbox [ref=e286]
+                      - img [ref=e288]
+                    - generic [ref=e289]:
+                      - img [ref=e290]
+                      - paragraph [ref=e296]: Специальная переменная
+                  - generic [ref=e298]:
+                    - generic [ref=e300]:
+                      - checkbox [ref=e301]
+                      - img [ref=e303]
+                    - generic [ref=e304]:
+                      - img [ref=e305]
+                      - paragraph [ref=e308]: Архив
+                  - generic [ref=e310]:
+                    - generic [ref=e312]:
+                      - checkbox [ref=e313]
+                      - img [ref=e315]
+                    - generic [ref=e316]:
+                      - img [ref=e317]
+                      - paragraph [ref=e320]: Команда пользователя
+                - code [ref=e323]:
+                  - generic [ref=e324]:
+                    - textbox "Editor content"
+                    - textbox [ref=e325]
+                    - generic [ref=e330]: "1"
+        - separator [ref=e337]
+        - tree [ref=e341]:
+          - generic [ref=e344]:
+            - treeitem "Переменные" [expanded] [level=1] [ref=e345]:
+              - generic [ref=e348]:
+                - button [ref=e349] [cursor=pointer]:
+                  - img [ref=e350]
+                - paragraph [ref=e354]: Переменные
+            - treeitem "test" [level=2] [selected] [ref=e355]:
+              - generic [ref=e359]:
+                - img [ref=e360]
+                - paragraph [ref=e365]: test
+    - contentinfo [ref=e366]:
+      - generic [ref=e367]:
+        - generic [ref=e368]:
+          - img [ref=e369]
+          - paragraph [ref=e372]: "-------"
+        - generic [ref=e373]:
+          - img [ref=e374]
+          - paragraph [ref=e377]: "----"
+        - generic [ref=e378]:
+          - img [ref=e379]
+          - paragraph [ref=e381]: "----"
+        - img [ref=e382]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e386]':
+          - paragraph [ref=e387]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - generic [ref=e388]:
+    - alert
+    - alert
+```

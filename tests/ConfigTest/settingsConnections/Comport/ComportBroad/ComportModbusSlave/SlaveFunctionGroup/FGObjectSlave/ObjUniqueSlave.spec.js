@@ -439,6 +439,8 @@ test('Уникальность адреса объекта (FG-ИО)-(FG-ИО)-(
     /*await page.evaluate(() => {
         window.scrollBy(0,1000)
     })*/
+    await page.keyboard.press('PageDown')
+    await page.keyboard.press('PageDown')
     await page.screenshot({path:'err.png'})
     await expect(el5).toBeVisible();
     //await el5.click();

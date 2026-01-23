@@ -5,8 +5,13 @@ module.exports = defineConfig({
 
   reporter: [
     ['line'],
-    ['json', { outputFile: 'testit-report.json' }],
-    ['allure-playwright'],
+    //['junit', {outputFile: './test-results/junit-report.xml'}],
+    //['json', { outputFile: 'testit-report.json' }],
+    ['allure-playwright', {
+      detail: true,
+      outputFolder: 'allure-results',
+      suiteTitle: false
+    }],
     /*[
       'testit-adapter-playwright',
       {
@@ -14,7 +19,7 @@ module.exports = defineConfig({
         privateToken: 'WlFZaEFQRG9kTk5QaDhLMDV5',     // ← это выглядит как укороченный/старый токен. Создай НОВЫЙ!
         projectId: '01970bb3-a82c-75d3-8970-a3477c8f9793',
         configurationId: '01970bb3-a864-74e6-a813-a14b67880298',
-        testrunName: 'Playwright Comport Level 1',
+        testRunName: 'Playwright Comport Level 1',
         automaticCreationTestCases: false,
         adapterMode: 1,  // ← режим 1: отправляет все результаты без фильтра (самый простой для локального запуска)
         // Если есть существующий test run — добавь его ID:

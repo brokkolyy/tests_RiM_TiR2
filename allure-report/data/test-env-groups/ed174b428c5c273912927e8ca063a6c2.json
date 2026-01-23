@@ -1,1 +1,1 @@
-{"id":"ed174b428c5c273912927e8ca063a6c2","fullName":"tests/ConfigTest/createObjectElementsBroad.spec.js:154:1","name":"Создание объектов данных(5) IEC104, раздел \"Передача\"","status":"passed","testResultsByEnv":{"default":"682eaaa4cb114eb040011d8926696b67"}}
+{"id":"ed174b428c5c273912927e8ca063a6c2","fullName":"tests/ConfigTest/createObjectElementsBroad.spec.js:154:1","name":"Создание объектов данных(5) IEC104, раздел \"Передача\"","status":"failed","testResultsByEnv":{"default":"682eaaa4cb114eb040011d8926696b67"}}

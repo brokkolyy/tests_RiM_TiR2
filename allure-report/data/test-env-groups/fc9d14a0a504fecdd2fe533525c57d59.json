@@ -1,0 +1,1 @@
+{"id":"fc9d14a0a504fecdd2fe533525c57d59","fullName":"ConfigTest/settingsConnections/ModbusTCP/ModbusTCPServer/functionGroupServer/listFunctionModbusServer.spec.js:38:1","name":"(0x02) Чтение значений из нескольких дискретных входов","status":"passed","testResultsByEnv":{"default":"bf45b3cc527bc2819e504a0da0a44a8d"}}
