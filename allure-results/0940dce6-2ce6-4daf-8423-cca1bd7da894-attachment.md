@@ -1,0 +1,251 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e33]:
+      - heading "Выберите файл" [level=3] [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]:
+          - combobox [ref=e38]
+          - generic [ref=e39]: "Количество отображаемых строк:"
+          - generic [ref=e40]:
+            - combobox "Количество отображаемых строк:" [ref=e41]:
+              - generic [ref=e42]: "1000"
+            - generic:
+              - generic:
+                - img
+        - generic [ref=e44]:
+          - button "Выбрать все" [ref=e45] [cursor=pointer]:
+            - img [ref=e46]
+            - generic [ref=e47]: Выбрать все
+          - listbox "Выбрать все" [active] [ref=e48]:
+            - group "Логи во внешней памяти" [ref=e49]:
+              - text: Логи во внешней памяти
+              - option "null.log 0 B 10/21/2025, 9:56:36 AM" [ref=e50] [cursor=pointer]:
+                - img [ref=e51]
+                - generic [ref=e52]:
+                  - generic [ref=e53]: null.log
+                  - generic [ref=e54]:
+                    - text: 0 B
+                    - paragraph [ref=e56]: 10/21/2025, 9:56:36 AM
+                - button [ref=e57]:
+                  - img [ref=e58]
+              - option "system — копия (3).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e60] [cursor=pointer]:
+                - img [ref=e61]
+                - generic [ref=e62]:
+                  - generic [ref=e63]: system — копия (3).log
+                  - generic [ref=e64]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e66]: 9/26/2025, 5:23:41 PM
+                - button [ref=e67]:
+                  - img [ref=e68]
+              - option "system — копия (4).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e70] [cursor=pointer]:
+                - img [ref=e71]
+                - generic [ref=e72]:
+                  - generic [ref=e73]: system — копия (4).log
+                  - generic [ref=e74]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e76]: 9/26/2025, 5:23:41 PM
+                - button [ref=e77]:
+                  - img [ref=e78]
+              - option "system — копия (5).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e80] [cursor=pointer]:
+                - img [ref=e81]
+                - generic [ref=e82]:
+                  - generic [ref=e83]: system — копия (5).log
+                  - generic [ref=e84]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e86]: 9/26/2025, 5:23:41 PM
+                - button [ref=e87]:
+                  - img [ref=e88]
+              - option "system — копия (6).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e90] [cursor=pointer]:
+                - img [ref=e91]
+                - generic [ref=e92]:
+                  - generic [ref=e93]: system — копия (6).log
+                  - generic [ref=e94]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e96]: 9/26/2025, 5:23:41 PM
+                - button [ref=e97]:
+                  - img [ref=e98]
+              - option "system — копия.log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e100] [cursor=pointer]:
+                - img [ref=e101]
+                - generic [ref=e102]:
+                  - generic [ref=e103]: system — копия.log
+                  - generic [ref=e104]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e106]: 9/26/2025, 5:23:41 PM
+                - button [ref=e107]:
+                  - img [ref=e108]
+              - option "system.log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e110] [cursor=pointer]:
+                - img [ref=e111]
+                - generic [ref=e112]:
+                  - generic [ref=e113]: system.log
+                  - generic [ref=e114]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e116]: 9/26/2025, 5:23:41 PM
+                - button [ref=e117]:
+                  - img [ref=e118]
+              - option "gpio.log 4,68 МБ 9/26/2025, 5:23:38 PM" [ref=e120] [cursor=pointer]:
+                - img [ref=e121]
+                - generic [ref=e122]:
+                  - generic [ref=e123]: gpio.log
+                  - generic [ref=e124]:
+                    - text: 4,68 МБ
+                    - paragraph [ref=e126]: 9/26/2025, 5:23:38 PM
+                - button [ref=e127]:
+                  - img [ref=e128]
+            - group "Логи во внутренней памяти" [ref=e130]:
+              - text: Логи во внутренней памяти
+              - option "Modbus_BEMP.log 1,93 МБ 9/26/2025, 5:23:41 PM" [selected] [ref=e131] [cursor=pointer]:
+                - img [ref=e132]
+                - generic [ref=e134]:
+                  - generic [ref=e135]: Modbus_BEMP.log
+                  - generic [ref=e136]:
+                    - text: 1,93 МБ
+                    - paragraph [ref=e138]: 9/26/2025, 5:23:41 PM
+                - button [ref=e139]:
+                  - img [ref=e140]
+              - option "system — копия (10).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e142] [cursor=pointer]:
+                - img [ref=e143]
+                - generic [ref=e144]:
+                  - generic [ref=e145]: system — копия (10).log
+                  - generic [ref=e146]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e148]: 9/26/2025, 5:23:41 PM
+                - button [ref=e149]:
+                  - img [ref=e150]
+              - option "system — копия (2).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e152] [cursor=pointer]:
+                - img [ref=e153]
+                - generic [ref=e154]:
+                  - generic [ref=e155]: system — копия (2).log
+                  - generic [ref=e156]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e158]: 9/26/2025, 5:23:41 PM
+                - button [ref=e159]:
+                  - img [ref=e160]
+              - option "system — копия (3).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e162] [cursor=pointer]:
+                - img [ref=e163]
+                - generic [ref=e164]:
+                  - generic [ref=e165]: system — копия (3).log
+                  - generic [ref=e166]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e168]: 9/26/2025, 5:23:41 PM
+                - button [ref=e169]:
+                  - img [ref=e170]
+              - option "system — копия (4).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e172] [cursor=pointer]:
+                - img [ref=e173]
+                - generic [ref=e174]:
+                  - generic [ref=e175]: system — копия (4).log
+                  - generic [ref=e176]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e178]: 9/26/2025, 5:23:41 PM
+                - button [ref=e179]:
+                  - img [ref=e180]
+              - option "system — копия (5).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e182] [cursor=pointer]:
+                - img [ref=e183]
+                - generic [ref=e184]:
+                  - generic [ref=e185]: system — копия (5).log
+                  - generic [ref=e186]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e188]: 9/26/2025, 5:23:41 PM
+                - button [ref=e189]:
+                  - img [ref=e190]
+              - option "system — копия (6).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e192] [cursor=pointer]:
+                - img [ref=e193]
+                - generic [ref=e194]:
+                  - generic [ref=e195]: system — копия (6).log
+                  - generic [ref=e196]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e198]: 9/26/2025, 5:23:41 PM
+                - button [ref=e199]:
+                  - img [ref=e200]
+              - option "system — копия (7).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e202] [cursor=pointer]:
+                - img [ref=e203]
+                - generic [ref=e204]:
+                  - generic [ref=e205]: system — копия (7).log
+                  - generic [ref=e206]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e208]: 9/26/2025, 5:23:41 PM
+                - button [ref=e209]:
+                  - img [ref=e210]
+              - option "system — копия (8).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e212] [cursor=pointer]:
+                - img [ref=e213]
+                - generic [ref=e214]:
+                  - generic [ref=e215]: system — копия (8).log
+                  - generic [ref=e216]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e218]: 9/26/2025, 5:23:41 PM
+                - button [ref=e219]:
+                  - img [ref=e220]
+              - option "system — копия (9).log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e222] [cursor=pointer]:
+                - img [ref=e223]
+                - generic [ref=e224]:
+                  - generic [ref=e225]: system — копия (9).log
+                  - generic [ref=e226]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e228]: 9/26/2025, 5:23:41 PM
+                - button [ref=e229]:
+                  - img [ref=e230]
+              - option "system — копия.log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e232] [cursor=pointer]:
+                - img [ref=e233]
+                - generic [ref=e234]:
+                  - generic [ref=e235]: system — копия.log
+                  - generic [ref=e236]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e238]: 9/26/2025, 5:23:41 PM
+                - button [ref=e239]:
+                  - img [ref=e240]
+              - option "system.log 87,6 кБ 9/26/2025, 5:23:41 PM" [ref=e242] [cursor=pointer]:
+                - img [ref=e243]
+                - generic [ref=e244]:
+                  - generic [ref=e245]: system.log
+                  - generic [ref=e246]:
+                    - text: 87,6 кБ
+                    - paragraph [ref=e248]: 9/26/2025, 5:23:41 PM
+                - button [ref=e249]:
+                  - img [ref=e250]
+      - button "Скачать выбранные логи" [ref=e253] [cursor=pointer]:
+        - img [ref=e254]
+        - text: Скачать выбранные логи
+    - contentinfo [ref=e257]:
+      - generic [ref=e258]:
+        - generic [ref=e259]:
+          - img [ref=e260]
+          - paragraph [ref=e263]: 4:03:06 PM
+        - generic [ref=e264]:
+          - img [ref=e265]
+          - paragraph [ref=e268]: 32%
+        - generic [ref=e269]:
+          - img [ref=e270]
+          - paragraph [ref=e272]: 19%
+        - img [ref=e273]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e277]':
+          - paragraph [ref=e278]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

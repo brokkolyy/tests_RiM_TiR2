@@ -1,0 +1,127 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e33]:
+      - generic [ref=e35]:
+        - button [ref=e36] [cursor=pointer]:
+          - img [ref=e37]
+        - generic [ref=e39]:
+          - heading "Modbus_BEMP.log" [level=2] [ref=e40]
+          - button "info" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+        - group [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - checkbox [checked] [ref=e47]
+              - img [ref=e49]
+            - generic [ref=e51]:
+              - checkbox [checked] [ref=e52]
+              - img [ref=e54]
+            - generic [ref=e56]:
+              - checkbox [checked] [ref=e57]
+              - img [ref=e59]
+        - generic [ref=e61]:
+          - button [ref=e62] [cursor=pointer]:
+            - img [ref=e63]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e69] [cursor=pointer]:
+            - img [ref=e70]
+          - generic [ref=e72]:
+            - checkbox [ref=e73]
+            - img [ref=e75]
+          - generic [ref=e78]:
+            - checkbox [ref=e79]
+            - img [ref=e81]
+          - button [ref=e84] [cursor=pointer]:
+            - img [ref=e85]
+      - generic [ref=e90]:
+        - generic [ref=e92]: "[2025-09-26T17:23:38.242Z] [INFO] Func:3 Num_of_regs:3"
+        - generic [ref=e94]: "[2025-09-26T17:23:38.243Z] [INFO] SEND 01 03 19 EE 00 03 62 A2"
+        - generic [ref=e96]: "[2025-09-26T17:23:38.244Z] [INFO] RCVD"
+        - generic [ref=e98]: "[2025-09-26T17:23:38.245Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e100]: "[2025-09-26T17:23:38.622Z] [INFO] Func:4 Num_of_regs:1"
+        - generic [ref=e102]: "[2025-09-26T17:23:38.623Z] [INFO] SEND 01 04 03 0A 00 01 11 8C"
+        - generic [ref=e104]: "[2025-09-26T17:23:38.624Z] [INFO] RCVD"
+        - generic [ref=e106]: "[2025-09-26T17:23:38.625Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e108]: "[2025-09-26T17:23:38.942Z] [INFO] Func:4 Num_of_regs:1"
+        - generic [ref=e110]: "[2025-09-26T17:23:38.943Z] [INFO] SEND 01 04 0E 00 00 01 33 22"
+        - generic [ref=e112]: "[2025-09-26T17:23:38.944Z] [INFO] RCVD"
+        - generic [ref=e114]: "[2025-09-26T17:23:38.945Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e116]: "[2025-09-26T17:23:39.402Z] [INFO] Func:4 Num_of_regs:1"
+        - generic [ref=e118]: "[2025-09-26T17:23:39.403Z] [INFO] SEND 01 04 1E 00 00 01 37 E2"
+        - generic [ref=e120]: "[2025-09-26T17:23:39.404Z] [INFO] RCVD"
+        - generic [ref=e122]: "[2025-09-26T17:23:39.405Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e124]: "[2025-09-26T17:23:39.722Z] [INFO] Func:4 Num_of_regs:2"
+        - generic [ref=e126]: "[2025-09-26T17:23:39.723Z] [INFO] SEND 01 04 08 39 00 02 A3 A6"
+        - generic [ref=e128]: "[2025-09-26T17:23:39.724Z] [INFO] RCVD"
+        - generic [ref=e130]: "[2025-09-26T17:23:39.725Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e132]: "[2025-09-26T17:23:40.042Z] [INFO] Func:4 Num_of_regs:2"
+        - generic [ref=e134]: "[2025-09-26T17:23:40.043Z] [INFO] SEND 01 04 08 3B 00 02 02 66"
+        - generic [ref=e136]: "[2025-09-26T17:23:40.044Z] [INFO] RCVD"
+        - generic [ref=e138]: "[2025-09-26T17:23:40.045Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e140]: "[2025-09-26T17:23:40.362Z] [INFO] Func:4 Num_of_regs:2"
+        - generic [ref=e142]: "[2025-09-26T17:23:40.363Z] [INFO] SEND 01 04 08 3D 00 02 E2 67"
+        - generic [ref=e144]: "[2025-09-26T17:23:40.364Z] [INFO] RCVD"
+        - generic [ref=e146]: "[2025-09-26T17:23:40.365Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e148]: "[2025-09-26T17:23:40.682Z] [INFO] Func:4 Num_of_regs:2"
+        - generic [ref=e150]: "[2025-09-26T17:23:40.683Z] [INFO] SEND 01 04 12 02 00 02 D5 73"
+        - generic [ref=e152]: "[2025-09-26T17:23:40.684Z] [INFO] RCVD"
+        - generic [ref=e154]: "[2025-09-26T17:23:40.685Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e156]: "[2025-09-26T17:23:41.002Z] [INFO] Func:3 Num_of_regs:3"
+        - generic [ref=e158]: "[2025-09-26T17:23:41.004Z] [INFO] SEND 01 03 01 00 00 03 04 37"
+        - generic [ref=e160]: "[2025-09-26T17:23:41.006Z] [INFO] RCVD"
+        - generic [ref=e162]: "[2025-09-26T17:23:41.007Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e164]: "[2025-09-26T17:23:41.322Z] [INFO] Func:3 Num_of_regs:5"
+        - generic [ref=e166]: "[2025-09-26T17:23:41.323Z] [INFO] SEND 01 03 01 05 00 05 94 34"
+        - generic [ref=e168]: "[2025-09-26T17:23:41.324Z] [INFO] RCVD"
+        - generic [ref=e170]: "[2025-09-26T17:23:41.325Z] [ERROR] ModbusServiceFunctions::ReadInt: Read timeout"
+        - generic [ref=e172]: "[2026-01-28T09:06:17.749Z] [WARN] Demo log from Modbus_BEMP.log"
+        - generic [ref=e174]: "[2026-01-28T09:06:18.748Z] [INFO] Demo log from Modbus_BEMP.log"
+        - generic [ref=e176]: "[2026-01-28T09:06:19.749Z] [WARN] Demo log from Modbus_BEMP.log"
+        - generic [ref=e178]: "[2026-01-28T09:06:20.750Z] [ERROR] Demo log from Modbus_BEMP.log"
+        - generic [ref=e180]: "[2026-01-28T09:06:21.762Z] [WARN] Demo log from Modbus_BEMP.log"
+    - contentinfo [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]:
+          - img [ref=e184]
+          - paragraph [ref=e187]: 4:06:21 PM
+        - generic [ref=e188]:
+          - img [ref=e189]
+          - paragraph [ref=e192]: 14%
+        - generic [ref=e193]:
+          - img [ref=e194]
+          - paragraph [ref=e196]: 11%
+        - img [ref=e197]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e201]':
+          - paragraph [ref=e202]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

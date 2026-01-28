@@ -11,6 +11,7 @@
   "directories": {
     "test": "tests"
   },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "test": "playwright test --reporter=line,allure-playwright",

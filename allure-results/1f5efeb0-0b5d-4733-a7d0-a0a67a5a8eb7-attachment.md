@@ -1,0 +1,150 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Конфигурация" [ref=e5] [cursor=pointer]:
+          - /url: /configuration
+          - button "Конфигурация" [ref=e6]
+        - link "Мониторинг" [ref=e7] [cursor=pointer]:
+          - /url: /monitoring
+          - button "Мониторинг" [ref=e8]
+        - link "Логирование" [ref=e9] [cursor=pointer]:
+          - /url: /log
+          - button "Логирование" [ref=e10]
+        - link "Журналирование" [ref=e11] [cursor=pointer]:
+          - /url: /journal
+          - button "Журналирование" [ref=e12]
+        - link "Графики" [ref=e13] [cursor=pointer]:
+          - /url: /graph
+          - button "Графики" [ref=e14]
+        - link "Редактор HMI" [ref=e15] [cursor=pointer]:
+          - /url: /HMIEditor
+          - button "Редактор HMI" [ref=e16]
+      - button "Settings" [ref=e17] [cursor=pointer]:
+        - img [ref=e18]
+      - button "Logout" [ref=e21] [cursor=pointer]:
+        - img [ref=e22]
+      - button "Toggle color mode" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+    - generic [ref=e33]:
+      - generic [ref=e35]:
+        - button [ref=e36] [cursor=pointer]:
+          - img [ref=e37]
+        - generic [ref=e39]:
+          - heading "system — копия (3).log" [level=2] [ref=e40]
+          - button "info" [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+        - group [ref=e44]:
+          - generic [ref=e45]:
+            - generic [ref=e46]:
+              - checkbox [checked] [ref=e47]
+              - img [ref=e49]
+            - generic [ref=e51]:
+              - checkbox [checked] [ref=e52]
+              - img [ref=e54]
+            - generic [ref=e56]:
+              - checkbox [checked] [ref=e57]
+              - img [ref=e59]
+        - generic [ref=e61]:
+          - button [ref=e62] [cursor=pointer]:
+            - img [ref=e63]
+          - button [ref=e66] [cursor=pointer]:
+            - img [ref=e67]
+          - button [ref=e69] [cursor=pointer]:
+            - img [ref=e70]
+          - generic [ref=e72]:
+            - checkbox [ref=e73]
+            - img [ref=e75]
+          - generic [ref=e78]:
+            - checkbox [checked] [active] [ref=e79]
+            - img [ref=e81]
+          - button [ref=e83] [cursor=pointer]:
+            - img [ref=e84]
+      - generic [ref=e88]:
+        - generic [ref=e89]:
+          - generic [ref=e91]: "[2025-09-02T10:16:18.460Z] [INFO] Started new Thread for adding signals info to database."
+          - generic [ref=e93]: "[2025-09-02T10:16:18.589Z] [INFO] receive.xml file integrity checked."
+          - generic [ref=e95]: "[2025-09-02T10:16:18.621Z] [INFO] variables.xml file integrity checked."
+          - generic [ref=e97]: "[2025-09-02T10:16:18.648Z] [INFO] send.xml file integrity checked."
+          - generic [ref=e99]: "[2025-09-02T10:16:18.699Z] [INFO] Start iec104 threads"
+          - generic [ref=e101]: "[2025-09-02T10:16:18.750Z] [INFO] Start modbus threads"
+          - generic [ref=e103]: "[2025-09-02T10:16:18.799Z] [INFO] Start gpio threads"
+          - generic [ref=e105]: "[2025-09-02T15:39:48.568Z] [INFO] Server shut down"
+          - generic [ref=e107]: "[2025-09-02T15:39:48.633Z] [INFO] Database and Thread closed successfully."
+          - generic [ref=e109]: "[2025-09-02T15:40:38.879Z] [ERROR] Can't form log file. /rimtir/app/configuration/receive.xml config file is empty"
+          - generic [ref=e111]: "[2025-09-02T15:40:38.880Z] [ERROR] Can't form log file. /rimtir/app/configuration/send.xml config file is empty"
+          - generic [ref=e113]: "[2025-09-02T15:40:38.920Z] [INFO] Logs directory: /mnt/mmcblk0p1/tir_logs/"
+          - generic [ref=e115]: "[2025-09-02T15:40:38.921Z] [INFO] DB directory: /mnt/mmcblk0p1/tir_sqlite3_db/"
+          - generic [ref=e117]: "[2025-09-02T15:40:38.922Z] [INFO] Server start"
+          - generic [ref=e119]: "[2025-09-02T15:40:38.934Z] [INFO] Websocket start"
+          - generic [ref=e121]: "[2025-09-02T15:40:38.937Z] [INFO] Database 'tdb_v2.1.db' opened successfully. Existing tables: JOURNAL, TYPES, GROUPS, TELEMETRY, MEASUREMENT, TISTATE, SIGNALSTATE."
+          - generic [ref=e123]: "[2025-09-02T15:40:38.941Z] [INFO] Started new Thread for adding signals info to database."
+          - generic [ref=e125]: "[2025-09-02T15:40:38.954Z] [INFO] receive.xml file integrity checked."
+          - generic [ref=e127]: "[2025-09-02T15:40:38.966Z] [INFO] variables.xml file integrity checked."
+          - generic [ref=e129]: "[2025-09-02T15:40:38.997Z] [INFO] send.xml file integrity checked."
+          - generic [ref=e131]: "[2025-09-02T15:40:39.003Z] [INFO] Start iec104 threads"
+          - generic [ref=e133]: "[2025-09-02T15:40:39.006Z] [INFO] Start modbus threads"
+          - generic [ref=e135]: "[2025-09-02T15:40:39.009Z] [INFO] Start gpio threads"
+          - generic [ref=e137]: "[2025-09-02T15:42:13.327Z] [INFO] Server shut down"
+          - generic [ref=e139]: "[2025-09-02T15:42:13.390Z] [INFO] Database and Thread closed successfully."
+          - generic [ref=e141]: "[2025-09-02T16:00:01.217Z] [ERROR] Can't form log file. /rimtir/app/configuration/receive.xml config file is empty"
+          - generic [ref=e143]: "[2025-09-02T16:00:01.230Z] [ERROR] Can't form log file. /rimtir/app/configuration/send.xml config file is empty"
+          - generic [ref=e145]: "[2025-09-02T16:00:01.234Z] [INFO] Logs directory: /mnt/mmcblk0p1/tir_logs/"
+          - generic [ref=e147]: "[2025-09-02T16:00:01.235Z] [INFO] DB directory: /mnt/mmcblk0p1/tir_sqlite3_db/"
+          - generic [ref=e149]: "[2025-09-02T16:00:01.246Z] [INFO] Server start"
+          - generic [ref=e151]: "[2025-09-02T16:00:01.265Z] [INFO] Websocket start"
+          - generic [ref=e153]: "[2025-09-02T16:00:01.298Z] [INFO] Database 'tdb_v2.1.db' opened successfully. Existing tables: JOURNAL, TYPES, GROUPS, TELEMETRY, MEASUREMENT, TISTATE, SIGNALSTATE."
+          - generic [ref=e155]: "[2025-09-02T16:00:01.338Z] [INFO] Started new Thread for adding signals info to database."
+          - generic [ref=e157]: "[2025-09-02T16:00:01.377Z] [INFO] receive.xml file integrity checked."
+          - generic [ref=e159]: "[2025-09-02T16:00:01.407Z] [INFO] variables.xml file integrity checked."
+          - generic [ref=e161]: "[2025-09-02T16:00:01.459Z] [INFO] send.xml file integrity checked."
+          - generic [ref=e163]: "[2025-09-02T16:00:01.471Z] [INFO] Start iec104 threads"
+          - generic [ref=e165]: "[2025-09-02T16:00:01.478Z] [INFO] Start modbus threads"
+          - generic [ref=e167]: "[2025-09-02T16:00:01.488Z] [INFO] Start gpio threads"
+          - generic [ref=e169]: "[2025-09-02T16:04:44.079Z] [INFO] Server shut down"
+          - generic [ref=e171]: "[2025-09-02T16:04:44.141Z] [INFO] Database and Thread closed successfully."
+          - generic [ref=e173]: "[2025-09-02T16:05:49.088Z] [ERROR] Can't form log file. /rimtir/app/configuration/receive.xml config file is empty"
+          - generic [ref=e175]: "[2025-09-02T16:05:49.089Z] [ERROR] Can't form log file. /rimtir/app/configuration/send.xml config file is empty"
+          - generic [ref=e177]: "[2025-09-02T16:05:49.108Z] [INFO] Logs directory: /mnt/mmcblk0p1/tir_logs/"
+          - generic [ref=e179]: "[2025-09-02T16:05:49.109Z] [INFO] DB directory: /mnt/mmcblk0p1/tir_sqlite3_db/"
+          - generic [ref=e181]: "[2025-09-02T16:05:49.110Z] [INFO] Server start"
+          - generic [ref=e183]: "[2025-09-02T16:05:49.121Z] [INFO] Websocket start"
+          - generic [ref=e185]: "[2025-09-02T16:05:49.136Z] [INFO] Database 'tdb_v2.1.db' opened successfully. Existing tables: JOURNAL, TYPES, GROUPS, TELEMETRY, MEASUREMENT, TISTATE, SIGNALSTATE."
+          - generic [ref=e187]: "[2025-09-02T16:05:49.140Z] [INFO] Started new Thread for adding signals info to database."
+          - generic [ref=e189]: "[2025-09-02T16:05:49.188Z] [INFO] receive.xml file integrity checked."
+          - generic [ref=e191]: "[2025-09-02T16:05:49.200Z] [INFO] variables.xml file integrity checked."
+          - generic [ref=e193]: "[2025-09-02T16:05:49.213Z] [INFO] send.xml file integrity checked."
+          - generic [ref=e195]: "[2025-09-02T16:05:49.219Z] [INFO] Start iec104 threads"
+          - generic [ref=e197]: "[2025-09-02T16:05:49.222Z] [INFO] Start modbus threads"
+          - generic [ref=e199]: "[2025-09-02T16:05:49.225Z] [INFO] Start gpio threads"
+          - generic [ref=e201]: "[2025-09-02T16:08:16.567Z] [INFO] Server shut down"
+          - generic [ref=e203]: "[2025-09-02T16:08:16.622Z] [INFO] Database and Thread closed successfully."
+          - generic [ref=e205]: "[2025-09-02T16:08:17.013Z] [INFO] Logs directory: /mnt/mmcblk0p1/tir_logs/"
+          - generic [ref=e207]: "[2025-09-02T16:08:17.014Z] [INFO] DB directory: /mnt/mmcblk0p1/tir_sqlite3_db/"
+          - generic [ref=e209]: "[2025-09-02T16:08:17.015Z] [INFO] Server start"
+          - generic [ref=e211]: "[2025-09-02T16:08:17.027Z] [INFO] Websocket start"
+          - generic [ref=e213]: "[2025-09-02T16:08:17.042Z] [INFO] Database 'tdb_v2.1.db' opened successfully. Existing tables: JOURNAL, TYPES, GROUPS, TELEMETRY, MEASUREMENT, TISTATE, SIGNALSTATE."
+          - generic [ref=e215]: "[2025-09-02T16:08:17.047Z] [INFO] Started new Thread for adding signals info to database."
+          - generic [ref=e217]: "[2025-09-02T16:08:17.076Z] [INFO] receive.xml file integrity checked."
+          - generic [ref=e219]: "[2025-09-02T16:08:17.120Z] [INFO] variables.xml file integrity checked."
+        - button [ref=e221] [cursor=pointer]:
+          - img [ref=e222]
+    - contentinfo [ref=e224]:
+      - generic [ref=e225]:
+        - generic [ref=e226]:
+          - img [ref=e227]
+          - paragraph [ref=e230]: 4:29:52 PM
+        - generic [ref=e231]:
+          - img [ref=e232]
+          - paragraph [ref=e235]: 10%
+        - generic [ref=e236]:
+          - img [ref=e237]
+          - paragraph [ref=e239]: 31%
+        - img [ref=e240]
+        - 'generic "Текущая версия ПК: 1.99.999" [ref=e244]':
+          - paragraph [ref=e245]: 1.99.999
+  - region "bottom-end Notifications alt+T"
+```

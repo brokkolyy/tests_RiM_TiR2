@@ -1,0 +1,912 @@
+# Page snapshot
+
+```yaml
+- generic:
+  - generic:
+    - banner:
+      - navigation:
+        - link:
+          - /url: /configuration
+          - button: Конфигурация
+        - link:
+          - /url: /monitoring
+          - button: Мониторинг
+        - link:
+          - /url: /log
+          - button: Логирование
+        - link:
+          - /url: /journal
+          - button: Журналирование
+        - link:
+          - /url: /graph
+          - button: Графики
+        - link:
+          - /url: /HMIEditor
+          - button: Редактор HMI
+      - button:
+        - img
+      - button:
+        - img
+      - button:
+        - img
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - checkbox
+            - generic: Переключить отображение имени
+          - generic:
+            - generic:
+              - img
+            - textbox:
+              - /placeholder: Поиск
+          - generic:
+            - paragraph: ТиР РЦДУ v2.0
+            - button:
+              - img
+      - generic:
+        - generic:
+          - generic:
+            - generic:
+              - tree:
+                - generic:
+                  - generic:
+                    - treeitem [expanded] [level=1]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - paragraph: Прием
+                    - treeitem [expanded] [level=2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: gpio
+                              - generic: log
+                              - generic: "200"
+                              - generic:
+                                - generic:
+                                  - paragraph: gpio
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2"
+                              - generic: output
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IRZGPIO_ACOk
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "3"
+                              - generic: output
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IRZGPIO_DoorOpen
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "4"
+                              - generic: output
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IRZGPIO_CmdPulse
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "1"
+                              - generic: input
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IRZGPIO_BattLow
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: COM
+                              - generic: ttyS0
+                              - generic: "115200"
+                              - generic:
+                                - generic:
+                                  - paragraph: comport
+                    - treeitem [expanded] [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: MB RTU
+                              - generic: log
+                              - generic: "12"
+                              - generic:
+                                - generic:
+                                  - paragraph: modbusRTU_master_1
+                    - treeitem [expanded] [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: fg
+                              - generic: "4"
+                              - generic: bit
+                              - generic:
+                                - generic:
+                                  - paragraph: functionGroup_1_1
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x1"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenSt_RPV
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x11"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenSt_RemoteMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x12"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenSt_LocalMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x13"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenSt_ManualMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x14"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenSt_RPO
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: Состояние привода
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x145"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenActuatorSt_Current
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x125"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenActuatorSt_FaultOvercurrent
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: fg
+                              - generic: "16"
+                              - generic: bit
+                              - generic:
+                                - generic:
+                                  - paragraph: functionGroup_1_2
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x1"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenCmd_SwOff
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x11"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenCmd_FaultFromASU
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "0x13"
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: OvenCmd_ResetFault
+                                - generic:
+                                  - img
+                                  - code
+          - separator
+          - generic:
+            - generic:
+              - tree:
+                - generic:
+                  - generic:
+                    - treeitem [expanded] [level=1]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - paragraph: Переменные
+                    - treeitem [expanded] [level=2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: GPIO
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: IRZGPIO_BattLow
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: IRZGPIO_ACOk
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: IRZGPIO_DoorOpen
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: IRZGPIO_CmdPulse
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: modbusRTU_master_1
+                    - treeitem [expanded] [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: "4"
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenSt_RPO
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenSt_RPV
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenSt_RemoteMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenSt_LocalMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenSt_ManualMode
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: Состояние привода
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenActuatorSt_Current
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenActuatorSt_FaultOvercurrent
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: "16"
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenCmd_SwOn
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenCmd_SwOff
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenCmd_FaultFromASU
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: OvenCmd_ResetFault
+                                - generic:
+                                  - img
+                                  - code
+          - separator
+          - generic:
+            - generic:
+              - tree:
+                - generic:
+                  - generic:
+                    - treeitem [expanded] [level=1]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - paragraph: Передача
+                    - treeitem [expanded] [level=2]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: iec104
+                              - generic: 127.0.0.1
+                              - generic: "2404"
+                              - generic:
+                                - generic:
+                                  - paragraph: iec104_server
+                    - treeitem [expanded] [level=3]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - generic: asdu
+                              - generic: "1"
+                              - generic:
+                                - generic:
+                                  - paragraph: asdu
+                    - treeitem [expanded] [level=4]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: Параметры измерений с ИКЗ
+                    - treeitem [expanded] [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: ИКЗ 1
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2001"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZCurrent_1
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2002"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZBatt_1
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2003"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZTemp_1
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2004"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZCurrentShCirc_1
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [expanded] [level=5]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - button:
+                              - img
+                            - generic:
+                              - img
+                              - generic:
+                                - generic:
+                                  - paragraph: ИКЗ 2
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "1"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZCurrent_2
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "2"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZBatt_2
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "10"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZTemp_2
+                                - generic:
+                                  - img
+                                  - code
+                    - treeitem [level=6]:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - img
+                              - generic: "11"
+                              - generic: ts1
+                              - generic:
+                                - generic:
+                                  - code:
+                                    - paragraph: IKZCurrentShCirc_2
+                                - generic:
+                                  - img
+                                  - code
+    - contentinfo:
+      - generic:
+        - generic:
+          - img
+          - paragraph: 5:41:31 PM
+        - generic:
+          - img
+          - paragraph: 25%
+        - generic:
+          - img
+          - paragraph: 33%
+        - img
+        - generic:
+          - paragraph: 1.99.999
+  - region "bottom-end Notifications alt+T"
+  - generic:
+    - menu:
+      - menuitem:
+        - img
+        - text: Найти соответствие
+      - menuitem:
+        - img
+        - text: Ручной ввод
+      - menuitem:
+        - img
+        - text: Редактор сигнала
+      - menuitem:
+        - img
+        - text: Дополнительная информация
+  - dialog "Ручной ввод" [ref=e2]:
+    - generic [ref=e3]:
+      - img [ref=e4]
+      - heading "Ручной ввод" [level=2] [ref=e9]
+    - button "Close" [ref=e10] [cursor=pointer]:
+      - img [ref=e11]
+    - generic [ref=e13]:
+      - generic [ref=e14]: Изменение значения переменной
+      - group [ref=e15]:
+        - generic [ref=e16]: Значение
+        - generic [ref=e17]:
+          - group [ref=e18]:
+            - button "increment value" [disabled] [ref=e19] [cursor=pointer]:
+              - img [ref=e20]
+            - button "decrease value" [ref=e22] [cursor=pointer]:
+              - img [ref=e23]
+          - spinbutton "Значение" [active] [ref=e25]: "65536"
+        - generic [ref=e26]: Значение не может быть больше 65535
+        - generic [ref=e27]: Целое от 0 до 65535
+      - group "Атрибуты" [ref=e28]:
+        - generic [ref=e29]: Атрибуты
+        - group [ref=e31]:
+          - generic [ref=e32]:
+            - generic [ref=e33]:
+              - img [ref=e34]
+              - generic [ref=e37]:
+                - checkbox "Используется (US)" [ref=e38]
+                - img [ref=e40]
+                - generic [ref=e41]: Используется (US)
+              - button "Подробнее об атрибуте \"Используется\"" [ref=e42] [cursor=pointer]:
+                - img [ref=e43]
+            - generic [ref=e45]:
+              - img [ref=e46]
+              - generic [ref=e49]:
+                - checkbox "Доп. расчет (AC)" [ref=e50]
+                - img [ref=e52]
+                - generic [ref=e53]: Доп. расчет (AC)
+              - button "Подробнее об атрибуте \"Доп. расчет\"" [ref=e54] [cursor=pointer]:
+                - img [ref=e55]
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - generic [ref=e60]:
+                - checkbox "Заблокирован (BL)" [ref=e61]
+                - img [ref=e63]
+                - generic [ref=e64]: Заблокирован (BL)
+              - button "Подробнее об атрибуте \"Заблокирован\"" [ref=e65] [cursor=pointer]:
+                - img [ref=e66]
+            - generic [ref=e68]:
+              - img [ref=e69]
+              - generic [ref=e72]:
+                - checkbox "Переполнен (OV)" [ref=e73]
+                - img [ref=e75]
+                - generic [ref=e76]: Переполнен (OV)
+              - button "Подробнее об атрибуте \"Переполнен\"" [ref=e77] [cursor=pointer]:
+                - img [ref=e78]
+            - generic [ref=e80]:
+              - img [ref=e81]
+              - generic [ref=e83]:
+                - checkbox "Неизвестный (UN)" [ref=e84]
+                - img [ref=e86]
+                - generic [ref=e87]: Неизвестный (UN)
+              - button "Подробнее об атрибуте \"Неизвестный\"" [ref=e88] [cursor=pointer]:
+                - img [ref=e89]
+            - generic [ref=e91]:
+              - img [ref=e92]
+              - generic [ref=e97]:
+                - checkbox "Ручной (BL)" [checked] [disabled] [ref=e98]
+                - img [ref=e100]
+                - generic [ref=e102]: Ручной (BL)
+              - button "Подробнее об атрибуте \"Ручной\"" [ref=e103] [cursor=pointer]:
+                - img [ref=e104]
+            - generic [ref=e106]:
+              - img [ref=e107]
+              - generic [ref=e108]:
+                - checkbox "Замещен (SB)" [checked] [disabled] [ref=e109]
+                - img [ref=e111]
+                - generic [ref=e113]: Замещен (SB)
+              - button "Подробнее об атрибуте \"Замещен\"" [ref=e114] [cursor=pointer]:
+                - img [ref=e115]
+            - generic [ref=e117]:
+              - img [ref=e118]
+              - generic [ref=e121]:
+                - checkbox "Устаревший (NT)" [ref=e122]
+                - img [ref=e124]
+                - generic [ref=e125]: Устаревший (NT)
+              - button "Подробнее об атрибуте \"Устаревший\"" [ref=e126] [cursor=pointer]:
+                - img [ref=e127]
+            - generic [ref=e129]:
+              - img [ref=e130]
+              - generic [ref=e134]:
+                - checkbox "Недостоверный (IV)" [checked] [disabled] [ref=e135]
+                - img [ref=e137]
+                - generic [ref=e139]: Недостоверный (IV)
+              - button "Подробнее об атрибуте \"Недостоверный\"" [ref=e140] [cursor=pointer]:
+                - img [ref=e141]
+    - generic [ref=e143]:
+      - button "Ручной ввод - Применить" [ref=e144] [cursor=pointer]
+      - button "Ручной ввод - Отмена" [ref=e145] [cursor=pointer]
+```

@@ -1,0 +1,196 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\glotova\\Desktop\\tests\\playwright.config.js",
+    "rootDir": "C:/Users/glotova/Desktop/tests/tests",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "line",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "playwright-report/report.json"
+        }
+      ],
+      [
+        "C:\\Users\\glotova\\Desktop\\tests\\node_modules\\allure-playwright\\dist\\cjs\\index.js",
+        {
+          "detail": true,
+          "outputFolder": "allure-results",
+          "suiteTitle": false
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/glotova/Desktop/tests/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/glotova/Desktop/tests/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.57.0",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ConfigTest\\settingsConnections\\ContextMenu\\comport\\ComportLevel_1.spec.js",
+      "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Навигация",
+          "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "На 1 уровне - COM-порт (раздел \"Прием\")",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6738,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T03:09:51.828Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJleHRlcm5hbElkIjoiOWJjNGFlMDAtMWRkYy00MTI4LTlmYTUtNDk5MGY5M2UyZDcwIn0="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJ0aXRsZSI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0YDQuNC10LxcIikifQ=="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJkZXNjcmlwdGlvbiI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0YDQuNC10LxcIikifQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "91ee27881252185736a4-cf4381fa10df928b5375",
+              "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 21,
+              "column": 5
+            },
+            {
+              "title": "На 1 уровне - COM-порт (раздел \"Передача\")",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5806,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-28T03:09:59.059Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJleHRlcm5hbElkIjoiOWJjNGFlMDAtMWRkYy00MTI4LTlmYTUtNDk5MGY5M2UyZDcwIn0="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJ0aXRsZSI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0LXRgNC10LTQsNGH0LBcIikifQ=="
+                        },
+                        {
+                          "name": "tms-metadata.json",
+                          "contentType": "application/vnd.tms.metadata+json",
+                          "body": "eyJkZXNjcmlwdGlvbiI6ItCd0LAgMSDRg9GA0L7QstC90LUgLSBDT00t0L/QvtGA0YIgKNGA0LDQt9C00LXQuyBcItCf0LXRgNC10LTQsNGH0LBcIikifQ=="
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "91ee27881252185736a4-78701a0be67b2c6b9577",
+              "file": "ConfigTest/settingsConnections/ContextMenu/comport/ComportLevel_1.spec.js",
+              "line": 78,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-01-28T03:09:50.215Z",
+    "duration": 14719.341999999999,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
